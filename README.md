@@ -104,7 +104,7 @@
 - **Contract Name**: PredictiveLiquidityMiningV4Dynamic
 - **Functions**: `stakeInPool`, `unstakeFromPool`, `claimRewards`
 - **Features**: Multi-pool staking, reward distribution, governance voting
-- **Explorer**: [View on AlgoExplorer](https://testnet.algoexplorer.io/application/746499783)
+- **Explorer**: [View on AlgoExplorer](https://testnet.algoexplorer.io/application/746488803)
 - **Deployment**: Deployed with real-time transaction data integration
 
 ### Trailing Stop-Loss Contract
