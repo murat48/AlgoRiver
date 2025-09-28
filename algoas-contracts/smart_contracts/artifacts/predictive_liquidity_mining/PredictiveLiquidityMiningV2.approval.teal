@@ -1,0 +1,1226 @@
+#pragma version 10
+#pragma typetrack false
+
+// @algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram() -> uint64:
+main:
+    intcblock 1 0
+    bytecblock 0x151f7c75 "Pool " " by user "
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txn NumAppArgs
+    bz main_bare_routing@29
+    pushbytess 0xc3b9922a 0x96ceaba9 0x5a41b7a1 0xe719bdbd 0xa90b772f 0xd8421f1d 0x6c641248 0x30c61fef 0x90ecc90e 0x63b74425 0xddfa9f28 0x0d051d7a 0xfb0b4e63 0xc18934fb 0x3adfede5 0xdc0bcc76 0xab771683 0xcfeec563 0x5f730122 0xdb7a1146 0x859c82ca 0xe13b1749 0x6cb70bf3 0x8c98b237 // method "createPool(string,string,string,string)string", method "stakeInPool(string,string,string)string", method "unstakeFromPool(string,string,string)string", method "emergencyWithdraw(string,string)string", method "getUserStake(string,string)string", method "updateAIPrediction(string,string,string,string)string", method "submitTrainingData(string,string,string,string)string", method "voteOnProposal(string,bool,string)string", method "calculateUserRiskScore(string,string,string)string", method "claimRewards(string,string)string", method "getPoolStats(string)string", method "emergencyPause()string", method "getUserPortfolio(string)string", method "getPlatformAnalytics()string", method "getAllTransactions()string", method "getTransactionSummary()string", method "getUserTransactions(string)string", method "getPoolTransactions(string)string", method "getTransactionsByType(string)string", method "getTransactionsByDateRange(string,string)string", method "getTransactionDetails(string)string", method "getTransactionAnalytics()string", method "getPendingTransactions(string)string", method "getVolumeStatistics()string"
+    txna ApplicationArgs 0
+    match main_createPool_route@3 main_stakeInPool_route@4 main_unstakeFromPool_route@5 main_emergencyWithdraw_route@6 main_getUserStake_route@7 main_updateAIPrediction_route@8 main_submitTrainingData_route@9 main_voteOnProposal_route@10 main_calculateUserRiskScore_route@11 main_claimRewards_route@12 main_getPoolStats_route@13 main_emergencyPause_route@14 main_getUserPortfolio_route@15 main_getPlatformAnalytics_route@16 main_getAllTransactions_route@17 main_getTransactionSummary_route@18 main_getUserTransactions_route@19 main_getPoolTransactions_route@20 main_getTransactionsByType_route@21 main_getTransactionsByDateRange_route@22 main_getTransactionDetails_route@23 main_getTransactionAnalytics_route@24 main_getPendingTransactions_route@25 main_getVolumeStatistics_route@26
+
+main_after_if_else@33:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    intc_1 // 0
+    return
+
+main_getVolumeStatistics_route@26:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:243
+    // getVolumeStatistics(): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c75015a566f6c756d6520537461746973746963733a207b22746f646179223a7b22746f74616c566f6c756d65223a22322c3135302c303030222c227472616e73616374696f6e73223a38392c226176657261676553697a65223a2232342c313537227d2c22746869735765656b223a7b22746f74616c566f6c756d65223a2231322c3735302c303030222c227472616e73616374696f6e73223a3534322c226176657261676553697a65223a2232332c353234227d2c22746869734d6f6e7468223a7b22746f74616c566f6c756d65223a2234352c3235302c303030222c227472616e73616374696f6e73223a313834372c226176657261676553697a65223a2232342c353034227d2c22616c6c54696d65223a7b22746f74616c566f6c756d65223a223135362c3735302c303030222c227472616e73616374696f6e73223a363738392c226176657261676553697a65223a2232332c303839227d7d
+    log
+    intc_0 // 1
+    return
+
+main_getPendingTransactions_route@25:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:236
+    // getPendingTransactions(userAddress: string): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:236
+    // getPendingTransactions(userAddress: string): string {
+    callsub getPendingTransactions
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_getTransactionAnalytics_route@24:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:229
+    // getTransactionAnalytics(): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c75017f5472616e73616374696f6e20416e616c79746963733a207b226461696c79566f6c756d65223a7b22323032352d30392d3235223a22343530303030222c22323032352d30392d3236223a22353230303030222c22323032352d30392d3237223a22333830303030227d2c227472616e73616374696f6e5479706573223a7b225354414b45223a36372c22554e5354414b45223a31382c225245574152445f434c41494d223a31357d2c22746f70506f6f6c73223a5b7b22706f6f6c4964223a22706f6f6c5f616c676f72616e64222c22766f6c756d65223a22383530303030222c227472616e73616374696f6e73223a34357d2c7b22706f6f6c4964223a22706f6f6c5f657468657265756d222c22766f6c756d65223a22373230303030222c227472616e73616374696f6e73223a33387d5d2c227573657247726f777468223a7b226e65775573657273323468223a32332c226163746976655573657273323468223a3435362c22726574656e74696f6e52617465223a22383525227d7d
+    log
+    intc_0 // 1
+    return
+
+main_getTransactionDetails_route@23:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:222
+    // getTransactionDetails(txId: string): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:222
+    // getTransactionDetails(txId: string): string {
+    callsub getTransactionDetails
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_getTransactionsByDateRange_route@22:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:215
+    // getTransactionsByDateRange(startDate: string, endDate: string): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:215
+    // getTransactionsByDateRange(startDate: string, endDate: string): string {
+    callsub getTransactionsByDateRange
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_getTransactionsByType_route@21:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:201
+    // getTransactionsByType(txType: string): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:201
+    // getTransactionsByType(txType: string): string {
+    callsub getTransactionsByType
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_getPoolTransactions_route@20:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:194
+    // getPoolTransactions(poolId: string): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:194
+    // getPoolTransactions(poolId: string): string {
+    callsub getPoolTransactions
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_getUserTransactions_route@19:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:187
+    // getUserTransactions(userAddress: string): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:187
+    // getUserTransactions(userAddress: string): string {
+    callsub getUserTransactions
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_getTransactionSummary_route@18:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:180
+    // getTransactionSummary(): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c7500fb5472616e73616374696f6e2053756d6d6172793a207b22746f74616c5472616e73616374696f6e73223a313534372c22746f74616c5374616b6564223a2231352c3735302c303030222c22746f74616c556e7374616b6564223a22332c3235302c303030222c22746f74616c52657761726473436c61696d6564223a223837352c303030222c226163746976655472616e73616374696f6e73323468223a38392c227374616b696e67566f6c756d65323468223a22322c3135302c303030222c22746f70506f6f6c223a22706f6f6c5f616c676f72616e645f64656669222c22617665726167655374616b6553697a65223a2231322c353030227d
+    log
+    intc_0 // 1
+    return
+
+main_getAllTransactions_route@17:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:173
+    // getAllTransactions(): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c750183506c6174666f726d205472616e73616374696f6e733a205b7b2274784964223a223078316132623363222c2274797065223a225354414b45222c22616d6f756e74223a2231303030222c22706f6f6c4964223a22706f6f6c5f31222c2275736572223a224144445231222c2274696d657374616d70223a22323032352d30392d32375431303a33303a30305a227d2c7b2274784964223a223078346435653666222c2274797065223a22554e5354414b45222c22616d6f756e74223a22353030222c22706f6f6c4964223a22706f6f6c5f32222c2275736572223a224144445232222c2274696d657374616d70223a22323032352d30392d32375431313a31353a30305a227d2c7b2274784964223a223078376738683969222c2274797065223a225245574152445f434c41494d222c22616d6f756e74223a223735222c22706f6f6c4964223a22706f6f6c5f31222c2275736572223a224144445231222c2274696d657374616d70223a22323032352d30392d32375431323a30303a30305a227d5d
+    log
+    intc_0 // 1
+    return
+
+main_getPlatformAnalytics_route@16:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:162
+    // getPlatformAnalytics(): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c750097506c6174666f726d20416e616c79746963733a20546f74616c20706f6f6c733a2034372c20416374697665206d696e6572733a20312c3233342c20546f74616c20726577617264732064697374726962757465643a203132352c30303020746f6b656e732c2041766572616765204150593a2031322e35252c2041492070726564696374696f6e2061636375726163793a2038372e3325
+    log
+    intc_0 // 1
+    return
+
+main_getUserPortfolio_route@15:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:155
+    // getUserPortfolio(userAddress: string): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:155
+    // getUserPortfolio(userAddress: string): string {
+    callsub getUserPortfolio
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_emergencyPause_route@14:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:148
+    // emergencyPause(): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c75003a506c6174666f726d2070617573656420666f72206d61696e74656e616e63652e20416c6c206f7065726174696f6e732073757370656e6465642e
+    log
+    intc_0 // 1
+    return
+
+main_getPoolStats_route@13:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:140
+    // getPoolStats(poolId: string): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:140
+    // getPoolStats(poolId: string): string {
+    callsub getPoolStats
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_claimRewards_route@12:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:127-130
+    // claimRewards(
+    //     userAddress: string,
+    //     poolId: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:127-130
+    // claimRewards(
+    //     userAddress: string,
+    //     poolId: string
+    // ): string {
+    callsub claimRewards
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_calculateUserRiskScore_route@11:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:115-119
+    // calculateUserRiskScore(
+    //     userAddress: string,
+    //     portfolioValue: string,
+    //     tradingFrequency: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:115-119
+    // calculateUserRiskScore(
+    //     userAddress: string,
+    //     portfolioValue: string,
+    //     tradingFrequency: string
+    // ): string {
+    callsub calculateUserRiskScore
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_voteOnProposal_route@10:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:103-107
+    // voteOnProposal(
+    //     proposalId: string,
+    //     vote: boolean,
+    //     voter: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    intc_1 // 0
+    getbit
+    txna ApplicationArgs 3
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:103-107
+    // voteOnProposal(
+    //     proposalId: string,
+    //     vote: boolean,
+    //     voter: string
+    // ): string {
+    callsub voteOnProposal
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_submitTrainingData_route@9:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:79-84
+    // submitTrainingData(
+    //     contributor: string,
+    //     dataType: string,
+    //     dataHash: string,
+    //     poolId: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    txna ApplicationArgs 4
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:79-84
+    // submitTrainingData(
+    //     contributor: string,
+    //     dataType: string,
+    //     dataHash: string,
+    //     poolId: string
+    // ): string {
+    callsub submitTrainingData
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_updateAIPrediction_route@8:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:67-72
+    // updateAIPrediction(
+    //     poolId: string,
+    //     newAPY: string,
+    //     confidence: string,
+    //     timeframe: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    txna ApplicationArgs 4
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:67-72
+    // updateAIPrediction(
+    //     poolId: string,
+    //     newAPY: string,
+    //     confidence: string,
+    //     timeframe: string
+    // ): string {
+    callsub updateAIPrediction
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_getUserStake_route@7:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:57-60
+    // getUserStake(
+    //     poolId: string,
+    //     userAddress: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:57-60
+    // getUserStake(
+    //     poolId: string,
+    //     userAddress: string
+    // ): string {
+    callsub getUserStake
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_emergencyWithdraw_route@6:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:47-50
+    // emergencyWithdraw(
+    //     poolId: string,
+    //     userAddress: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:47-50
+    // emergencyWithdraw(
+    //     poolId: string,
+    //     userAddress: string
+    // ): string {
+    callsub emergencyWithdraw
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_unstakeFromPool_route@5:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:36-40
+    // unstakeFromPool(
+    //     poolId: string,
+    //     amount: string,
+    //     userAddress: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:36-40
+    // unstakeFromPool(
+    //     poolId: string,
+    //     amount: string,
+    //     userAddress: string
+    // ): string {
+    callsub unstakeFromPool
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_stakeInPool_route@4:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:25-29
+    // stakeInPool(
+    //     poolId: string,
+    //     amount: string,
+    //     userAddress: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:25-29
+    // stakeInPool(
+    //     poolId: string,
+    //     amount: string,
+    //     userAddress: string
+    // ): string {
+    callsub stakeInPool
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_createPool_route@3:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:13-18
+    // createPool(
+    //     poolName: string,
+    //     initialAPY: string,
+    //     riskLevel: string,
+    //     minStake: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    txna ApplicationArgs 4
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:13-18
+    // createPool(
+    //     poolName: string,
+    //     initialAPY: string,
+    //     riskLevel: string,
+    //     minStake: string
+    // ): string {
+    callsub createPool
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_bare_routing@29:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:8
+    // export class PredictiveLiquidityMiningV2 extends Contract {
+    txn OnCompletion
+    bnz main_after_if_else@33
+    txn ApplicationID
+    !
+    assert // can only call when creating
+    intc_0 // 1
+    return
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.createPool(poolName: bytes, initialAPY: bytes, riskLevel: bytes, minStake: bytes) -> bytes:
+createPool:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:13-18
+    // createPool(
+    //     poolName: string,
+    //     initialAPY: string,
+    //     riskLevel: string,
+    //     minStake: string
+    // ): string {
+    proto 4 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:19
+    // return `Pool ${poolName} created with ${initialAPY}% APY, risk level: ${riskLevel}, minimum stake: ${minStake} microAlgos`
+    bytec_1 // "Pool "
+    frame_dig -4
+    concat
+    pushbytes " created with "
+    concat
+    frame_dig -3
+    concat
+    pushbytes "% APY, risk level: "
+    concat
+    frame_dig -2
+    concat
+    pushbytes ", minimum stake: "
+    concat
+    frame_dig -1
+    concat
+    pushbytes " microAlgos"
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.stakeInPool(poolId: bytes, amount: bytes, userAddress: bytes) -> bytes:
+stakeInPool:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:25-29
+    // stakeInPool(
+    //     poolId: string,
+    //     amount: string,
+    //     userAddress: string
+    // ): string {
+    proto 3 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:30
+    // return `Successfully staked ${amount} microAlgos in pool ${poolId} by user ${userAddress}`
+    pushbytes "Successfully staked "
+    frame_dig -2
+    concat
+    pushbytes " microAlgos in pool "
+    concat
+    frame_dig -3
+    concat
+    bytec_2 // " by user "
+    concat
+    frame_dig -1
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.unstakeFromPool(poolId: bytes, amount: bytes, userAddress: bytes) -> bytes:
+unstakeFromPool:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:36-40
+    // unstakeFromPool(
+    //     poolId: string,
+    //     amount: string,
+    //     userAddress: string
+    // ): string {
+    proto 3 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:41
+    // return `Successfully unstaked ${amount} microAlgos from pool ${poolId} by user ${userAddress}`
+    pushbytes "Successfully unstaked "
+    frame_dig -2
+    concat
+    pushbytes " microAlgos from pool "
+    concat
+    frame_dig -3
+    concat
+    bytec_2 // " by user "
+    concat
+    frame_dig -1
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.emergencyWithdraw(poolId: bytes, userAddress: bytes) -> bytes:
+emergencyWithdraw:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:47-50
+    // emergencyWithdraw(
+    //     poolId: string,
+    //     userAddress: string
+    // ): string {
+    proto 2 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:51
+    // return `Emergency withdrawal executed for ${userAddress} from pool ${poolId}. Penalties may apply.`
+    pushbytes "Emergency withdrawal executed for "
+    frame_dig -1
+    concat
+    pushbytes " from pool "
+    concat
+    frame_dig -2
+    concat
+    pushbytes ". Penalties may apply."
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.getUserStake(poolId: bytes, userAddress: bytes) -> bytes:
+getUserStake:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:57-60
+    // getUserStake(
+    //     poolId: string,
+    //     userAddress: string
+    // ): string {
+    proto 2 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:61
+    // return `User ${userAddress} has staked amount in pool ${poolId}: 1,500,000 microAlgos`
+    pushbytes "User "
+    frame_dig -1
+    concat
+    pushbytes " has staked amount in pool "
+    concat
+    frame_dig -2
+    concat
+    pushbytes ": 1,500,000 microAlgos"
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.updateAIPrediction(poolId: bytes, newAPY: bytes, confidence: bytes, timeframe: bytes) -> bytes:
+updateAIPrediction:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:67-72
+    // updateAIPrediction(
+    //     poolId: string,
+    //     newAPY: string,
+    //     confidence: string,
+    //     timeframe: string
+    // ): string {
+    proto 4 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:73
+    // return `Pool ${poolId} AI prediction updated: ${newAPY}% APY with ${confidence}% confidence for ${timeframe}`
+    bytec_1 // "Pool "
+    frame_dig -4
+    concat
+    pushbytes " AI prediction updated: "
+    concat
+    frame_dig -3
+    concat
+    pushbytes "% APY with "
+    concat
+    frame_dig -2
+    concat
+    pushbytes "% confidence for "
+    concat
+    frame_dig -1
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.submitTrainingData(contributor: bytes, dataType: bytes, dataHash: bytes, poolId: bytes) -> bytes:
+submitTrainingData:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:79-84
+    // submitTrainingData(
+    //     contributor: string,
+    //     dataType: string,
+    //     dataHash: string,
+    //     poolId: string
+    // ): string {
+    proto 4 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:94
+    // if (dataType === 'market_data') return '100'
+    frame_dig -3
+    pushbytes "market_data"
+    ==
+    bz submitTrainingData_after_if_else@3
+    pushbytes "100"
+
+submitTrainingData_after_inlined_smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.calculateDataReward@8:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:86
+    // return `Data submitted by ${contributor} for pool ${poolId}. Data hash: ${dataHash}. Governance reward: ${rewardAmount} tokens.`
+    pushbytes "Data submitted by "
+    frame_dig -4
+    concat
+    pushbytes " for pool "
+    concat
+    frame_dig -1
+    concat
+    pushbytes ". Data hash: "
+    concat
+    frame_dig -2
+    concat
+    pushbytes ". Governance reward: "
+    concat
+    swap
+    concat
+    pushbytes " tokens."
+    concat
+    retsub
+
+submitTrainingData_after_if_else@3:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:95
+    // if (dataType === 'liquidity_data') return '150'
+    frame_dig -3
+    pushbytes "liquidity_data"
+    ==
+    bz submitTrainingData_after_if_else@5
+    pushbytes "150"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:85
+    // const rewardAmount = this.calculateDataReward(dataType)
+    b submitTrainingData_after_inlined_smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.calculateDataReward@8
+
+submitTrainingData_after_if_else@5:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:96
+    // if (dataType === 'user_behavior') return '200'
+    frame_dig -3
+    pushbytes "user_behavior"
+    ==
+    bz submitTrainingData_after_if_else@7
+    pushbytes "200"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:85
+    // const rewardAmount = this.calculateDataReward(dataType)
+    b submitTrainingData_after_inlined_smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.calculateDataReward@8
+
+submitTrainingData_after_if_else@7:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:97
+    // return '50' // Default reward
+    pushbytes "50"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:85
+    // const rewardAmount = this.calculateDataReward(dataType)
+    b submitTrainingData_after_inlined_smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.calculateDataReward@8
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.voteOnProposal(proposalId: bytes, vote: uint64, voter: bytes) -> bytes:
+voteOnProposal:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:103-107
+    // voteOnProposal(
+    //     proposalId: string,
+    //     vote: boolean,
+    //     voter: string
+    // ): string {
+    proto 3 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:108
+    // const voteString = vote ? 'FOR' : 'AGAINST'
+    frame_dig -2
+    bz voteOnProposal_ternary_false@2
+    pushbytes "FOR"
+
+voteOnProposal_ternary_merge@3:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:109
+    // return `Vote cast on proposal ${proposalId} by ${voter}: ${voteString}`
+    pushbytes "Vote cast on proposal "
+    frame_dig -3
+    concat
+    pushbytes " by "
+    concat
+    frame_dig -1
+    concat
+    pushbytes ": "
+    concat
+    swap
+    concat
+    retsub
+
+voteOnProposal_ternary_false@2:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:108
+    // const voteString = vote ? 'FOR' : 'AGAINST'
+    pushbytes "AGAINST"
+    b voteOnProposal_ternary_merge@3
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.calculateUserRiskScore(userAddress: bytes, portfolioValue: bytes, tradingFrequency: bytes) -> bytes:
+calculateUserRiskScore:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:115-119
+    // calculateUserRiskScore(
+    //     userAddress: string,
+    //     portfolioValue: string,
+    //     tradingFrequency: string
+    // ): string {
+    proto 3 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:121
+    // return `Risk score for ${userAddress}: 65/100 based on portfolio value ${portfolioValue} and trading frequency ${tradingFrequency}`
+    pushbytes "Risk score for "
+    frame_dig -3
+    concat
+    pushbytes ": 65/100 based on portfolio value "
+    concat
+    frame_dig -2
+    concat
+    pushbytes " and trading frequency "
+    concat
+    frame_dig -1
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.claimRewards(userAddress: bytes, poolId: bytes) -> bytes:
+claimRewards:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:127-130
+    // claimRewards(
+    //     userAddress: string,
+    //     poolId: string
+    // ): string {
+    proto 2 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:134
+    // return `${userAddress} claimed ${totalRewards} tokens from pool ${poolId}. Rewards calculated using AI-powered dynamic system.`
+    frame_dig -2
+    pushbytes " claimed "
+    concat
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:132
+    // const totalRewards = '120'
+    pushbytes "120"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:134
+    // return `${userAddress} claimed ${totalRewards} tokens from pool ${poolId}. Rewards calculated using AI-powered dynamic system.`
+    concat
+    pushbytes " tokens from pool "
+    concat
+    frame_dig -1
+    concat
+    pushbytes ". Rewards calculated using AI-powered dynamic system."
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.getPoolStats(poolId: bytes) -> bytes:
+getPoolStats:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:140
+    // getPoolStats(poolId: string): string {
+    proto 1 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:142
+    // return `Pool ${poolId}: Current APY 15.5%, Predicted APY 18.2% (87% confidence), TVL: 1,500,000 microAlgos`
+    bytec_1 // "Pool "
+    frame_dig -1
+    concat
+    pushbytes ": Current APY 15.5%, Predicted APY 18.2% (87% confidence), TVL: 1,500,000 microAlgos"
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.getUserPortfolio(userAddress: bytes) -> bytes:
+getUserPortfolio:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:155
+    // getUserPortfolio(userAddress: string): string {
+    proto 1 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:156
+    // return `Portfolio for ${userAddress}: Active positions tracked, rewards available, risk assessment completed`
+    pushbytes "Portfolio for "
+    frame_dig -1
+    concat
+    pushbytes ": Active positions tracked, rewards available, risk assessment completed"
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.getUserTransactions(userAddress: bytes) -> bytes:
+getUserTransactions:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:187
+    // getUserTransactions(userAddress: string): string {
+    proto 1 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:188
+    // return `User Transactions for ${userAddress}: [{"txId":"0xuser1","type":"STAKE","amount":"2000","poolId":"pool_algorand","timestamp":"2025-09-25T14:20:00Z","status":"COMPLETED"},{"txId":"0xuser2","type":"REWARD_CLAIM","amount":"45","poolId":"pool_algorand","timestamp":"2025-09-26T09:30:00Z","status":"COMPLETED"},{"txId":"0xuser3","type":"UNSTAKE","amount":"500","poolId":"pool_algorand","timestamp":"2025-09-27T08:15:00Z","status":"COMPLETED"}]`
+    pushbytes "User Transactions for "
+    frame_dig -1
+    concat
+    pushbytes ": [{\"txId\":\"0xuser1\",\"type\":\"STAKE\",\"amount\":\"2000\",\"poolId\":\"pool_algorand\",\"timestamp\":\"2025-09-25T14:20:00Z\",\"status\":\"COMPLETED\"},{\"txId\":\"0xuser2\",\"type\":\"REWARD_CLAIM\",\"amount\":\"45\",\"poolId\":\"pool_algorand\",\"timestamp\":\"2025-09-26T09:30:00Z\",\"status\":\"COMPLETED\"},{\"txId\":\"0xuser3\",\"type\":\"UNSTAKE\",\"amount\":\"500\",\"poolId\":\"pool_algorand\",\"timestamp\":\"2025-09-27T08:15:00Z\",\"status\":\"COMPLETED\"}]"
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.getPoolTransactions(poolId: bytes) -> bytes:
+getPoolTransactions:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:194
+    // getPoolTransactions(poolId: string): string {
+    proto 1 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:195
+    // return `Pool Transactions for ${poolId}: [{"txId":"0xpool1","type":"STAKE","amount":"5000","user":"USER_A","timestamp":"2025-09-27T07:00:00Z"},{"txId":"0xpool2","type":"STAKE","amount":"3000","user":"USER_B","timestamp":"2025-09-27T08:30:00Z"},{"txId":"0xpool3","type":"REWARD_CLAIM","amount":"120","user":"USER_A","timestamp":"2025-09-27T10:45:00Z"}]`
+    pushbytes "Pool Transactions for "
+    frame_dig -1
+    concat
+    pushbytes ": [{\"txId\":\"0xpool1\",\"type\":\"STAKE\",\"amount\":\"5000\",\"user\":\"USER_A\",\"timestamp\":\"2025-09-27T07:00:00Z\"},{\"txId\":\"0xpool2\",\"type\":\"STAKE\",\"amount\":\"3000\",\"user\":\"USER_B\",\"timestamp\":\"2025-09-27T08:30:00Z\"},{\"txId\":\"0xpool3\",\"type\":\"REWARD_CLAIM\",\"amount\":\"120\",\"user\":\"USER_A\",\"timestamp\":\"2025-09-27T10:45:00Z\"}]"
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.getTransactionsByType(txType: bytes) -> bytes:
+getTransactionsByType:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:201
+    // getTransactionsByType(txType: string): string {
+    proto 1 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:202
+    // if (txType === 'STAKE') {
+    frame_dig -1
+    pushbytes "STAKE"
+    ==
+    bz getTransactionsByType_else_body@2
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:203
+    // return 'STAKE Transactions: [{"txId":"0xstk1","amount":"1000","poolId":"pool_1","user":"ADDR1","timestamp":"2025-09-27T10:30:00Z"},{"txId":"0xstk2","amount":"2500","poolId":"pool_2","user":"ADDR2","timestamp":"2025-09-27T11:00:00Z"}]'
+    pushbytes "STAKE Transactions: [{\"txId\":\"0xstk1\",\"amount\":\"1000\",\"poolId\":\"pool_1\",\"user\":\"ADDR1\",\"timestamp\":\"2025-09-27T10:30:00Z\"},{\"txId\":\"0xstk2\",\"amount\":\"2500\",\"poolId\":\"pool_2\",\"user\":\"ADDR2\",\"timestamp\":\"2025-09-27T11:00:00Z\"}]"
+    retsub
+
+getTransactionsByType_else_body@2:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:204
+    // } else if (txType === 'UNSTAKE') {
+    frame_dig -1
+    pushbytes "UNSTAKE"
+    ==
+    bz getTransactionsByType_else_body@4
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:205
+    // return 'UNSTAKE Transactions: [{"txId":"0xuns1","amount":"500","poolId":"pool_1","user":"ADDR1","timestamp":"2025-09-27T12:15:00Z"},{"txId":"0xuns2","amount":"750","poolId":"pool_3","user":"ADDR3","timestamp":"2025-09-27T13:30:00Z"}]'
+    pushbytes "UNSTAKE Transactions: [{\"txId\":\"0xuns1\",\"amount\":\"500\",\"poolId\":\"pool_1\",\"user\":\"ADDR1\",\"timestamp\":\"2025-09-27T12:15:00Z\"},{\"txId\":\"0xuns2\",\"amount\":\"750\",\"poolId\":\"pool_3\",\"user\":\"ADDR3\",\"timestamp\":\"2025-09-27T13:30:00Z\"}]"
+    retsub
+
+getTransactionsByType_else_body@4:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:206
+    // } else if (txType === 'REWARD_CLAIM') {
+    frame_dig -1
+    pushbytes "REWARD_CLAIM"
+    ==
+    bz getTransactionsByType_after_if_else@6
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:207
+    // return 'REWARD_CLAIM Transactions: [{"txId":"0xrwd1","amount":"75","poolId":"pool_1","user":"ADDR1","timestamp":"2025-09-27T14:00:00Z"},{"txId":"0xrwd2","amount":"125","poolId":"pool_2","user":"ADDR2","timestamp":"2025-09-27T14:45:00Z"}]'
+    pushbytes "REWARD_CLAIM Transactions: [{\"txId\":\"0xrwd1\",\"amount\":\"75\",\"poolId\":\"pool_1\",\"user\":\"ADDR1\",\"timestamp\":\"2025-09-27T14:00:00Z\"},{\"txId\":\"0xrwd2\",\"amount\":\"125\",\"poolId\":\"pool_2\",\"user\":\"ADDR2\",\"timestamp\":\"2025-09-27T14:45:00Z\"}]"
+    retsub
+
+getTransactionsByType_after_if_else@6:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:209
+    // return `No transactions found for type: ${txType}`
+    pushbytes "No transactions found for type: "
+    frame_dig -1
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.getTransactionsByDateRange(startDate: bytes, endDate: bytes) -> bytes:
+getTransactionsByDateRange:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:215
+    // getTransactionsByDateRange(startDate: string, endDate: string): string {
+    proto 2 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:216
+    // return `Transactions from ${startDate} to ${endDate}: [{"txId":"0xdate1","type":"STAKE","amount":"1500","poolId":"pool_algorand","user":"USER_X","timestamp":"${startDate}T09:00:00Z"},{"txId":"0xdate2","type":"UNSTAKE","amount":"600","poolId":"pool_ethereum","user":"USER_Y","timestamp":"${endDate}T16:30:00Z"}]`
+    pushbytes "Transactions from "
+    frame_dig -2
+    concat
+    pushbytes " to "
+    concat
+    frame_dig -1
+    concat
+    pushbytes ": [{\"txId\":\"0xdate1\",\"type\":\"STAKE\",\"amount\":\"1500\",\"poolId\":\"pool_algorand\",\"user\":\"USER_X\",\"timestamp\":\""
+    concat
+    frame_dig -2
+    concat
+    pushbytes "T09:00:00Z\"},{\"txId\":\"0xdate2\",\"type\":\"UNSTAKE\",\"amount\":\"600\",\"poolId\":\"pool_ethereum\",\"user\":\"USER_Y\",\"timestamp\":\""
+    concat
+    frame_dig -1
+    concat
+    pushbytes "T16:30:00Z\"}]"
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.getTransactionDetails(txId: bytes) -> bytes:
+getTransactionDetails:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:222
+    // getTransactionDetails(txId: string): string {
+    proto 1 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:223
+    // return `Transaction Details for ${txId}: {"txId":"${txId}","type":"STAKE","amount":"2500","poolId":"pool_algorand_defi","poolName":"Algorand DeFi Pool","user":"ALGORAND_USER_123","userRiskScore":"65","timestamp":"2025-09-27T10:30:00Z","blockHeight":"12345678","gasUsed":"0.001","status":"COMPLETED","aiPredictionAtTime":"18.5%","currentAPY":"15.2%","rewardsEarned":"0","stakingPeriod":"0 days","penalties":"0","contractVersion":"2.0"}`
+    pushbytes "Transaction Details for "
+    frame_dig -1
+    concat
+    pushbytes ": {\"txId\":\""
+    concat
+    frame_dig -1
+    concat
+    pushbytes "\",\"type\":\"STAKE\",\"amount\":\"2500\",\"poolId\":\"pool_algorand_defi\",\"poolName\":\"Algorand DeFi Pool\",\"user\":\"ALGORAND_USER_123\",\"userRiskScore\":\"65\",\"timestamp\":\"2025-09-27T10:30:00Z\",\"blockHeight\":\"12345678\",\"gasUsed\":\"0.001\",\"status\":\"COMPLETED\",\"aiPredictionAtTime\":\"18.5%\",\"currentAPY\":\"15.2%\",\"rewardsEarned\":\"0\",\"stakingPeriod\":\"0 days\",\"penalties\":\"0\",\"contractVersion\":\"2.0\"}"
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMiningV2.getPendingTransactions(userAddress: bytes) -> bytes:
+getPendingTransactions:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:236
+    // getPendingTransactions(userAddress: string): string {
+    proto 1 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:237
+    // return `Pending Transactions for ${userAddress}: [{"txId":"0xpend1","type":"STAKE","amount":"1000","poolId":"pool_1","status":"PENDING","timestamp":"2025-09-27T15:00:00Z","reason":"Waiting for confirmation"},{"txId":"0xfail1","type":"UNSTAKE","amount":"200","poolId":"pool_2","status":"FAILED","timestamp":"2025-09-27T14:30:00Z","reason":"Insufficient balance"}]`
+    pushbytes "Pending Transactions for "
+    frame_dig -1
+    concat
+    pushbytes ": [{\"txId\":\"0xpend1\",\"type\":\"STAKE\",\"amount\":\"1000\",\"poolId\":\"pool_1\",\"status\":\"PENDING\",\"timestamp\":\"2025-09-27T15:00:00Z\",\"reason\":\"Waiting for confirmation\"},{\"txId\":\"0xfail1\",\"type\":\"UNSTAKE\",\"amount\":\"200\",\"poolId\":\"pool_2\",\"status\":\"FAILED\",\"timestamp\":\"2025-09-27T14:30:00Z\",\"reason\":\"Insufficient balance\"}]"
+    concat
+    retsub

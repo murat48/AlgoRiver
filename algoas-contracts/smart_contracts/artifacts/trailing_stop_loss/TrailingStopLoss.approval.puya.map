@@ -1,0 +1,4596 @@
+{
+  "version": 3,
+  "sources": [
+    "/home/muratkeskin/vault/algoasv5/projects/algoas-contracts/smart_contracts/trailing_stop_loss/contract.algo.ts"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAMA;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AA6II;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAPA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAdA;;AAAA;AAAA;AAAA;;AAAA;AAxHJ;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAwHI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AARA;;AAAA;AAAA;AAAA;;AAAA;AAhHJ;;;AAAA;;;AAgHI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAXA;;AAAA;AAAA;AAAA;;AAAA;AArGJ;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAqGI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAhBA;;AAAA;AAAA;AAAA;;AAAA;AArFJ;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAqFI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AARA;;AAAA;AAAA;AAAA;;AAAA;AA7EJ;;;AAAA;;;AA6EI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAVA;;AAAA;AAAA;AAAA;;AAAA;AAnEJ;;;AAAA;;;AAAA;;;AAAA;;;AAmEI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAhBA;;AAAA;AAAA;AAAA;;AAAA;AAnDJ;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAmDI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAjBA;;AAAA;AAAA;AAAA;;AAAA;AAlCJ;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAkCI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAbA;;AAAA;AAAA;AAAA;;AAAA;AArBJ;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAqBI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAhBA;;AAAA;AAAA;AAAA;;AAAA;AALJ;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAKI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AALJ;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;;AAKI;;;AAiJW;;;;;;;;;;;;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAiBA;AAAA;;AAAA;AAAA;;AAAA;AAxJA;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;;;;;;AAAA;AAAA;;AAAA;AAAP;AAMJ;;;AAuIW;;;;;;;;;;;;;;;;;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAhIA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAP;AAMJ;;;AAQe;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAP;AASR;;;AAyHW;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;AAAA;AA/GA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;AAAA;AAAA;AAAA;AAAP;AAMJ;;;AAIW;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAP;AAMJ;;;AAEW;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAP;AAMJ;;;AAkFW;AAAA;;AAAA;AAAA;;AAAA;AAxEA;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAP;AAMJ;;;AAKW;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;AAAA;AAAA;;AAAA;AAAP;AAMJ;;;AAEW;;;;;;;;;;;;;;;;;;;;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAP;AAMJ;;;AAQW;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAP",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "@algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 1"
+    },
+    "4": {
+      "op": "bytecblock 0x151f7c75 \"Order \" \"_\" \"TSL_\" \"_ORDER\" \", Trail \" \" at \" \"h: \""
+    },
+    "50": {
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "52": {
+      "op": "bz main_bare_routing@17",
+      "stack_out": []
+    },
+    "55": {
+      "op": "pushbytess 0x674e5a35 0x5c7a635b 0xf3196bb8 0x95020b9e 0x0fe99d46 0x371abbc0 0x15ec8879 0xa14cd0ed 0x792b47cb 0xd373076c 0x11237b48 0xb171c8a6 // method \"createTrailingOrder(string,string,string,string,string)string\", method \"updateStopPrice(string,string,string)string\", method \"checkExecutionCondition(string,string,string)string\", method \"executeTrailingOrder(string,string,string,string,string)string\", method \"cancelTrailingOrder(string,string)string\", method \"getOrderDetails(string)string\", method \"createBracketOrder(string,string,string,string,string,string)string\", method \"updateTrailDistance(string,string,string)string\", method \"getUserOrders(string)string\", method \"setTimeBasedTrail(string,string,string,string,string,string)string\", method \"getPlatformStats()string\", method \"emergencyPauseOrders()string\"",
+      "defined_out": [
+        "Method(cancelTrailingOrder(string,string)string)",
+        "Method(checkExecutionCondition(string,string,string)string)",
+        "Method(createBracketOrder(string,string,string,string,string,string)string)",
+        "Method(createTrailingOrder(string,string,string,string,string)string)",
+        "Method(emergencyPauseOrders()string)",
+        "Method(executeTrailingOrder(string,string,string,string,string)string)",
+        "Method(getOrderDetails(string)string)",
+        "Method(getPlatformStats()string)",
+        "Method(getUserOrders(string)string)",
+        "Method(setTimeBasedTrail(string,string,string,string,string,string)string)",
+        "Method(updateStopPrice(string,string,string)string)",
+        "Method(updateTrailDistance(string,string,string)string)"
+      ],
+      "stack_out": [
+        "Method(createTrailingOrder(string,string,string,string,string)string)",
+        "Method(updateStopPrice(string,string,string)string)",
+        "Method(checkExecutionCondition(string,string,string)string)",
+        "Method(executeTrailingOrder(string,string,string,string,string)string)",
+        "Method(cancelTrailingOrder(string,string)string)",
+        "Method(getOrderDetails(string)string)",
+        "Method(createBracketOrder(string,string,string,string,string,string)string)",
+        "Method(updateTrailDistance(string,string,string)string)",
+        "Method(getUserOrders(string)string)",
+        "Method(setTimeBasedTrail(string,string,string,string,string,string)string)",
+        "Method(getPlatformStats()string)",
+        "Method(emergencyPauseOrders()string)"
+      ]
+    },
+    "117": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(cancelTrailingOrder(string,string)string)",
+        "Method(checkExecutionCondition(string,string,string)string)",
+        "Method(createBracketOrder(string,string,string,string,string,string)string)",
+        "Method(createTrailingOrder(string,string,string,string,string)string)",
+        "Method(emergencyPauseOrders()string)",
+        "Method(executeTrailingOrder(string,string,string,string,string)string)",
+        "Method(getOrderDetails(string)string)",
+        "Method(getPlatformStats()string)",
+        "Method(getUserOrders(string)string)",
+        "Method(setTimeBasedTrail(string,string,string,string,string,string)string)",
+        "Method(updateStopPrice(string,string,string)string)",
+        "Method(updateTrailDistance(string,string,string)string)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(createTrailingOrder(string,string,string,string,string)string)",
+        "Method(updateStopPrice(string,string,string)string)",
+        "Method(checkExecutionCondition(string,string,string)string)",
+        "Method(executeTrailingOrder(string,string,string,string,string)string)",
+        "Method(cancelTrailingOrder(string,string)string)",
+        "Method(getOrderDetails(string)string)",
+        "Method(createBracketOrder(string,string,string,string,string,string)string)",
+        "Method(updateTrailDistance(string,string,string)string)",
+        "Method(getUserOrders(string)string)",
+        "Method(setTimeBasedTrail(string,string,string,string,string,string)string)",
+        "Method(getPlatformStats()string)",
+        "Method(emergencyPauseOrders()string)",
+        "tmp%2#0"
+      ]
+    },
+    "120": {
+      "op": "match main_createTrailingOrder_route@3 main_updateStopPrice_route@4 main_checkExecutionCondition_route@5 main_executeTrailingOrder_route@6 main_cancelTrailingOrder_route@7 main_getOrderDetails_route@8 main_createBracketOrder_route@9 main_updateTrailDistance_route@10 main_getUserOrders_route@11 main_setTimeBasedTrail_route@12 main_getPlatformStats_route@13 main_emergencyPauseOrders_route@14",
+      "stack_out": []
+    },
+    "146": {
+      "block": "main_after_if_else@21",
+      "stack_in": [],
+      "op": "pushint 0 // 0",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "148": {
+      "op": "return",
+      "stack_out": []
+    },
+    "149": {
+      "block": "main_emergencyPauseOrders_route@14",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%128#0"
+      ],
+      "stack_out": [
+        "tmp%128#0"
+      ]
+    },
+    "151": {
+      "op": "!",
+      "defined_out": [
+        "tmp%129#0"
+      ],
+      "stack_out": [
+        "tmp%129#0"
+      ]
+    },
+    "152": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "153": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%130#0"
+      ],
+      "stack_out": [
+        "tmp%130#0"
+      ]
+    },
+    "155": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "156": {
+      "op": "pushbytes 0x151f7c750044454d455247454e43593a20416c6c20747261696c696e67206f7264657273207061757365642e204d616e75616c20696e74657276656e74696f6e2072657175697265642e",
+      "defined_out": [
+        "0x151f7c750044454d455247454e43593a20416c6c20747261696c696e67206f7264657273207061757365642e204d616e75616c20696e74657276656e74696f6e2072657175697265642e"
+      ],
+      "stack_out": [
+        "0x151f7c750044454d455247454e43593a20416c6c20747261696c696e67206f7264657273207061757365642e204d616e75616c20696e74657276656e74696f6e2072657175697265642e"
+      ]
+    },
+    "232": {
+      "op": "log",
+      "stack_out": []
+    },
+    "233": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "234": {
+      "op": "return",
+      "stack_out": []
+    },
+    "235": {
+      "block": "main_getPlatformStats_route@13",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%123#0"
+      ],
+      "stack_out": [
+        "tmp%123#0"
+      ]
+    },
+    "237": {
+      "op": "!",
+      "defined_out": [
+        "tmp%124#0"
+      ],
+      "stack_out": [
+        "tmp%124#0"
+      ]
+    },
+    "238": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "239": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%125#0"
+      ],
+      "stack_out": [
+        "tmp%125#0"
+      ]
+    },
+    "241": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "242": {
+      "op": "pushbytes 0x151f7c750077547261696c696e672053746f7020506c6174666f726d3a20312c32333420616374697665206f72646572732c2024322e354d20746f74616c2070726f7465637465642076616c75652c2039382e372520657865637574696f6e207375636365737320726174652c2041766720747261696c3a20382e3525",
+      "defined_out": [
+        "0x151f7c750077547261696c696e672053746f7020506c6174666f726d3a20312c32333420616374697665206f72646572732c2024322e354d20746f74616c2070726f7465637465642076616c75652c2039382e372520657865637574696f6e207375636365737320726174652c2041766720747261696c3a20382e3525"
+      ],
+      "stack_out": [
+        "0x151f7c750077547261696c696e672053746f7020506c6174666f726d3a20312c32333420616374697665206f72646572732c2024322e354d20746f74616c2070726f7465637465642076616c75652c2039382e372520657865637574696f6e207375636365737320726174652c2041766720747261696c3a20382e3525"
+      ]
+    },
+    "369": {
+      "op": "log",
+      "stack_out": []
+    },
+    "370": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "371": {
+      "op": "return",
+      "stack_out": []
+    },
+    "372": {
+      "block": "main_setTimeBasedTrail_route@12",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%106#0"
+      ],
+      "stack_out": [
+        "tmp%106#0"
+      ]
+    },
+    "374": {
+      "op": "!",
+      "defined_out": [
+        "tmp%107#0"
+      ],
+      "stack_out": [
+        "tmp%107#0"
+      ]
+    },
+    "375": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "376": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%108#0"
+      ],
+      "stack_out": [
+        "tmp%108#0"
+      ]
+    },
+    "378": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "379": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%110#0"
+      ],
+      "stack_out": [
+        "tmp%110#0"
+      ]
+    },
+    "382": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%111#0"
+      ],
+      "stack_out": [
+        "tmp%111#0"
+      ]
+    },
+    "385": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%111#0",
+        "tmp%112#0"
+      ],
+      "stack_out": [
+        "tmp%111#0",
+        "tmp%112#0"
+      ]
+    },
+    "388": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%111#0",
+        "tmp%113#0"
+      ],
+      "stack_out": [
+        "tmp%111#0",
+        "tmp%113#0"
+      ]
+    },
+    "391": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%111#0",
+        "tmp%113#0",
+        "tmp%114#0"
+      ],
+      "stack_out": [
+        "tmp%111#0",
+        "tmp%113#0",
+        "tmp%114#0"
+      ]
+    },
+    "394": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%111#0",
+        "tmp%113#0",
+        "tmp%115#0"
+      ],
+      "stack_out": [
+        "tmp%111#0",
+        "tmp%113#0",
+        "tmp%115#0"
+      ]
+    },
+    "397": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "tmp%111#0",
+        "tmp%113#0",
+        "tmp%115#0",
+        "tmp%116#0"
+      ],
+      "stack_out": [
+        "tmp%111#0",
+        "tmp%113#0",
+        "tmp%115#0",
+        "tmp%116#0"
+      ]
+    },
+    "400": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%111#0",
+        "tmp%113#0",
+        "tmp%115#0",
+        "tmp%117#0"
+      ],
+      "stack_out": [
+        "tmp%111#0",
+        "tmp%113#0",
+        "tmp%115#0",
+        "tmp%117#0"
+      ]
+    },
+    "403": {
+      "op": "txna ApplicationArgs 5",
+      "defined_out": [
+        "tmp%111#0",
+        "tmp%113#0",
+        "tmp%115#0",
+        "tmp%117#0",
+        "tmp%118#0"
+      ],
+      "stack_out": [
+        "tmp%111#0",
+        "tmp%113#0",
+        "tmp%115#0",
+        "tmp%117#0",
+        "tmp%118#0"
+      ]
+    },
+    "406": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%111#0",
+        "tmp%113#0",
+        "tmp%115#0",
+        "tmp%117#0",
+        "tmp%119#0"
+      ],
+      "stack_out": [
+        "tmp%111#0",
+        "tmp%113#0",
+        "tmp%115#0",
+        "tmp%117#0",
+        "tmp%119#0"
+      ]
+    },
+    "409": {
+      "op": "txna ApplicationArgs 6",
+      "defined_out": [
+        "tmp%111#0",
+        "tmp%113#0",
+        "tmp%115#0",
+        "tmp%117#0",
+        "tmp%119#0",
+        "tmp%120#0"
+      ],
+      "stack_out": [
+        "tmp%111#0",
+        "tmp%113#0",
+        "tmp%115#0",
+        "tmp%117#0",
+        "tmp%119#0",
+        "tmp%120#0"
+      ]
+    },
+    "412": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%111#0",
+        "tmp%113#0",
+        "tmp%115#0",
+        "tmp%117#0",
+        "tmp%119#0",
+        "tmp%121#0"
+      ],
+      "stack_out": [
+        "tmp%111#0",
+        "tmp%113#0",
+        "tmp%115#0",
+        "tmp%117#0",
+        "tmp%119#0",
+        "tmp%121#0"
+      ]
+    },
+    "415": {
+      "callsub": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.setTimeBasedTrail",
+      "op": "callsub setTimeBasedTrail",
+      "defined_out": [
+        "to_encode%9#0"
+      ],
+      "stack_out": [
+        "to_encode%9#0"
+      ]
+    },
+    "418": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%9#0",
+        "to_encode%9#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%9#0",
+        "to_encode%9#0 (copy)"
+      ]
+    },
+    "419": {
+      "op": "len",
+      "defined_out": [
+        "length%9#0",
+        "to_encode%9#0"
+      ],
+      "stack_out": [
+        "to_encode%9#0",
+        "length%9#0"
+      ]
+    },
+    "420": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%9#0",
+        "to_encode%9#0"
+      ],
+      "stack_out": [
+        "to_encode%9#0",
+        "as_bytes%9#0"
+      ]
+    },
+    "421": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%9#0",
+        "to_encode%9#0"
+      ],
+      "stack_out": [
+        "to_encode%9#0",
+        "length_uint16%9#0"
+      ]
+    },
+    "424": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%9#0",
+        "to_encode%9#0"
+      ]
+    },
+    "425": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%9#0"
+      ],
+      "stack_out": [
+        "encoded_value%9#0"
+      ]
+    },
+    "426": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%9#0"
+      ],
+      "stack_out": [
+        "encoded_value%9#0",
+        "0x151f7c75"
+      ]
+    },
+    "427": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%9#0"
+      ]
+    },
+    "428": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%122#0"
+      ],
+      "stack_out": [
+        "tmp%122#0"
+      ]
+    },
+    "429": {
+      "op": "log",
+      "stack_out": []
+    },
+    "430": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "431": {
+      "op": "return",
+      "stack_out": []
+    },
+    "432": {
+      "block": "main_getUserOrders_route@11",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%99#0"
+      ],
+      "stack_out": [
+        "tmp%99#0"
+      ]
+    },
+    "434": {
+      "op": "!",
+      "defined_out": [
+        "tmp%100#0"
+      ],
+      "stack_out": [
+        "tmp%100#0"
+      ]
+    },
+    "435": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "436": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%101#0"
+      ],
+      "stack_out": [
+        "tmp%101#0"
+      ]
+    },
+    "438": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "439": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%103#0"
+      ],
+      "stack_out": [
+        "tmp%103#0"
+      ]
+    },
+    "442": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%104#0"
+      ],
+      "stack_out": [
+        "tmp%104#0"
+      ]
+    },
+    "445": {
+      "callsub": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.getUserOrders",
+      "op": "callsub getUserOrders",
+      "defined_out": [
+        "to_encode%8#0"
+      ],
+      "stack_out": [
+        "to_encode%8#0"
+      ]
+    },
+    "448": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%8#0",
+        "to_encode%8#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%8#0",
+        "to_encode%8#0 (copy)"
+      ]
+    },
+    "449": {
+      "op": "len",
+      "defined_out": [
+        "length%8#0",
+        "to_encode%8#0"
+      ],
+      "stack_out": [
+        "to_encode%8#0",
+        "length%8#0"
+      ]
+    },
+    "450": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%8#0",
+        "to_encode%8#0"
+      ],
+      "stack_out": [
+        "to_encode%8#0",
+        "as_bytes%8#0"
+      ]
+    },
+    "451": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%8#0",
+        "to_encode%8#0"
+      ],
+      "stack_out": [
+        "to_encode%8#0",
+        "length_uint16%8#0"
+      ]
+    },
+    "454": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%8#0",
+        "to_encode%8#0"
+      ]
+    },
+    "455": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%8#0"
+      ]
+    },
+    "456": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%8#0",
+        "0x151f7c75"
+      ]
+    },
+    "457": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%8#0"
+      ]
+    },
+    "458": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%105#0"
+      ],
+      "stack_out": [
+        "tmp%105#0"
+      ]
+    },
+    "459": {
+      "op": "log",
+      "stack_out": []
+    },
+    "460": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "461": {
+      "op": "return",
+      "stack_out": []
+    },
+    "462": {
+      "block": "main_updateTrailDistance_route@10",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%88#0"
+      ],
+      "stack_out": [
+        "tmp%88#0"
+      ]
+    },
+    "464": {
+      "op": "!",
+      "defined_out": [
+        "tmp%89#0"
+      ],
+      "stack_out": [
+        "tmp%89#0"
+      ]
+    },
+    "465": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "466": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%90#0"
+      ],
+      "stack_out": [
+        "tmp%90#0"
+      ]
+    },
+    "468": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "469": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%92#0"
+      ],
+      "stack_out": [
+        "tmp%92#0"
+      ]
+    },
+    "472": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%93#0"
+      ],
+      "stack_out": [
+        "tmp%93#0"
+      ]
+    },
+    "475": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%93#0",
+        "tmp%94#0"
+      ],
+      "stack_out": [
+        "tmp%93#0",
+        "tmp%94#0"
+      ]
+    },
+    "478": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%93#0",
+        "tmp%95#0"
+      ],
+      "stack_out": [
+        "tmp%93#0",
+        "tmp%95#0"
+      ]
+    },
+    "481": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%93#0",
+        "tmp%95#0",
+        "tmp%96#0"
+      ],
+      "stack_out": [
+        "tmp%93#0",
+        "tmp%95#0",
+        "tmp%96#0"
+      ]
+    },
+    "484": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%93#0",
+        "tmp%95#0",
+        "tmp%97#0"
+      ],
+      "stack_out": [
+        "tmp%93#0",
+        "tmp%95#0",
+        "tmp%97#0"
+      ]
+    },
+    "487": {
+      "callsub": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.updateTrailDistance",
+      "op": "callsub updateTrailDistance",
+      "defined_out": [
+        "to_encode%7#0"
+      ],
+      "stack_out": [
+        "to_encode%7#0"
+      ]
+    },
+    "490": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%7#0",
+        "to_encode%7#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%7#0",
+        "to_encode%7#0 (copy)"
+      ]
+    },
+    "491": {
+      "op": "len",
+      "defined_out": [
+        "length%7#0",
+        "to_encode%7#0"
+      ],
+      "stack_out": [
+        "to_encode%7#0",
+        "length%7#0"
+      ]
+    },
+    "492": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%7#0",
+        "to_encode%7#0"
+      ],
+      "stack_out": [
+        "to_encode%7#0",
+        "as_bytes%7#0"
+      ]
+    },
+    "493": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%7#0",
+        "to_encode%7#0"
+      ],
+      "stack_out": [
+        "to_encode%7#0",
+        "length_uint16%7#0"
+      ]
+    },
+    "496": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%7#0",
+        "to_encode%7#0"
+      ]
+    },
+    "497": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%7#0"
+      ],
+      "stack_out": [
+        "encoded_value%7#0"
+      ]
+    },
+    "498": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%7#0"
+      ],
+      "stack_out": [
+        "encoded_value%7#0",
+        "0x151f7c75"
+      ]
+    },
+    "499": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%7#0"
+      ]
+    },
+    "500": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%98#0"
+      ],
+      "stack_out": [
+        "tmp%98#0"
+      ]
+    },
+    "501": {
+      "op": "log",
+      "stack_out": []
+    },
+    "502": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "503": {
+      "op": "return",
+      "stack_out": []
+    },
+    "504": {
+      "block": "main_createBracketOrder_route@9",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%71#0"
+      ],
+      "stack_out": [
+        "tmp%71#0"
+      ]
+    },
+    "506": {
+      "op": "!",
+      "defined_out": [
+        "tmp%72#0"
+      ],
+      "stack_out": [
+        "tmp%72#0"
+      ]
+    },
+    "507": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "508": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%73#0"
+      ],
+      "stack_out": [
+        "tmp%73#0"
+      ]
+    },
+    "510": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "511": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%75#0"
+      ],
+      "stack_out": [
+        "tmp%75#0"
+      ]
+    },
+    "514": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%76#0"
+      ],
+      "stack_out": [
+        "tmp%76#0"
+      ]
+    },
+    "517": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%76#0",
+        "tmp%77#0"
+      ],
+      "stack_out": [
+        "tmp%76#0",
+        "tmp%77#0"
+      ]
+    },
+    "520": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%76#0",
+        "tmp%78#0"
+      ],
+      "stack_out": [
+        "tmp%76#0",
+        "tmp%78#0"
+      ]
+    },
+    "523": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%79#0"
+      ],
+      "stack_out": [
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%79#0"
+      ]
+    },
+    "526": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%80#0"
+      ],
+      "stack_out": [
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%80#0"
+      ]
+    },
+    "529": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%80#0",
+        "tmp%81#0"
+      ],
+      "stack_out": [
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%80#0",
+        "tmp%81#0"
+      ]
+    },
+    "532": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%80#0",
+        "tmp%82#0"
+      ],
+      "stack_out": [
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%80#0",
+        "tmp%82#0"
+      ]
+    },
+    "535": {
+      "op": "txna ApplicationArgs 5",
+      "defined_out": [
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%80#0",
+        "tmp%82#0",
+        "tmp%83#0"
+      ],
+      "stack_out": [
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%80#0",
+        "tmp%82#0",
+        "tmp%83#0"
+      ]
+    },
+    "538": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%80#0",
+        "tmp%82#0",
+        "tmp%84#0"
+      ],
+      "stack_out": [
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%80#0",
+        "tmp%82#0",
+        "tmp%84#0"
+      ]
+    },
+    "541": {
+      "op": "txna ApplicationArgs 6",
+      "defined_out": [
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%80#0",
+        "tmp%82#0",
+        "tmp%84#0",
+        "tmp%85#0"
+      ],
+      "stack_out": [
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%80#0",
+        "tmp%82#0",
+        "tmp%84#0",
+        "tmp%85#0"
+      ]
+    },
+    "544": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%80#0",
+        "tmp%82#0",
+        "tmp%84#0",
+        "tmp%86#0"
+      ],
+      "stack_out": [
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%80#0",
+        "tmp%82#0",
+        "tmp%84#0",
+        "tmp%86#0"
+      ]
+    },
+    "547": {
+      "callsub": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.createBracketOrder",
+      "op": "callsub createBracketOrder",
+      "defined_out": [
+        "to_encode%6#0"
+      ],
+      "stack_out": [
+        "to_encode%6#0"
+      ]
+    },
+    "550": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%6#0",
+        "to_encode%6#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%6#0",
+        "to_encode%6#0 (copy)"
+      ]
+    },
+    "551": {
+      "op": "len",
+      "defined_out": [
+        "length%6#0",
+        "to_encode%6#0"
+      ],
+      "stack_out": [
+        "to_encode%6#0",
+        "length%6#0"
+      ]
+    },
+    "552": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%6#0",
+        "to_encode%6#0"
+      ],
+      "stack_out": [
+        "to_encode%6#0",
+        "as_bytes%6#0"
+      ]
+    },
+    "553": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%6#0",
+        "to_encode%6#0"
+      ],
+      "stack_out": [
+        "to_encode%6#0",
+        "length_uint16%6#0"
+      ]
+    },
+    "556": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%6#0",
+        "to_encode%6#0"
+      ]
+    },
+    "557": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%6#0"
+      ],
+      "stack_out": [
+        "encoded_value%6#0"
+      ]
+    },
+    "558": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%6#0"
+      ],
+      "stack_out": [
+        "encoded_value%6#0",
+        "0x151f7c75"
+      ]
+    },
+    "559": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%6#0"
+      ]
+    },
+    "560": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%87#0"
+      ],
+      "stack_out": [
+        "tmp%87#0"
+      ]
+    },
+    "561": {
+      "op": "log",
+      "stack_out": []
+    },
+    "562": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "563": {
+      "op": "return",
+      "stack_out": []
+    },
+    "564": {
+      "block": "main_getOrderDetails_route@8",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%64#0"
+      ],
+      "stack_out": [
+        "tmp%64#0"
+      ]
+    },
+    "566": {
+      "op": "!",
+      "defined_out": [
+        "tmp%65#0"
+      ],
+      "stack_out": [
+        "tmp%65#0"
+      ]
+    },
+    "567": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "568": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%66#0"
+      ],
+      "stack_out": [
+        "tmp%66#0"
+      ]
+    },
+    "570": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "571": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%68#0"
+      ],
+      "stack_out": [
+        "tmp%68#0"
+      ]
+    },
+    "574": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%69#0"
+      ],
+      "stack_out": [
+        "tmp%69#0"
+      ]
+    },
+    "577": {
+      "callsub": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.getOrderDetails",
+      "op": "callsub getOrderDetails",
+      "defined_out": [
+        "to_encode%5#0"
+      ],
+      "stack_out": [
+        "to_encode%5#0"
+      ]
+    },
+    "580": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%5#0",
+        "to_encode%5#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%5#0",
+        "to_encode%5#0 (copy)"
+      ]
+    },
+    "581": {
+      "op": "len",
+      "defined_out": [
+        "length%5#0",
+        "to_encode%5#0"
+      ],
+      "stack_out": [
+        "to_encode%5#0",
+        "length%5#0"
+      ]
+    },
+    "582": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%5#0",
+        "to_encode%5#0"
+      ],
+      "stack_out": [
+        "to_encode%5#0",
+        "as_bytes%5#0"
+      ]
+    },
+    "583": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%5#0",
+        "to_encode%5#0"
+      ],
+      "stack_out": [
+        "to_encode%5#0",
+        "length_uint16%5#0"
+      ]
+    },
+    "586": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%5#0",
+        "to_encode%5#0"
+      ]
+    },
+    "587": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%5#0"
+      ],
+      "stack_out": [
+        "encoded_value%5#0"
+      ]
+    },
+    "588": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%5#0"
+      ],
+      "stack_out": [
+        "encoded_value%5#0",
+        "0x151f7c75"
+      ]
+    },
+    "589": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%5#0"
+      ]
+    },
+    "590": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%70#0"
+      ],
+      "stack_out": [
+        "tmp%70#0"
+      ]
+    },
+    "591": {
+      "op": "log",
+      "stack_out": []
+    },
+    "592": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "593": {
+      "op": "return",
+      "stack_out": []
+    },
+    "594": {
+      "block": "main_cancelTrailingOrder_route@7",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%55#0"
+      ],
+      "stack_out": [
+        "tmp%55#0"
+      ]
+    },
+    "596": {
+      "op": "!",
+      "defined_out": [
+        "tmp%56#0"
+      ],
+      "stack_out": [
+        "tmp%56#0"
+      ]
+    },
+    "597": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "598": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%57#0"
+      ],
+      "stack_out": [
+        "tmp%57#0"
+      ]
+    },
+    "600": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "601": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%59#0"
+      ],
+      "stack_out": [
+        "tmp%59#0"
+      ]
+    },
+    "604": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%60#0"
+      ],
+      "stack_out": [
+        "tmp%60#0"
+      ]
+    },
+    "607": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%60#0",
+        "tmp%61#0"
+      ],
+      "stack_out": [
+        "tmp%60#0",
+        "tmp%61#0"
+      ]
+    },
+    "610": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%60#0",
+        "tmp%62#0"
+      ],
+      "stack_out": [
+        "tmp%60#0",
+        "tmp%62#0"
+      ]
+    },
+    "613": {
+      "callsub": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.cancelTrailingOrder",
+      "op": "callsub cancelTrailingOrder",
+      "defined_out": [
+        "to_encode%4#0"
+      ],
+      "stack_out": [
+        "to_encode%4#0"
+      ]
+    },
+    "616": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%4#0",
+        "to_encode%4#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%4#0",
+        "to_encode%4#0 (copy)"
+      ]
+    },
+    "617": {
+      "op": "len",
+      "defined_out": [
+        "length%4#0",
+        "to_encode%4#0"
+      ],
+      "stack_out": [
+        "to_encode%4#0",
+        "length%4#0"
+      ]
+    },
+    "618": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%4#0",
+        "to_encode%4#0"
+      ],
+      "stack_out": [
+        "to_encode%4#0",
+        "as_bytes%4#0"
+      ]
+    },
+    "619": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%4#0",
+        "to_encode%4#0"
+      ],
+      "stack_out": [
+        "to_encode%4#0",
+        "length_uint16%4#0"
+      ]
+    },
+    "622": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%4#0",
+        "to_encode%4#0"
+      ]
+    },
+    "623": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%4#0"
+      ],
+      "stack_out": [
+        "encoded_value%4#0"
+      ]
+    },
+    "624": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%4#0"
+      ],
+      "stack_out": [
+        "encoded_value%4#0",
+        "0x151f7c75"
+      ]
+    },
+    "625": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%4#0"
+      ]
+    },
+    "626": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%63#0"
+      ],
+      "stack_out": [
+        "tmp%63#0"
+      ]
+    },
+    "627": {
+      "op": "log",
+      "stack_out": []
+    },
+    "628": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "629": {
+      "op": "return",
+      "stack_out": []
+    },
+    "630": {
+      "block": "main_executeTrailingOrder_route@6",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%40#0"
+      ],
+      "stack_out": [
+        "tmp%40#0"
+      ]
+    },
+    "632": {
+      "op": "!",
+      "defined_out": [
+        "tmp%41#0"
+      ],
+      "stack_out": [
+        "tmp%41#0"
+      ]
+    },
+    "633": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "634": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%42#0"
+      ],
+      "stack_out": [
+        "tmp%42#0"
+      ]
+    },
+    "636": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "637": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%44#0"
+      ],
+      "stack_out": [
+        "tmp%44#0"
+      ]
+    },
+    "640": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%45#0"
+      ],
+      "stack_out": [
+        "tmp%45#0"
+      ]
+    },
+    "643": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%45#0",
+        "tmp%46#0"
+      ],
+      "stack_out": [
+        "tmp%45#0",
+        "tmp%46#0"
+      ]
+    },
+    "646": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%45#0",
+        "tmp%47#0"
+      ],
+      "stack_out": [
+        "tmp%45#0",
+        "tmp%47#0"
+      ]
+    },
+    "649": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%45#0",
+        "tmp%47#0",
+        "tmp%48#0"
+      ],
+      "stack_out": [
+        "tmp%45#0",
+        "tmp%47#0",
+        "tmp%48#0"
+      ]
+    },
+    "652": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%45#0",
+        "tmp%47#0",
+        "tmp%49#0"
+      ],
+      "stack_out": [
+        "tmp%45#0",
+        "tmp%47#0",
+        "tmp%49#0"
+      ]
+    },
+    "655": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "tmp%45#0",
+        "tmp%47#0",
+        "tmp%49#0",
+        "tmp%50#0"
+      ],
+      "stack_out": [
+        "tmp%45#0",
+        "tmp%47#0",
+        "tmp%49#0",
+        "tmp%50#0"
+      ]
+    },
+    "658": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%45#0",
+        "tmp%47#0",
+        "tmp%49#0",
+        "tmp%51#0"
+      ],
+      "stack_out": [
+        "tmp%45#0",
+        "tmp%47#0",
+        "tmp%49#0",
+        "tmp%51#0"
+      ]
+    },
+    "661": {
+      "op": "txna ApplicationArgs 5",
+      "defined_out": [
+        "tmp%45#0",
+        "tmp%47#0",
+        "tmp%49#0",
+        "tmp%51#0",
+        "tmp%52#0"
+      ],
+      "stack_out": [
+        "tmp%45#0",
+        "tmp%47#0",
+        "tmp%49#0",
+        "tmp%51#0",
+        "tmp%52#0"
+      ]
+    },
+    "664": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%45#0",
+        "tmp%47#0",
+        "tmp%49#0",
+        "tmp%51#0",
+        "tmp%53#0"
+      ],
+      "stack_out": [
+        "tmp%45#0",
+        "tmp%47#0",
+        "tmp%49#0",
+        "tmp%51#0",
+        "tmp%53#0"
+      ]
+    },
+    "667": {
+      "callsub": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.executeTrailingOrder",
+      "op": "callsub executeTrailingOrder",
+      "defined_out": [
+        "to_encode%3#0"
+      ],
+      "stack_out": [
+        "to_encode%3#0"
+      ]
+    },
+    "670": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%3#0",
+        "to_encode%3#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%3#0",
+        "to_encode%3#0 (copy)"
+      ]
+    },
+    "671": {
+      "op": "len",
+      "defined_out": [
+        "length%3#0",
+        "to_encode%3#0"
+      ],
+      "stack_out": [
+        "to_encode%3#0",
+        "length%3#0"
+      ]
+    },
+    "672": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%3#0",
+        "to_encode%3#0"
+      ],
+      "stack_out": [
+        "to_encode%3#0",
+        "as_bytes%3#0"
+      ]
+    },
+    "673": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%3#0",
+        "to_encode%3#0"
+      ],
+      "stack_out": [
+        "to_encode%3#0",
+        "length_uint16%3#0"
+      ]
+    },
+    "676": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%3#0",
+        "to_encode%3#0"
+      ]
+    },
+    "677": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%3#0"
+      ],
+      "stack_out": [
+        "encoded_value%3#0"
+      ]
+    },
+    "678": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%3#0"
+      ],
+      "stack_out": [
+        "encoded_value%3#0",
+        "0x151f7c75"
+      ]
+    },
+    "679": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%3#0"
+      ]
+    },
+    "680": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%54#0"
+      ],
+      "stack_out": [
+        "tmp%54#0"
+      ]
+    },
+    "681": {
+      "op": "log",
+      "stack_out": []
+    },
+    "682": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "683": {
+      "op": "return",
+      "stack_out": []
+    },
+    "684": {
+      "block": "main_checkExecutionCondition_route@5",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%29#0"
+      ],
+      "stack_out": [
+        "tmp%29#0"
+      ]
+    },
+    "686": {
+      "op": "!",
+      "defined_out": [
+        "tmp%30#0"
+      ],
+      "stack_out": [
+        "tmp%30#0"
+      ]
+    },
+    "687": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "688": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%31#0"
+      ],
+      "stack_out": [
+        "tmp%31#0"
+      ]
+    },
+    "690": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "691": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%33#0"
+      ],
+      "stack_out": [
+        "tmp%33#0"
+      ]
+    },
+    "694": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%34#0"
+      ],
+      "stack_out": [
+        "tmp%34#0"
+      ]
+    },
+    "697": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%34#0",
+        "tmp%35#0"
+      ],
+      "stack_out": [
+        "tmp%34#0",
+        "tmp%35#0"
+      ]
+    },
+    "700": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%34#0",
+        "tmp%36#0"
+      ],
+      "stack_out": [
+        "tmp%34#0",
+        "tmp%36#0"
+      ]
+    },
+    "703": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%34#0",
+        "tmp%36#0",
+        "tmp%37#0"
+      ],
+      "stack_out": [
+        "tmp%34#0",
+        "tmp%36#0",
+        "tmp%37#0"
+      ]
+    },
+    "706": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%34#0",
+        "tmp%36#0",
+        "tmp%38#0"
+      ],
+      "stack_out": [
+        "tmp%34#0",
+        "tmp%36#0",
+        "tmp%38#0"
+      ]
+    },
+    "709": {
+      "callsub": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.checkExecutionCondition",
+      "op": "callsub checkExecutionCondition",
+      "defined_out": [
+        "to_encode%2#0"
+      ],
+      "stack_out": [
+        "to_encode%2#0"
+      ]
+    },
+    "712": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%2#0",
+        "to_encode%2#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%2#0",
+        "to_encode%2#0 (copy)"
+      ]
+    },
+    "713": {
+      "op": "len",
+      "defined_out": [
+        "length%2#0",
+        "to_encode%2#0"
+      ],
+      "stack_out": [
+        "to_encode%2#0",
+        "length%2#0"
+      ]
+    },
+    "714": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%2#0",
+        "to_encode%2#0"
+      ],
+      "stack_out": [
+        "to_encode%2#0",
+        "as_bytes%2#0"
+      ]
+    },
+    "715": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%2#0",
+        "to_encode%2#0"
+      ],
+      "stack_out": [
+        "to_encode%2#0",
+        "length_uint16%2#0"
+      ]
+    },
+    "718": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%2#0",
+        "to_encode%2#0"
+      ]
+    },
+    "719": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%2#0"
+      ],
+      "stack_out": [
+        "encoded_value%2#0"
+      ]
+    },
+    "720": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%2#0"
+      ],
+      "stack_out": [
+        "encoded_value%2#0",
+        "0x151f7c75"
+      ]
+    },
+    "721": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%2#0"
+      ]
+    },
+    "722": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%39#0"
+      ],
+      "stack_out": [
+        "tmp%39#0"
+      ]
+    },
+    "723": {
+      "op": "log",
+      "stack_out": []
+    },
+    "724": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "725": {
+      "op": "return",
+      "stack_out": []
+    },
+    "726": {
+      "block": "main_updateStopPrice_route@4",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%18#0"
+      ],
+      "stack_out": [
+        "tmp%18#0"
+      ]
+    },
+    "728": {
+      "op": "!",
+      "defined_out": [
+        "tmp%19#0"
+      ],
+      "stack_out": [
+        "tmp%19#0"
+      ]
+    },
+    "729": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "730": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%20#0"
+      ],
+      "stack_out": [
+        "tmp%20#0"
+      ]
+    },
+    "732": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "733": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%22#0"
+      ],
+      "stack_out": [
+        "tmp%22#0"
+      ]
+    },
+    "736": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%23#0"
+      ],
+      "stack_out": [
+        "tmp%23#0"
+      ]
+    },
+    "739": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%23#0",
+        "tmp%24#0"
+      ],
+      "stack_out": [
+        "tmp%23#0",
+        "tmp%24#0"
+      ]
+    },
+    "742": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%23#0",
+        "tmp%25#0"
+      ],
+      "stack_out": [
+        "tmp%23#0",
+        "tmp%25#0"
+      ]
+    },
+    "745": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%23#0",
+        "tmp%25#0",
+        "tmp%26#0"
+      ],
+      "stack_out": [
+        "tmp%23#0",
+        "tmp%25#0",
+        "tmp%26#0"
+      ]
+    },
+    "748": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%23#0",
+        "tmp%25#0",
+        "tmp%27#0"
+      ],
+      "stack_out": [
+        "tmp%23#0",
+        "tmp%25#0",
+        "tmp%27#0"
+      ]
+    },
+    "751": {
+      "callsub": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.updateStopPrice",
+      "op": "callsub updateStopPrice",
+      "defined_out": [
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0"
+      ]
+    },
+    "754": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%1#0",
+        "to_encode%1#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%1#0",
+        "to_encode%1#0 (copy)"
+      ]
+    },
+    "755": {
+      "op": "len",
+      "defined_out": [
+        "length%1#0",
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0",
+        "length%1#0"
+      ]
+    },
+    "756": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%1#0",
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0",
+        "as_bytes%1#0"
+      ]
+    },
+    "757": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%1#0",
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0",
+        "length_uint16%1#0"
+      ]
+    },
+    "760": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%1#0",
+        "to_encode%1#0"
+      ]
+    },
+    "761": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%1#0"
+      ],
+      "stack_out": [
+        "encoded_value%1#0"
+      ]
+    },
+    "762": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%1#0"
+      ],
+      "stack_out": [
+        "encoded_value%1#0",
+        "0x151f7c75"
+      ]
+    },
+    "763": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%1#0"
+      ]
+    },
+    "764": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%28#0"
+      ],
+      "stack_out": [
+        "tmp%28#0"
+      ]
+    },
+    "765": {
+      "op": "log",
+      "stack_out": []
+    },
+    "766": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "767": {
+      "op": "return",
+      "stack_out": []
+    },
+    "768": {
+      "block": "main_createTrailingOrder_route@3",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "770": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "771": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "772": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "774": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "775": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "778": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "781": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ]
+    },
+    "784": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0"
+      ]
+    },
+    "787": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%11#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%11#0"
+      ]
+    },
+    "790": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0"
+      ]
+    },
+    "793": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%13#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%13#0"
+      ]
+    },
+    "796": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0"
+      ]
+    },
+    "799": {
+      "op": "txna ApplicationArgs 5",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%15#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%15#0"
+      ]
+    },
+    "802": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0"
+      ]
+    },
+    "805": {
+      "callsub": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.createTrailingOrder",
+      "op": "callsub createTrailingOrder",
+      "defined_out": [
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0"
+      ]
+    },
+    "808": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%0#0",
+        "to_encode%0#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "to_encode%0#0 (copy)"
+      ]
+    },
+    "809": {
+      "op": "len",
+      "defined_out": [
+        "length%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "length%0#0"
+      ]
+    },
+    "810": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "as_bytes%0#0"
+      ]
+    },
+    "811": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "length_uint16%0#0"
+      ]
+    },
+    "814": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%0#0",
+        "to_encode%0#0"
+      ]
+    },
+    "815": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0"
+      ]
+    },
+    "816": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "817": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%0#0"
+      ]
+    },
+    "818": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%17#0"
+      ],
+      "stack_out": [
+        "tmp%17#0"
+      ]
+    },
+    "819": {
+      "op": "log",
+      "stack_out": []
+    },
+    "820": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "821": {
+      "op": "return",
+      "stack_out": []
+    },
+    "822": {
+      "block": "main_bare_routing@17",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%133#0"
+      ],
+      "stack_out": [
+        "tmp%133#0"
+      ]
+    },
+    "824": {
+      "op": "bnz main_after_if_else@21",
+      "stack_out": []
+    },
+    "827": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%134#0"
+      ],
+      "stack_out": [
+        "tmp%134#0"
+      ]
+    },
+    "829": {
+      "op": "!",
+      "defined_out": [
+        "tmp%135#0"
+      ],
+      "stack_out": [
+        "tmp%135#0"
+      ]
+    },
+    "830": {
+      "error": "can only call when creating",
+      "op": "assert // can only call when creating",
+      "stack_out": []
+    },
+    "831": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "832": {
+      "op": "return",
+      "stack_out": []
+    },
+    "833": {
+      "subroutine": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.createTrailingOrder",
+      "params": {
+        "assetId#0": "bytes",
+        "amount#0": "bytes",
+        "trailDistance#0": "bytes",
+        "initialPrice#0": "bytes",
+        "userAddress#0": "bytes"
+      },
+      "block": "createTrailingOrder",
+      "stack_in": [],
+      "op": "proto 5 1"
+    },
+    "836": {
+      "op": "pushbytes \"stopPrice_\"",
+      "defined_out": [
+        "\"stopPrice_\""
+      ],
+      "stack_out": [
+        "\"stopPrice_\""
+      ]
+    },
+    "848": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "\"stopPrice_\"",
+        "initialPrice#0 (copy)"
+      ],
+      "stack_out": [
+        "\"stopPrice_\"",
+        "initialPrice#0 (copy)"
+      ]
+    },
+    "850": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "851": {
+      "op": "bytec_2 // \"_\"",
+      "defined_out": [
+        "\"_\"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\"_\""
+      ]
+    },
+    "852": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "853": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "tmp%1#0",
+        "trailDistance#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "trailDistance#0 (copy)"
+      ]
+    },
+    "855": {
+      "op": "concat",
+      "defined_out": [
+        "currentStopPrice#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0"
+      ]
+    },
+    "856": {
+      "op": "bytec_3 // \"TSL_\"",
+      "defined_out": [
+        "\"TSL_\"",
+        "currentStopPrice#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0",
+        "\"TSL_\""
+      ]
+    },
+    "857": {
+      "op": "frame_dig -5",
+      "defined_out": [
+        "\"TSL_\"",
+        "assetId#0 (copy)",
+        "currentStopPrice#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0",
+        "\"TSL_\"",
+        "assetId#0 (copy)"
+      ]
+    },
+    "859": {
+      "op": "concat",
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%0#0"
+      ]
+    },
+    "860": {
+      "op": "bytec 4 // \"_ORDER\"",
+      "defined_out": [
+        "\"_ORDER\"",
+        "currentStopPrice#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%0#0",
+        "\"_ORDER\""
+      ]
+    },
+    "862": {
+      "op": "concat",
+      "defined_out": [
+        "currentStopPrice#0",
+        "orderId#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0",
+        "orderId#0"
+      ]
+    },
+    "863": {
+      "op": "pushbytes \"Trailing order \"",
+      "defined_out": [
+        "\"Trailing order \"",
+        "currentStopPrice#0",
+        "orderId#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0",
+        "orderId#0",
+        "\"Trailing order \""
+      ]
+    },
+    "880": {
+      "op": "swap",
+      "stack_out": [
+        "currentStopPrice#0",
+        "\"Trailing order \"",
+        "orderId#0"
+      ]
+    },
+    "881": {
+      "op": "concat",
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%0#0"
+      ]
+    },
+    "882": {
+      "op": "pushbytes \" created: Asset \"",
+      "defined_out": [
+        "\" created: Asset \"",
+        "currentStopPrice#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%0#0",
+        "\" created: Asset \""
+      ]
+    },
+    "900": {
+      "op": "concat",
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%1#0"
+      ]
+    },
+    "901": {
+      "op": "frame_dig -5",
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%1#0",
+        "assetId#0 (copy)"
+      ]
+    },
+    "903": {
+      "op": "concat",
+      "defined_out": [
+        "currentStopPrice#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%2#0"
+      ]
+    },
+    "904": {
+      "op": "pushbytes \", Amount \"",
+      "defined_out": [
+        "\", Amount \"",
+        "currentStopPrice#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%2#0",
+        "\", Amount \""
+      ]
+    },
+    "915": {
+      "op": "concat",
+      "defined_out": [
+        "currentStopPrice#0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%3#0"
+      ]
+    },
+    "916": {
+      "op": "frame_dig -4",
+      "defined_out": [
+        "amount#0 (copy)",
+        "currentStopPrice#0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%3#0",
+        "amount#0 (copy)"
+      ]
+    },
+    "918": {
+      "op": "concat",
+      "defined_out": [
+        "currentStopPrice#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%4#0"
+      ]
+    },
+    "919": {
+      "op": "bytec 5 // \", Trail \"",
+      "defined_out": [
+        "\", Trail \"",
+        "currentStopPrice#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%4#0",
+        "\", Trail \""
+      ]
+    },
+    "921": {
+      "op": "concat",
+      "defined_out": [
+        "currentStopPrice#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%5#0"
+      ]
+    },
+    "922": {
+      "op": "frame_dig -3",
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%5#0",
+        "trailDistance#0 (copy)"
+      ]
+    },
+    "924": {
+      "op": "concat",
+      "defined_out": [
+        "currentStopPrice#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%6#0"
+      ]
+    },
+    "925": {
+      "op": "pushbytes \"%, Stop Price \"",
+      "defined_out": [
+        "\"%, Stop Price \"",
+        "currentStopPrice#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%6#0",
+        "\"%, Stop Price \""
+      ]
+    },
+    "941": {
+      "op": "concat",
+      "defined_out": [
+        "currentStopPrice#0",
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "currentStopPrice#0",
+        "tmp%7#0"
+      ]
+    },
+    "942": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%7#0",
+        "currentStopPrice#0"
+      ]
+    },
+    "943": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "944": {
+      "op": "pushbytes \" by \"",
+      "defined_out": [
+        "\" by \"",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "\" by \""
+      ]
+    },
+    "950": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0"
+      ]
+    },
+    "951": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "tmp%9#0",
+        "userAddress#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%9#0",
+        "userAddress#0 (copy)"
+      ]
+    },
+    "953": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "tmp%10#0"
+      ]
+    },
+    "954": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "955": {
+      "subroutine": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.updateStopPrice",
+      "params": {
+        "orderId#0": "bytes",
+        "currentMarketPrice#0": "bytes",
+        "trailDistance#0": "bytes"
+      },
+      "block": "updateStopPrice",
+      "stack_in": [],
+      "op": "proto 3 1"
+    },
+    "958": {
+      "op": "pushbytes \"trailStopPrice_\"",
+      "defined_out": [
+        "\"trailStopPrice_\""
+      ],
+      "stack_out": [
+        "\"trailStopPrice_\""
+      ]
+    },
+    "975": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "\"trailStopPrice_\"",
+        "currentMarketPrice#0 (copy)"
+      ],
+      "stack_out": [
+        "\"trailStopPrice_\"",
+        "currentMarketPrice#0 (copy)"
+      ]
+    },
+    "977": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "978": {
+      "op": "bytec_2 // \"_\"",
+      "defined_out": [
+        "\"_\"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\"_\""
+      ]
+    },
+    "979": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "980": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "tmp%1#0",
+        "trailDistance#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "trailDistance#0 (copy)"
+      ]
+    },
+    "982": {
+      "op": "concat",
+      "defined_out": [
+        "newStopPrice#0"
+      ],
+      "stack_out": [
+        "newStopPrice#0"
+      ]
+    },
+    "983": {
+      "op": "bytec_1 // \"Order \"",
+      "defined_out": [
+        "\"Order \"",
+        "newStopPrice#0"
+      ],
+      "stack_out": [
+        "newStopPrice#0",
+        "\"Order \""
+      ]
+    },
+    "984": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "\"Order \"",
+        "newStopPrice#0",
+        "orderId#0 (copy)"
+      ],
+      "stack_out": [
+        "newStopPrice#0",
+        "\"Order \"",
+        "orderId#0 (copy)"
+      ]
+    },
+    "986": {
+      "op": "concat",
+      "stack_out": [
+        "newStopPrice#0",
+        "tmp%0#0"
+      ]
+    },
+    "987": {
+      "op": "pushbytes \": Stop price updated to \"",
+      "defined_out": [
+        "\": Stop price updated to \"",
+        "newStopPrice#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "newStopPrice#0",
+        "tmp%0#0",
+        "\": Stop price updated to \""
+      ]
+    },
+    "1013": {
+      "op": "concat",
+      "stack_out": [
+        "newStopPrice#0",
+        "tmp%1#0"
+      ]
+    },
+    "1014": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%1#0",
+        "newStopPrice#0"
+      ]
+    },
+    "1015": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1016": {
+      "op": "pushbytes \" based on market price \"",
+      "defined_out": [
+        "\" based on market price \"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\" based on market price \""
+      ]
+    },
+    "1041": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1042": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "tmp%3#0",
+        "currentMarketPrice#0 (copy)"
+      ]
+    },
+    "1044": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1045": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1046": {
+      "subroutine": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.checkExecutionCondition",
+      "params": {
+        "orderId#0": "bytes",
+        "currentPrice#0": "bytes",
+        "stopPrice#0": "bytes"
+      },
+      "block": "checkExecutionCondition",
+      "stack_in": [],
+      "op": "proto 3 1"
+    },
+    "1049": {
+      "op": "bytec_1 // \"Order \"",
+      "defined_out": [
+        "\"Order \""
+      ],
+      "stack_out": [
+        "\"Order \""
+      ]
+    },
+    "1050": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "\"Order \"",
+        "orderId#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Order \"",
+        "orderId#0 (copy)"
+      ]
+    },
+    "1052": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1053": {
+      "op": "pushbytes \" TRIGGERED: Current price \"",
+      "defined_out": [
+        "\" TRIGGERED: Current price \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\" TRIGGERED: Current price \""
+      ]
+    },
+    "1081": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1082": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "currentPrice#0 (copy)",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "currentPrice#0 (copy)"
+      ]
+    },
+    "1084": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1085": {
+      "op": "pushbytes \" <= Stop price \"",
+      "defined_out": [
+        "\" <= Stop price \"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\" <= Stop price \""
+      ]
+    },
+    "1102": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1103": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "stopPrice#0 (copy)",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "stopPrice#0 (copy)"
+      ]
+    },
+    "1105": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1106": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1107": {
+      "subroutine": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.executeTrailingOrder",
+      "params": {
+        "orderId#0": "bytes",
+        "assetId#0": "bytes",
+        "amount#0": "bytes",
+        "executionPrice#0": "bytes",
+        "userAddress#0": "bytes"
+      },
+      "block": "executeTrailingOrder",
+      "stack_in": [],
+      "op": "proto 5 1"
+    },
+    "1110": {
+      "op": "pushbytes \"Trade executed via optimal routing for \"",
+      "defined_out": [
+        "\"Trade executed via optimal routing for \""
+      ],
+      "stack_out": [
+        "\"Trade executed via optimal routing for \""
+      ]
+    },
+    "1151": {
+      "op": "frame_dig -4",
+      "defined_out": [
+        "\"Trade executed via optimal routing for \"",
+        "assetId#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Trade executed via optimal routing for \"",
+        "assetId#0 (copy)"
+      ]
+    },
+    "1153": {
+      "op": "concat",
+      "defined_out": [
+        "executionResult#0"
+      ],
+      "stack_out": [
+        "executionResult#0"
+      ]
+    },
+    "1154": {
+      "op": "bytec_1 // \"Order \"",
+      "defined_out": [
+        "\"Order \"",
+        "executionResult#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "\"Order \""
+      ]
+    },
+    "1155": {
+      "op": "frame_dig -5",
+      "defined_out": [
+        "\"Order \"",
+        "executionResult#0",
+        "orderId#0 (copy)"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "\"Order \"",
+        "orderId#0 (copy)"
+      ]
+    },
+    "1157": {
+      "op": "concat",
+      "defined_out": [
+        "executionResult#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%0#0"
+      ]
+    },
+    "1158": {
+      "op": "pushbytes \" EXECUTED: Sold \"",
+      "defined_out": [
+        "\" EXECUTED: Sold \"",
+        "executionResult#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%0#0",
+        "\" EXECUTED: Sold \""
+      ]
+    },
+    "1176": {
+      "op": "concat",
+      "defined_out": [
+        "executionResult#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%1#0"
+      ]
+    },
+    "1177": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "amount#0 (copy)",
+        "executionResult#0",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%1#0",
+        "amount#0 (copy)"
+      ]
+    },
+    "1179": {
+      "op": "concat",
+      "defined_out": [
+        "executionResult#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%2#0"
+      ]
+    },
+    "1180": {
+      "op": "pushbytes \" of asset \"",
+      "defined_out": [
+        "\" of asset \"",
+        "executionResult#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%2#0",
+        "\" of asset \""
+      ]
+    },
+    "1192": {
+      "op": "concat",
+      "defined_out": [
+        "executionResult#0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%3#0"
+      ]
+    },
+    "1193": {
+      "op": "frame_dig -4",
+      "stack_out": [
+        "executionResult#0",
+        "tmp%3#0",
+        "assetId#0 (copy)"
+      ]
+    },
+    "1195": {
+      "op": "concat",
+      "defined_out": [
+        "executionResult#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%4#0"
+      ]
+    },
+    "1196": {
+      "op": "bytec 6 // \" at \"",
+      "defined_out": [
+        "\" at \"",
+        "executionResult#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%4#0",
+        "\" at \""
+      ]
+    },
+    "1198": {
+      "op": "concat",
+      "defined_out": [
+        "executionResult#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%5#0"
+      ]
+    },
+    "1199": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "executionPrice#0 (copy)",
+        "executionResult#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%5#0",
+        "executionPrice#0 (copy)"
+      ]
+    },
+    "1201": {
+      "op": "concat",
+      "defined_out": [
+        "executionResult#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%6#0"
+      ]
+    },
+    "1202": {
+      "op": "pushbytes \" for user \"",
+      "defined_out": [
+        "\" for user \"",
+        "executionResult#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%6#0",
+        "\" for user \""
+      ]
+    },
+    "1214": {
+      "op": "concat",
+      "defined_out": [
+        "executionResult#0",
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%7#0"
+      ]
+    },
+    "1215": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "executionResult#0",
+        "tmp%7#0",
+        "userAddress#0 (copy)"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%7#0",
+        "userAddress#0 (copy)"
+      ]
+    },
+    "1217": {
+      "op": "concat",
+      "defined_out": [
+        "executionResult#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%8#0"
+      ]
+    },
+    "1218": {
+      "op": "pushbytes \". \"",
+      "defined_out": [
+        "\". \"",
+        "executionResult#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%8#0",
+        "\". \""
+      ]
+    },
+    "1222": {
+      "op": "concat",
+      "defined_out": [
+        "executionResult#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "executionResult#0",
+        "tmp%9#0"
+      ]
+    },
+    "1223": {
+      "op": "swap",
+      "stack_out": [
+        "tmp%9#0",
+        "executionResult#0"
+      ]
+    },
+    "1224": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "tmp%10#0"
+      ]
+    },
+    "1225": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1226": {
+      "subroutine": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.cancelTrailingOrder",
+      "params": {
+        "orderId#0": "bytes",
+        "userAddress#0": "bytes"
+      },
+      "block": "cancelTrailingOrder",
+      "stack_in": [],
+      "op": "proto 2 1"
+    },
+    "1229": {
+      "op": "bytec_1 // \"Order \"",
+      "defined_out": [
+        "\"Order \""
+      ],
+      "stack_out": [
+        "\"Order \""
+      ]
+    },
+    "1230": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "\"Order \"",
+        "orderId#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Order \"",
+        "orderId#0 (copy)"
+      ]
+    },
+    "1232": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1233": {
+      "op": "pushbytes \" cancelled by \"",
+      "defined_out": [
+        "\" cancelled by \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\" cancelled by \""
+      ]
+    },
+    "1249": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1250": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "tmp%1#0",
+        "userAddress#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "userAddress#0 (copy)"
+      ]
+    },
+    "1252": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1253": {
+      "op": "pushbytes \". Assets returned to wallet.\"",
+      "defined_out": [
+        "\". Assets returned to wallet.\"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\". Assets returned to wallet.\""
+      ]
+    },
+    "1283": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1284": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1285": {
+      "subroutine": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.getOrderDetails",
+      "params": {
+        "orderId#0": "bytes"
+      },
+      "block": "getOrderDetails",
+      "stack_in": [],
+      "op": "proto 1 1"
+    },
+    "1288": {
+      "op": "bytec_1 // \"Order \"",
+      "defined_out": [
+        "\"Order \""
+      ],
+      "stack_out": [
+        "\"Order \""
+      ]
+    },
+    "1289": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "\"Order \"",
+        "orderId#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Order \"",
+        "orderId#0 (copy)"
+      ]
+    },
+    "1291": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1292": {
+      "op": "pushbytes \": Asset ALGO, Amount 1000, Trail 10%, Current Stop $0.585, Status ACTIVE, High Water Mark $0.65\"",
+      "defined_out": [
+        "\": Asset ALGO, Amount 1000, Trail 10%, Current Stop $0.585, Status ACTIVE, High Water Mark $0.65\"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\": Asset ALGO, Amount 1000, Trail 10%, Current Stop $0.585, Status ACTIVE, High Water Mark $0.65\""
+      ]
+    },
+    "1389": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1390": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1391": {
+      "subroutine": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.createBracketOrder",
+      "params": {
+        "assetId#0": "bytes",
+        "buyAmount#0": "bytes",
+        "buyPrice#0": "bytes",
+        "trailDistance#0": "bytes",
+        "takeProfitPrice#0": "bytes",
+        "userAddress#0": "bytes"
+      },
+      "block": "createBracketOrder",
+      "stack_in": [],
+      "op": "proto 6 1"
+    },
+    "1394": {
+      "op": "bytec_3 // \"TSL_\"",
+      "defined_out": [
+        "\"TSL_\""
+      ],
+      "stack_out": [
+        "\"TSL_\""
+      ]
+    },
+    "1395": {
+      "op": "frame_dig -6",
+      "defined_out": [
+        "\"TSL_\"",
+        "assetId#0 (copy)"
+      ],
+      "stack_out": [
+        "\"TSL_\"",
+        "assetId#0 (copy)"
+      ]
+    },
+    "1397": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1398": {
+      "op": "bytec 4 // \"_ORDER\"",
+      "defined_out": [
+        "\"_ORDER\"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\"_ORDER\""
+      ]
+    },
+    "1400": {
+      "op": "concat",
+      "defined_out": [
+        "orderId#0"
+      ],
+      "stack_out": [
+        "orderId#0"
+      ]
+    },
+    "1401": {
+      "op": "pushbytes \"Bracket order \"",
+      "defined_out": [
+        "\"Bracket order \"",
+        "orderId#0"
+      ],
+      "stack_out": [
+        "orderId#0",
+        "\"Bracket order \""
+      ]
+    },
+    "1417": {
+      "op": "swap",
+      "stack_out": [
+        "\"Bracket order \"",
+        "orderId#0"
+      ]
+    },
+    "1418": {
+      "op": "concat",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1419": {
+      "op": "pushbytes \" created: Buy \"",
+      "defined_out": [
+        "\" created: Buy \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\" created: Buy \""
+      ]
+    },
+    "1435": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1436": {
+      "op": "frame_dig -5",
+      "defined_out": [
+        "buyAmount#0 (copy)",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "buyAmount#0 (copy)"
+      ]
+    },
+    "1438": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1439": {
+      "op": "pushbytes \" \"",
+      "defined_out": [
+        "\" \"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\" \""
+      ]
+    },
+    "1442": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1443": {
+      "op": "frame_dig -6",
+      "stack_out": [
+        "tmp%3#0",
+        "assetId#0 (copy)"
+      ]
+    },
+    "1445": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1446": {
+      "op": "bytec 6 // \" at \"",
+      "defined_out": [
+        "\" at \"",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0",
+        "\" at \""
+      ]
+    },
+    "1448": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "1449": {
+      "op": "frame_dig -4",
+      "defined_out": [
+        "buyPrice#0 (copy)",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0",
+        "buyPrice#0 (copy)"
+      ]
+    },
+    "1451": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "1452": {
+      "op": "bytec 5 // \", Trail \"",
+      "defined_out": [
+        "\", Trail \"",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0",
+        "\", Trail \""
+      ]
+    },
+    "1454": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "1455": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "tmp%7#0",
+        "trailDistance#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%7#0",
+        "trailDistance#0 (copy)"
+      ]
+    },
+    "1457": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "1458": {
+      "op": "pushbytes \"%, Take Profit \"",
+      "defined_out": [
+        "\"%, Take Profit \"",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "\"%, Take Profit \""
+      ]
+    },
+    "1475": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0"
+      ]
+    },
+    "1476": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "takeProfitPrice#0 (copy)",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0",
+        "takeProfitPrice#0 (copy)"
+      ]
+    },
+    "1478": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "tmp%10#0"
+      ]
+    },
+    "1479": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1480": {
+      "subroutine": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.updateTrailDistance",
+      "params": {
+        "orderId#0": "bytes",
+        "newTrailDistance#0": "bytes",
+        "userAddress#0": "bytes"
+      },
+      "block": "updateTrailDistance",
+      "stack_in": [],
+      "op": "proto 3 1"
+    },
+    "1483": {
+      "op": "bytec_1 // \"Order \"",
+      "defined_out": [
+        "\"Order \""
+      ],
+      "stack_out": [
+        "\"Order \""
+      ]
+    },
+    "1484": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "\"Order \"",
+        "orderId#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Order \"",
+        "orderId#0 (copy)"
+      ]
+    },
+    "1486": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1487": {
+      "op": "pushbytes \": Trail distance updated from current to \"",
+      "defined_out": [
+        "\": Trail distance updated from current to \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\": Trail distance updated from current to \""
+      ]
+    },
+    "1530": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1531": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "newTrailDistance#0 (copy)",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "newTrailDistance#0 (copy)"
+      ]
+    },
+    "1533": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1534": {
+      "op": "pushbytes \"% by \"",
+      "defined_out": [
+        "\"% by \"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\"% by \""
+      ]
+    },
+    "1541": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1542": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "tmp%3#0",
+        "userAddress#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "userAddress#0 (copy)"
+      ]
+    },
+    "1544": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1545": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1546": {
+      "subroutine": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.getUserOrders",
+      "params": {
+        "userAddress#0": "bytes"
+      },
+      "block": "getUserOrders",
+      "stack_in": [],
+      "op": "proto 1 1"
+    },
+    "1549": {
+      "op": "pushbytes \"Active orders for \"",
+      "defined_out": [
+        "\"Active orders for \""
+      ],
+      "stack_out": [
+        "\"Active orders for \""
+      ]
+    },
+    "1569": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "\"Active orders for \"",
+        "userAddress#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Active orders for \"",
+        "userAddress#0 (copy)"
+      ]
+    },
+    "1571": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1572": {
+      "op": "pushbytes \": 3 trailing stops, 1 bracket order, Total value protected: $5,420\"",
+      "defined_out": [
+        "\": 3 trailing stops, 1 bracket order, Total value protected: $5,420\"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\": 3 trailing stops, 1 bracket order, Total value protected: $5,420\""
+      ]
+    },
+    "1640": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1641": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1642": {
+      "subroutine": "smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.setTimeBasedTrail",
+      "params": {
+        "orderId#0": "bytes",
+        "phase1Duration#0": "bytes",
+        "phase1Trail#0": "bytes",
+        "phase2Duration#0": "bytes",
+        "phase2Trail#0": "bytes",
+        "phase3Trail#0": "bytes"
+      },
+      "block": "setTimeBasedTrail",
+      "stack_in": [],
+      "op": "proto 6 1"
+    },
+    "1645": {
+      "op": "bytec_1 // \"Order \"",
+      "defined_out": [
+        "\"Order \""
+      ],
+      "stack_out": [
+        "\"Order \""
+      ]
+    },
+    "1646": {
+      "op": "frame_dig -6",
+      "defined_out": [
+        "\"Order \"",
+        "orderId#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Order \"",
+        "orderId#0 (copy)"
+      ]
+    },
+    "1648": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1649": {
+      "op": "pushbytes \": Time-based trail set - First \"",
+      "defined_out": [
+        "\": Time-based trail set - First \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\": Time-based trail set - First \""
+      ]
+    },
+    "1682": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1683": {
+      "op": "frame_dig -5",
+      "defined_out": [
+        "phase1Duration#0 (copy)",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "phase1Duration#0 (copy)"
+      ]
+    },
+    "1685": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1686": {
+      "op": "bytec 7 // \"h: \"",
+      "defined_out": [
+        "\"h: \"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\"h: \""
+      ]
+    },
+    "1688": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1689": {
+      "op": "frame_dig -4",
+      "defined_out": [
+        "phase1Trail#0 (copy)",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "phase1Trail#0 (copy)"
+      ]
+    },
+    "1691": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1692": {
+      "op": "pushbytes \"%, Next \"",
+      "defined_out": [
+        "\"%, Next \"",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0",
+        "\"%, Next \""
+      ]
+    },
+    "1702": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "1703": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "phase2Duration#0 (copy)",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0",
+        "phase2Duration#0 (copy)"
+      ]
+    },
+    "1705": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "1706": {
+      "op": "bytec 7 // \"h: \"",
+      "stack_out": [
+        "tmp%6#0",
+        "\"h: \""
+      ]
+    },
+    "1708": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "1709": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "phase2Trail#0 (copy)",
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0",
+        "phase2Trail#0 (copy)"
+      ]
+    },
+    "1711": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "1712": {
+      "op": "pushbytes \"%, After: \"",
+      "defined_out": [
+        "\"%, After: \"",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "\"%, After: \""
+      ]
+    },
+    "1724": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0"
+      ]
+    },
+    "1725": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "phase3Trail#0 (copy)",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0",
+        "phase3Trail#0 (copy)"
+      ]
+    },
+    "1727": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "tmp%10#0"
+      ]
+    },
+    "1728": {
+      "op": "pushbytes \"%\"",
+      "defined_out": [
+        "\"%\"",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "tmp%10#0",
+        "\"%\""
+      ]
+    },
+    "1731": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0"
+      ]
+    },
+    "1732": {
+      "retsub": true,
+      "op": "retsub"
+    }
+  }
+}

@@ -1,0 +1,4562 @@
+{
+  "version": 3,
+  "sources": [
+    "/home/muratkeskin/vault/algoasv4/projects/algoas-contracts/smart_contracts/predictive_liquidity_mining/contract.algo.ts"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;AAMA;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;AA0JI;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAPA;;AAAA;AAAA;AAAA;;AAAA;AAnJJ;;;AAAA;;;AAmJI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAPA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AARA;;AAAA;AAAA;AAAA;;AAAA;AApIJ;;;AAAA;;;AAoII;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAbA;;AAAA;AAAA;AAAA;;AAAA;AAvHJ;;;AAAA;;;AAAA;;;AAAA;;;AAuHI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAZA;;AAAA;AAAA;AAAA;;AAAA;AA3GJ;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AA2GI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAZA;;AAAA;AAAA;AAAA;;AAAA;AA/FJ;;;AAAA;;;AAAA;;;;AAAA;AAAA;;;AAAA;;;AA+FI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAxBA;;AAAA;AAAA;AAAA;;AAAA;AAvEJ;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAuEI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAZA;;AAAA;AAAA;AAAA;;AAAA;AA3DJ;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AA2DI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAVA;;AAAA;AAAA;AAAA;;AAAA;AAjDJ;;;AAAA;;;AAAA;;;AAAA;;;AAiDI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAVA;;AAAA;AAAA;AAAA;;AAAA;AAvCJ;;;AAAA;;;AAAA;;;AAAA;;;AAuCI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAXA;;AAAA;AAAA;AAAA;;AAAA;AA5BJ;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AA4BI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAXA;;AAAA;AAAA;AAAA;;AAAA;AAjBJ;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAiBI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAZA;;AAAA;AAAA;AAAA;;AAAA;AALJ;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAKI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AALJ;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;;AAKI;;;AAMW;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;AAAA;AAAP;AAMJ;;;AAKW;;;;;;;;;;;;;;;;;;;;;;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAP;AAMJ;;;AAKW;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAP;AAMJ;;;AAIW;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;AAAA;AAAA;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAP;AAMJ;;;AAIW;;;;;;;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAP;AAMJ;;;AAMW;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAP;AAMJ;;;AAeQ;;AAAa;;;;;;;;;;;;;AAAb;AAAJ;;;AAAuC;;;;;AARhC;;;;;;;;;;;;;;;;;;;;AAAA;;AAAA;AAAA;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;;;;;;;;;;AAAA;AAAP;AASI;;AAAa;;;;;;;;;;;;;;;;AAAb;AAAJ;;;AAA0C;;;;;AAVrB;;;AAWjB;;AAAa;;;;;;;;;;;;;;;AAAb;AAAJ;;;AAAyC;;;;;AAXpB;;;AAYd;;;;AAZc;;;AAkBzB;;;AAKuB;;AAAA;;;AAAO;;;;;AACnB;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;AAAA;AAAA;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;AAAA;AAAA;AAAA;AAAP;AADkC;;;;;;;;;;;;AAOtC;;;AAMW;;;;;;;;;;;;;;;;;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAP;AAMJ;;;AAOW;;AAAA;;;;;;;;;;;AAAA;AAFc;;;;;AAEd;AAAA;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAP;AAMJ;;;AAEW;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAP;AAaJ;;;AACW;;;;;;;;;;;;;;;;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAP",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "@algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 1 0"
+    },
+    "5": {
+      "op": "bytecblock 0x151f7c75 \"Pool \" \" by user \""
+    },
+    "28": {
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "30": {
+      "op": "bz main_bare_routing@19",
+      "stack_out": []
+    },
+    "33": {
+      "op": "pushbytess 0xc3b9922a 0x96ceaba9 0x5a41b7a1 0xe719bdbd 0xa90b772f 0xd8421f1d 0x6c641248 0x30c61fef 0x90ecc90e 0x63b74425 0xddfa9f28 0x0d051d7a 0xfb0b4e63 0xc18934fb // method \"createPool(string,string,string,string)string\", method \"stakeInPool(string,string,string)string\", method \"unstakeFromPool(string,string,string)string\", method \"emergencyWithdraw(string,string)string\", method \"getUserStake(string,string)string\", method \"updateAIPrediction(string,string,string,string)string\", method \"submitTrainingData(string,string,string,string)string\", method \"voteOnProposal(string,bool,string)string\", method \"calculateUserRiskScore(string,string,string)string\", method \"claimRewards(string,string)string\", method \"getPoolStats(string)string\", method \"emergencyPause()string\", method \"getUserPortfolio(string)string\", method \"getPlatformAnalytics()string\"",
+      "defined_out": [
+        "Method(calculateUserRiskScore(string,string,string)string)",
+        "Method(claimRewards(string,string)string)",
+        "Method(createPool(string,string,string,string)string)",
+        "Method(emergencyPause()string)",
+        "Method(emergencyWithdraw(string,string)string)",
+        "Method(getPlatformAnalytics()string)",
+        "Method(getPoolStats(string)string)",
+        "Method(getUserPortfolio(string)string)",
+        "Method(getUserStake(string,string)string)",
+        "Method(stakeInPool(string,string,string)string)",
+        "Method(submitTrainingData(string,string,string,string)string)",
+        "Method(unstakeFromPool(string,string,string)string)",
+        "Method(updateAIPrediction(string,string,string,string)string)",
+        "Method(voteOnProposal(string,bool,string)string)"
+      ],
+      "stack_out": [
+        "Method(createPool(string,string,string,string)string)",
+        "Method(stakeInPool(string,string,string)string)",
+        "Method(unstakeFromPool(string,string,string)string)",
+        "Method(emergencyWithdraw(string,string)string)",
+        "Method(getUserStake(string,string)string)",
+        "Method(updateAIPrediction(string,string,string,string)string)",
+        "Method(submitTrainingData(string,string,string,string)string)",
+        "Method(voteOnProposal(string,bool,string)string)",
+        "Method(calculateUserRiskScore(string,string,string)string)",
+        "Method(claimRewards(string,string)string)",
+        "Method(getPoolStats(string)string)",
+        "Method(emergencyPause()string)",
+        "Method(getUserPortfolio(string)string)",
+        "Method(getPlatformAnalytics()string)"
+      ]
+    },
+    "105": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(calculateUserRiskScore(string,string,string)string)",
+        "Method(claimRewards(string,string)string)",
+        "Method(createPool(string,string,string,string)string)",
+        "Method(emergencyPause()string)",
+        "Method(emergencyWithdraw(string,string)string)",
+        "Method(getPlatformAnalytics()string)",
+        "Method(getPoolStats(string)string)",
+        "Method(getUserPortfolio(string)string)",
+        "Method(getUserStake(string,string)string)",
+        "Method(stakeInPool(string,string,string)string)",
+        "Method(submitTrainingData(string,string,string,string)string)",
+        "Method(unstakeFromPool(string,string,string)string)",
+        "Method(updateAIPrediction(string,string,string,string)string)",
+        "Method(voteOnProposal(string,bool,string)string)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(createPool(string,string,string,string)string)",
+        "Method(stakeInPool(string,string,string)string)",
+        "Method(unstakeFromPool(string,string,string)string)",
+        "Method(emergencyWithdraw(string,string)string)",
+        "Method(getUserStake(string,string)string)",
+        "Method(updateAIPrediction(string,string,string,string)string)",
+        "Method(submitTrainingData(string,string,string,string)string)",
+        "Method(voteOnProposal(string,bool,string)string)",
+        "Method(calculateUserRiskScore(string,string,string)string)",
+        "Method(claimRewards(string,string)string)",
+        "Method(getPoolStats(string)string)",
+        "Method(emergencyPause()string)",
+        "Method(getUserPortfolio(string)string)",
+        "Method(getPlatformAnalytics()string)",
+        "tmp%2#0"
+      ]
+    },
+    "108": {
+      "op": "match main_createPool_route@3 main_stakeInPool_route@4 main_unstakeFromPool_route@5 main_emergencyWithdraw_route@6 main_getUserStake_route@7 main_updateAIPrediction_route@8 main_submitTrainingData_route@9 main_voteOnProposal_route@10 main_calculateUserRiskScore_route@11 main_claimRewards_route@12 main_getPoolStats_route@13 main_emergencyPause_route@14 main_getUserPortfolio_route@15 main_getPlatformAnalytics_route@16",
+      "stack_out": []
+    },
+    "138": {
+      "block": "main_after_if_else@23",
+      "stack_in": [],
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "139": {
+      "op": "return",
+      "stack_out": []
+    },
+    "140": {
+      "block": "main_getPlatformAnalytics_route@16",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%131#0"
+      ],
+      "stack_out": [
+        "tmp%131#0"
+      ]
+    },
+    "142": {
+      "op": "!",
+      "defined_out": [
+        "tmp%132#0"
+      ],
+      "stack_out": [
+        "tmp%132#0"
+      ]
+    },
+    "143": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "144": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%133#0"
+      ],
+      "stack_out": [
+        "tmp%133#0"
+      ]
+    },
+    "146": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "147": {
+      "op": "pushbytes 0x151f7c750097506c6174666f726d20416e616c79746963733a20546f74616c20706f6f6c733a2034372c20416374697665206d696e6572733a20312c3233342c20546f74616c20726577617264732064697374726962757465643a203132352c30303020746f6b656e732c2041766572616765204150593a2031322e35252c2041492070726564696374696f6e2061636375726163793a2038372e3325",
+      "defined_out": [
+        "0x151f7c750097506c6174666f726d20416e616c79746963733a20546f74616c20706f6f6c733a2034372c20416374697665206d696e6572733a20312c3233342c20546f74616c20726577617264732064697374726962757465643a203132352c30303020746f6b656e732c2041766572616765204150593a2031322e35252c2041492070726564696374696f6e2061636375726163793a2038372e3325"
+      ],
+      "stack_out": [
+        "0x151f7c750097506c6174666f726d20416e616c79746963733a20546f74616c20706f6f6c733a2034372c20416374697665206d696e6572733a20312c3233342c20546f74616c20726577617264732064697374726962757465643a203132352c30303020746f6b656e732c2041766572616765204150593a2031322e35252c2041492070726564696374696f6e2061636375726163793a2038372e3325"
+      ]
+    },
+    "307": {
+      "op": "log",
+      "stack_out": []
+    },
+    "308": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "309": {
+      "op": "return",
+      "stack_out": []
+    },
+    "310": {
+      "block": "main_getUserPortfolio_route@15",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%124#0"
+      ],
+      "stack_out": [
+        "tmp%124#0"
+      ]
+    },
+    "312": {
+      "op": "!",
+      "defined_out": [
+        "tmp%125#0"
+      ],
+      "stack_out": [
+        "tmp%125#0"
+      ]
+    },
+    "313": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "314": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%126#0"
+      ],
+      "stack_out": [
+        "tmp%126#0"
+      ]
+    },
+    "316": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "317": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%128#0"
+      ],
+      "stack_out": [
+        "tmp%128#0"
+      ]
+    },
+    "320": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%129#0"
+      ],
+      "stack_out": [
+        "tmp%129#0"
+      ]
+    },
+    "323": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.getUserPortfolio",
+      "op": "callsub getUserPortfolio",
+      "defined_out": [
+        "to_encode%12#0"
+      ],
+      "stack_out": [
+        "to_encode%12#0"
+      ]
+    },
+    "326": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%12#0",
+        "to_encode%12#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%12#0",
+        "to_encode%12#0 (copy)"
+      ]
+    },
+    "327": {
+      "op": "len",
+      "defined_out": [
+        "length%12#0",
+        "to_encode%12#0"
+      ],
+      "stack_out": [
+        "to_encode%12#0",
+        "length%12#0"
+      ]
+    },
+    "328": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%12#0",
+        "to_encode%12#0"
+      ],
+      "stack_out": [
+        "to_encode%12#0",
+        "as_bytes%12#0"
+      ]
+    },
+    "329": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%12#0",
+        "to_encode%12#0"
+      ],
+      "stack_out": [
+        "to_encode%12#0",
+        "length_uint16%12#0"
+      ]
+    },
+    "332": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%12#0",
+        "to_encode%12#0"
+      ]
+    },
+    "333": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%12#0"
+      ],
+      "stack_out": [
+        "encoded_value%12#0"
+      ]
+    },
+    "334": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%12#0"
+      ],
+      "stack_out": [
+        "encoded_value%12#0",
+        "0x151f7c75"
+      ]
+    },
+    "335": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%12#0"
+      ]
+    },
+    "336": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%130#0"
+      ],
+      "stack_out": [
+        "tmp%130#0"
+      ]
+    },
+    "337": {
+      "op": "log",
+      "stack_out": []
+    },
+    "338": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "339": {
+      "op": "return",
+      "stack_out": []
+    },
+    "340": {
+      "block": "main_emergencyPause_route@14",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%119#0"
+      ],
+      "stack_out": [
+        "tmp%119#0"
+      ]
+    },
+    "342": {
+      "op": "!",
+      "defined_out": [
+        "tmp%120#0"
+      ],
+      "stack_out": [
+        "tmp%120#0"
+      ]
+    },
+    "343": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "344": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%121#0"
+      ],
+      "stack_out": [
+        "tmp%121#0"
+      ]
+    },
+    "346": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "347": {
+      "op": "pushbytes 0x151f7c75003a506c6174666f726d2070617573656420666f72206d61696e74656e616e63652e20416c6c206f7065726174696f6e732073757370656e6465642e",
+      "defined_out": [
+        "0x151f7c75003a506c6174666f726d2070617573656420666f72206d61696e74656e616e63652e20416c6c206f7065726174696f6e732073757370656e6465642e"
+      ],
+      "stack_out": [
+        "0x151f7c75003a506c6174666f726d2070617573656420666f72206d61696e74656e616e63652e20416c6c206f7065726174696f6e732073757370656e6465642e"
+      ]
+    },
+    "413": {
+      "op": "log",
+      "stack_out": []
+    },
+    "414": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "415": {
+      "op": "return",
+      "stack_out": []
+    },
+    "416": {
+      "block": "main_getPoolStats_route@13",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%112#0"
+      ],
+      "stack_out": [
+        "tmp%112#0"
+      ]
+    },
+    "418": {
+      "op": "!",
+      "defined_out": [
+        "tmp%113#0"
+      ],
+      "stack_out": [
+        "tmp%113#0"
+      ]
+    },
+    "419": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "420": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%114#0"
+      ],
+      "stack_out": [
+        "tmp%114#0"
+      ]
+    },
+    "422": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "423": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%116#0"
+      ],
+      "stack_out": [
+        "tmp%116#0"
+      ]
+    },
+    "426": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%117#0"
+      ],
+      "stack_out": [
+        "tmp%117#0"
+      ]
+    },
+    "429": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.getPoolStats",
+      "op": "callsub getPoolStats",
+      "defined_out": [
+        "to_encode%10#0"
+      ],
+      "stack_out": [
+        "to_encode%10#0"
+      ]
+    },
+    "432": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%10#0",
+        "to_encode%10#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%10#0",
+        "to_encode%10#0 (copy)"
+      ]
+    },
+    "433": {
+      "op": "len",
+      "defined_out": [
+        "length%10#0",
+        "to_encode%10#0"
+      ],
+      "stack_out": [
+        "to_encode%10#0",
+        "length%10#0"
+      ]
+    },
+    "434": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%10#0",
+        "to_encode%10#0"
+      ],
+      "stack_out": [
+        "to_encode%10#0",
+        "as_bytes%10#0"
+      ]
+    },
+    "435": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%10#0",
+        "to_encode%10#0"
+      ],
+      "stack_out": [
+        "to_encode%10#0",
+        "length_uint16%10#0"
+      ]
+    },
+    "438": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%10#0",
+        "to_encode%10#0"
+      ]
+    },
+    "439": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%10#0"
+      ],
+      "stack_out": [
+        "encoded_value%10#0"
+      ]
+    },
+    "440": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%10#0"
+      ],
+      "stack_out": [
+        "encoded_value%10#0",
+        "0x151f7c75"
+      ]
+    },
+    "441": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%10#0"
+      ]
+    },
+    "442": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%118#0"
+      ],
+      "stack_out": [
+        "tmp%118#0"
+      ]
+    },
+    "443": {
+      "op": "log",
+      "stack_out": []
+    },
+    "444": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "445": {
+      "op": "return",
+      "stack_out": []
+    },
+    "446": {
+      "block": "main_claimRewards_route@12",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%103#0"
+      ],
+      "stack_out": [
+        "tmp%103#0"
+      ]
+    },
+    "448": {
+      "op": "!",
+      "defined_out": [
+        "tmp%104#0"
+      ],
+      "stack_out": [
+        "tmp%104#0"
+      ]
+    },
+    "449": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "450": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%105#0"
+      ],
+      "stack_out": [
+        "tmp%105#0"
+      ]
+    },
+    "452": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "453": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%107#0"
+      ],
+      "stack_out": [
+        "tmp%107#0"
+      ]
+    },
+    "456": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%108#0"
+      ],
+      "stack_out": [
+        "tmp%108#0"
+      ]
+    },
+    "459": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%108#0",
+        "tmp%109#0"
+      ],
+      "stack_out": [
+        "tmp%108#0",
+        "tmp%109#0"
+      ]
+    },
+    "462": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%108#0",
+        "tmp%110#0"
+      ],
+      "stack_out": [
+        "tmp%108#0",
+        "tmp%110#0"
+      ]
+    },
+    "465": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.claimRewards",
+      "op": "callsub claimRewards",
+      "defined_out": [
+        "to_encode%9#0"
+      ],
+      "stack_out": [
+        "to_encode%9#0"
+      ]
+    },
+    "468": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%9#0",
+        "to_encode%9#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%9#0",
+        "to_encode%9#0 (copy)"
+      ]
+    },
+    "469": {
+      "op": "len",
+      "defined_out": [
+        "length%9#0",
+        "to_encode%9#0"
+      ],
+      "stack_out": [
+        "to_encode%9#0",
+        "length%9#0"
+      ]
+    },
+    "470": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%9#0",
+        "to_encode%9#0"
+      ],
+      "stack_out": [
+        "to_encode%9#0",
+        "as_bytes%9#0"
+      ]
+    },
+    "471": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%9#0",
+        "to_encode%9#0"
+      ],
+      "stack_out": [
+        "to_encode%9#0",
+        "length_uint16%9#0"
+      ]
+    },
+    "474": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%9#0",
+        "to_encode%9#0"
+      ]
+    },
+    "475": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%9#0"
+      ],
+      "stack_out": [
+        "encoded_value%9#0"
+      ]
+    },
+    "476": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%9#0"
+      ],
+      "stack_out": [
+        "encoded_value%9#0",
+        "0x151f7c75"
+      ]
+    },
+    "477": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%9#0"
+      ]
+    },
+    "478": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%111#0"
+      ],
+      "stack_out": [
+        "tmp%111#0"
+      ]
+    },
+    "479": {
+      "op": "log",
+      "stack_out": []
+    },
+    "480": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "481": {
+      "op": "return",
+      "stack_out": []
+    },
+    "482": {
+      "block": "main_calculateUserRiskScore_route@11",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%92#0"
+      ],
+      "stack_out": [
+        "tmp%92#0"
+      ]
+    },
+    "484": {
+      "op": "!",
+      "defined_out": [
+        "tmp%93#0"
+      ],
+      "stack_out": [
+        "tmp%93#0"
+      ]
+    },
+    "485": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "486": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%94#0"
+      ],
+      "stack_out": [
+        "tmp%94#0"
+      ]
+    },
+    "488": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "489": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%96#0"
+      ],
+      "stack_out": [
+        "tmp%96#0"
+      ]
+    },
+    "492": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%97#0"
+      ],
+      "stack_out": [
+        "tmp%97#0"
+      ]
+    },
+    "495": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%97#0",
+        "tmp%98#0"
+      ],
+      "stack_out": [
+        "tmp%97#0",
+        "tmp%98#0"
+      ]
+    },
+    "498": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%97#0",
+        "tmp%99#0"
+      ],
+      "stack_out": [
+        "tmp%97#0",
+        "tmp%99#0"
+      ]
+    },
+    "501": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%100#0",
+        "tmp%97#0",
+        "tmp%99#0"
+      ],
+      "stack_out": [
+        "tmp%97#0",
+        "tmp%99#0",
+        "tmp%100#0"
+      ]
+    },
+    "504": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%101#0",
+        "tmp%97#0",
+        "tmp%99#0"
+      ],
+      "stack_out": [
+        "tmp%97#0",
+        "tmp%99#0",
+        "tmp%101#0"
+      ]
+    },
+    "507": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.calculateUserRiskScore",
+      "op": "callsub calculateUserRiskScore",
+      "defined_out": [
+        "to_encode%8#0"
+      ],
+      "stack_out": [
+        "to_encode%8#0"
+      ]
+    },
+    "510": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%8#0",
+        "to_encode%8#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%8#0",
+        "to_encode%8#0 (copy)"
+      ]
+    },
+    "511": {
+      "op": "len",
+      "defined_out": [
+        "length%8#0",
+        "to_encode%8#0"
+      ],
+      "stack_out": [
+        "to_encode%8#0",
+        "length%8#0"
+      ]
+    },
+    "512": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%8#0",
+        "to_encode%8#0"
+      ],
+      "stack_out": [
+        "to_encode%8#0",
+        "as_bytes%8#0"
+      ]
+    },
+    "513": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%8#0",
+        "to_encode%8#0"
+      ],
+      "stack_out": [
+        "to_encode%8#0",
+        "length_uint16%8#0"
+      ]
+    },
+    "516": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%8#0",
+        "to_encode%8#0"
+      ]
+    },
+    "517": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%8#0"
+      ]
+    },
+    "518": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%8#0"
+      ],
+      "stack_out": [
+        "encoded_value%8#0",
+        "0x151f7c75"
+      ]
+    },
+    "519": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%8#0"
+      ]
+    },
+    "520": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%102#0"
+      ],
+      "stack_out": [
+        "tmp%102#0"
+      ]
+    },
+    "521": {
+      "op": "log",
+      "stack_out": []
+    },
+    "522": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "523": {
+      "op": "return",
+      "stack_out": []
+    },
+    "524": {
+      "block": "main_voteOnProposal_route@10",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%82#0"
+      ],
+      "stack_out": [
+        "tmp%82#0"
+      ]
+    },
+    "526": {
+      "op": "!",
+      "defined_out": [
+        "tmp%83#0"
+      ],
+      "stack_out": [
+        "tmp%83#0"
+      ]
+    },
+    "527": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "528": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%84#0"
+      ],
+      "stack_out": [
+        "tmp%84#0"
+      ]
+    },
+    "530": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "531": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%86#0"
+      ],
+      "stack_out": [
+        "tmp%86#0"
+      ]
+    },
+    "534": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%87#0"
+      ],
+      "stack_out": [
+        "tmp%87#0"
+      ]
+    },
+    "537": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "reinterpret_bytes[1]%0#0",
+        "tmp%87#0"
+      ],
+      "stack_out": [
+        "tmp%87#0",
+        "reinterpret_bytes[1]%0#0"
+      ]
+    },
+    "540": {
+      "op": "intc_1 // 0",
+      "defined_out": [
+        "0",
+        "reinterpret_bytes[1]%0#0",
+        "tmp%87#0"
+      ],
+      "stack_out": [
+        "tmp%87#0",
+        "reinterpret_bytes[1]%0#0",
+        "0"
+      ]
+    },
+    "541": {
+      "op": "getbit",
+      "defined_out": [
+        "tmp%87#0",
+        "tmp%88#0"
+      ],
+      "stack_out": [
+        "tmp%87#0",
+        "tmp%88#0"
+      ]
+    },
+    "542": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%87#0",
+        "tmp%88#0",
+        "tmp%89#0"
+      ],
+      "stack_out": [
+        "tmp%87#0",
+        "tmp%88#0",
+        "tmp%89#0"
+      ]
+    },
+    "545": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%87#0",
+        "tmp%88#0",
+        "tmp%90#0"
+      ],
+      "stack_out": [
+        "tmp%87#0",
+        "tmp%88#0",
+        "tmp%90#0"
+      ]
+    },
+    "548": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.voteOnProposal",
+      "op": "callsub voteOnProposal",
+      "defined_out": [
+        "to_encode%7#0"
+      ],
+      "stack_out": [
+        "to_encode%7#0"
+      ]
+    },
+    "551": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%7#0",
+        "to_encode%7#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%7#0",
+        "to_encode%7#0 (copy)"
+      ]
+    },
+    "552": {
+      "op": "len",
+      "defined_out": [
+        "length%7#0",
+        "to_encode%7#0"
+      ],
+      "stack_out": [
+        "to_encode%7#0",
+        "length%7#0"
+      ]
+    },
+    "553": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%7#0",
+        "to_encode%7#0"
+      ],
+      "stack_out": [
+        "to_encode%7#0",
+        "as_bytes%7#0"
+      ]
+    },
+    "554": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%7#0",
+        "to_encode%7#0"
+      ],
+      "stack_out": [
+        "to_encode%7#0",
+        "length_uint16%7#0"
+      ]
+    },
+    "557": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%7#0",
+        "to_encode%7#0"
+      ]
+    },
+    "558": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%7#0"
+      ],
+      "stack_out": [
+        "encoded_value%7#0"
+      ]
+    },
+    "559": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%7#0"
+      ],
+      "stack_out": [
+        "encoded_value%7#0",
+        "0x151f7c75"
+      ]
+    },
+    "560": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%7#0"
+      ]
+    },
+    "561": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%91#0"
+      ],
+      "stack_out": [
+        "tmp%91#0"
+      ]
+    },
+    "562": {
+      "op": "log",
+      "stack_out": []
+    },
+    "563": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "564": {
+      "op": "return",
+      "stack_out": []
+    },
+    "565": {
+      "block": "main_submitTrainingData_route@9",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%69#0"
+      ],
+      "stack_out": [
+        "tmp%69#0"
+      ]
+    },
+    "567": {
+      "op": "!",
+      "defined_out": [
+        "tmp%70#0"
+      ],
+      "stack_out": [
+        "tmp%70#0"
+      ]
+    },
+    "568": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "569": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%71#0"
+      ],
+      "stack_out": [
+        "tmp%71#0"
+      ]
+    },
+    "571": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "572": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%73#0"
+      ],
+      "stack_out": [
+        "tmp%73#0"
+      ]
+    },
+    "575": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%74#0"
+      ],
+      "stack_out": [
+        "tmp%74#0"
+      ]
+    },
+    "578": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%74#0",
+        "tmp%75#0"
+      ],
+      "stack_out": [
+        "tmp%74#0",
+        "tmp%75#0"
+      ]
+    },
+    "581": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%74#0",
+        "tmp%76#0"
+      ],
+      "stack_out": [
+        "tmp%74#0",
+        "tmp%76#0"
+      ]
+    },
+    "584": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%74#0",
+        "tmp%76#0",
+        "tmp%77#0"
+      ],
+      "stack_out": [
+        "tmp%74#0",
+        "tmp%76#0",
+        "tmp%77#0"
+      ]
+    },
+    "587": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%74#0",
+        "tmp%76#0",
+        "tmp%78#0"
+      ],
+      "stack_out": [
+        "tmp%74#0",
+        "tmp%76#0",
+        "tmp%78#0"
+      ]
+    },
+    "590": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "tmp%74#0",
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%79#0"
+      ],
+      "stack_out": [
+        "tmp%74#0",
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%79#0"
+      ]
+    },
+    "593": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%74#0",
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%80#0"
+      ],
+      "stack_out": [
+        "tmp%74#0",
+        "tmp%76#0",
+        "tmp%78#0",
+        "tmp%80#0"
+      ]
+    },
+    "596": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.submitTrainingData",
+      "op": "callsub submitTrainingData",
+      "defined_out": [
+        "to_encode%6#0"
+      ],
+      "stack_out": [
+        "to_encode%6#0"
+      ]
+    },
+    "599": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%6#0",
+        "to_encode%6#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%6#0",
+        "to_encode%6#0 (copy)"
+      ]
+    },
+    "600": {
+      "op": "len",
+      "defined_out": [
+        "length%6#0",
+        "to_encode%6#0"
+      ],
+      "stack_out": [
+        "to_encode%6#0",
+        "length%6#0"
+      ]
+    },
+    "601": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%6#0",
+        "to_encode%6#0"
+      ],
+      "stack_out": [
+        "to_encode%6#0",
+        "as_bytes%6#0"
+      ]
+    },
+    "602": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%6#0",
+        "to_encode%6#0"
+      ],
+      "stack_out": [
+        "to_encode%6#0",
+        "length_uint16%6#0"
+      ]
+    },
+    "605": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%6#0",
+        "to_encode%6#0"
+      ]
+    },
+    "606": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%6#0"
+      ],
+      "stack_out": [
+        "encoded_value%6#0"
+      ]
+    },
+    "607": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%6#0"
+      ],
+      "stack_out": [
+        "encoded_value%6#0",
+        "0x151f7c75"
+      ]
+    },
+    "608": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%6#0"
+      ]
+    },
+    "609": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%81#0"
+      ],
+      "stack_out": [
+        "tmp%81#0"
+      ]
+    },
+    "610": {
+      "op": "log",
+      "stack_out": []
+    },
+    "611": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "612": {
+      "op": "return",
+      "stack_out": []
+    },
+    "613": {
+      "block": "main_updateAIPrediction_route@8",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%56#0"
+      ],
+      "stack_out": [
+        "tmp%56#0"
+      ]
+    },
+    "615": {
+      "op": "!",
+      "defined_out": [
+        "tmp%57#0"
+      ],
+      "stack_out": [
+        "tmp%57#0"
+      ]
+    },
+    "616": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "617": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%58#0"
+      ],
+      "stack_out": [
+        "tmp%58#0"
+      ]
+    },
+    "619": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "620": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%60#0"
+      ],
+      "stack_out": [
+        "tmp%60#0"
+      ]
+    },
+    "623": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%61#0"
+      ],
+      "stack_out": [
+        "tmp%61#0"
+      ]
+    },
+    "626": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%61#0",
+        "tmp%62#0"
+      ],
+      "stack_out": [
+        "tmp%61#0",
+        "tmp%62#0"
+      ]
+    },
+    "629": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%61#0",
+        "tmp%63#0"
+      ],
+      "stack_out": [
+        "tmp%61#0",
+        "tmp%63#0"
+      ]
+    },
+    "632": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%61#0",
+        "tmp%63#0",
+        "tmp%64#0"
+      ],
+      "stack_out": [
+        "tmp%61#0",
+        "tmp%63#0",
+        "tmp%64#0"
+      ]
+    },
+    "635": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%61#0",
+        "tmp%63#0",
+        "tmp%65#0"
+      ],
+      "stack_out": [
+        "tmp%61#0",
+        "tmp%63#0",
+        "tmp%65#0"
+      ]
+    },
+    "638": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "tmp%61#0",
+        "tmp%63#0",
+        "tmp%65#0",
+        "tmp%66#0"
+      ],
+      "stack_out": [
+        "tmp%61#0",
+        "tmp%63#0",
+        "tmp%65#0",
+        "tmp%66#0"
+      ]
+    },
+    "641": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%61#0",
+        "tmp%63#0",
+        "tmp%65#0",
+        "tmp%67#0"
+      ],
+      "stack_out": [
+        "tmp%61#0",
+        "tmp%63#0",
+        "tmp%65#0",
+        "tmp%67#0"
+      ]
+    },
+    "644": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.updateAIPrediction",
+      "op": "callsub updateAIPrediction",
+      "defined_out": [
+        "to_encode%5#0"
+      ],
+      "stack_out": [
+        "to_encode%5#0"
+      ]
+    },
+    "647": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%5#0",
+        "to_encode%5#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%5#0",
+        "to_encode%5#0 (copy)"
+      ]
+    },
+    "648": {
+      "op": "len",
+      "defined_out": [
+        "length%5#0",
+        "to_encode%5#0"
+      ],
+      "stack_out": [
+        "to_encode%5#0",
+        "length%5#0"
+      ]
+    },
+    "649": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%5#0",
+        "to_encode%5#0"
+      ],
+      "stack_out": [
+        "to_encode%5#0",
+        "as_bytes%5#0"
+      ]
+    },
+    "650": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%5#0",
+        "to_encode%5#0"
+      ],
+      "stack_out": [
+        "to_encode%5#0",
+        "length_uint16%5#0"
+      ]
+    },
+    "653": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%5#0",
+        "to_encode%5#0"
+      ]
+    },
+    "654": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%5#0"
+      ],
+      "stack_out": [
+        "encoded_value%5#0"
+      ]
+    },
+    "655": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%5#0"
+      ],
+      "stack_out": [
+        "encoded_value%5#0",
+        "0x151f7c75"
+      ]
+    },
+    "656": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%5#0"
+      ]
+    },
+    "657": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%68#0"
+      ],
+      "stack_out": [
+        "tmp%68#0"
+      ]
+    },
+    "658": {
+      "op": "log",
+      "stack_out": []
+    },
+    "659": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "660": {
+      "op": "return",
+      "stack_out": []
+    },
+    "661": {
+      "block": "main_getUserStake_route@7",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%47#0"
+      ],
+      "stack_out": [
+        "tmp%47#0"
+      ]
+    },
+    "663": {
+      "op": "!",
+      "defined_out": [
+        "tmp%48#0"
+      ],
+      "stack_out": [
+        "tmp%48#0"
+      ]
+    },
+    "664": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "665": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%49#0"
+      ],
+      "stack_out": [
+        "tmp%49#0"
+      ]
+    },
+    "667": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "668": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%51#0"
+      ],
+      "stack_out": [
+        "tmp%51#0"
+      ]
+    },
+    "671": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%52#0"
+      ],
+      "stack_out": [
+        "tmp%52#0"
+      ]
+    },
+    "674": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%52#0",
+        "tmp%53#0"
+      ],
+      "stack_out": [
+        "tmp%52#0",
+        "tmp%53#0"
+      ]
+    },
+    "677": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%52#0",
+        "tmp%54#0"
+      ],
+      "stack_out": [
+        "tmp%52#0",
+        "tmp%54#0"
+      ]
+    },
+    "680": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.getUserStake",
+      "op": "callsub getUserStake",
+      "defined_out": [
+        "to_encode%4#0"
+      ],
+      "stack_out": [
+        "to_encode%4#0"
+      ]
+    },
+    "683": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%4#0",
+        "to_encode%4#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%4#0",
+        "to_encode%4#0 (copy)"
+      ]
+    },
+    "684": {
+      "op": "len",
+      "defined_out": [
+        "length%4#0",
+        "to_encode%4#0"
+      ],
+      "stack_out": [
+        "to_encode%4#0",
+        "length%4#0"
+      ]
+    },
+    "685": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%4#0",
+        "to_encode%4#0"
+      ],
+      "stack_out": [
+        "to_encode%4#0",
+        "as_bytes%4#0"
+      ]
+    },
+    "686": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%4#0",
+        "to_encode%4#0"
+      ],
+      "stack_out": [
+        "to_encode%4#0",
+        "length_uint16%4#0"
+      ]
+    },
+    "689": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%4#0",
+        "to_encode%4#0"
+      ]
+    },
+    "690": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%4#0"
+      ],
+      "stack_out": [
+        "encoded_value%4#0"
+      ]
+    },
+    "691": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%4#0"
+      ],
+      "stack_out": [
+        "encoded_value%4#0",
+        "0x151f7c75"
+      ]
+    },
+    "692": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%4#0"
+      ]
+    },
+    "693": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%55#0"
+      ],
+      "stack_out": [
+        "tmp%55#0"
+      ]
+    },
+    "694": {
+      "op": "log",
+      "stack_out": []
+    },
+    "695": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "696": {
+      "op": "return",
+      "stack_out": []
+    },
+    "697": {
+      "block": "main_emergencyWithdraw_route@6",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%38#0"
+      ],
+      "stack_out": [
+        "tmp%38#0"
+      ]
+    },
+    "699": {
+      "op": "!",
+      "defined_out": [
+        "tmp%39#0"
+      ],
+      "stack_out": [
+        "tmp%39#0"
+      ]
+    },
+    "700": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "701": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%40#0"
+      ],
+      "stack_out": [
+        "tmp%40#0"
+      ]
+    },
+    "703": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "704": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%42#0"
+      ],
+      "stack_out": [
+        "tmp%42#0"
+      ]
+    },
+    "707": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%43#0"
+      ],
+      "stack_out": [
+        "tmp%43#0"
+      ]
+    },
+    "710": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%43#0",
+        "tmp%44#0"
+      ],
+      "stack_out": [
+        "tmp%43#0",
+        "tmp%44#0"
+      ]
+    },
+    "713": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%43#0",
+        "tmp%45#0"
+      ],
+      "stack_out": [
+        "tmp%43#0",
+        "tmp%45#0"
+      ]
+    },
+    "716": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.emergencyWithdraw",
+      "op": "callsub emergencyWithdraw",
+      "defined_out": [
+        "to_encode%3#0"
+      ],
+      "stack_out": [
+        "to_encode%3#0"
+      ]
+    },
+    "719": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%3#0",
+        "to_encode%3#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%3#0",
+        "to_encode%3#0 (copy)"
+      ]
+    },
+    "720": {
+      "op": "len",
+      "defined_out": [
+        "length%3#0",
+        "to_encode%3#0"
+      ],
+      "stack_out": [
+        "to_encode%3#0",
+        "length%3#0"
+      ]
+    },
+    "721": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%3#0",
+        "to_encode%3#0"
+      ],
+      "stack_out": [
+        "to_encode%3#0",
+        "as_bytes%3#0"
+      ]
+    },
+    "722": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%3#0",
+        "to_encode%3#0"
+      ],
+      "stack_out": [
+        "to_encode%3#0",
+        "length_uint16%3#0"
+      ]
+    },
+    "725": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%3#0",
+        "to_encode%3#0"
+      ]
+    },
+    "726": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%3#0"
+      ],
+      "stack_out": [
+        "encoded_value%3#0"
+      ]
+    },
+    "727": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%3#0"
+      ],
+      "stack_out": [
+        "encoded_value%3#0",
+        "0x151f7c75"
+      ]
+    },
+    "728": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%3#0"
+      ]
+    },
+    "729": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%46#0"
+      ],
+      "stack_out": [
+        "tmp%46#0"
+      ]
+    },
+    "730": {
+      "op": "log",
+      "stack_out": []
+    },
+    "731": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "732": {
+      "op": "return",
+      "stack_out": []
+    },
+    "733": {
+      "block": "main_unstakeFromPool_route@5",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%27#0"
+      ],
+      "stack_out": [
+        "tmp%27#0"
+      ]
+    },
+    "735": {
+      "op": "!",
+      "defined_out": [
+        "tmp%28#0"
+      ],
+      "stack_out": [
+        "tmp%28#0"
+      ]
+    },
+    "736": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "737": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%29#0"
+      ],
+      "stack_out": [
+        "tmp%29#0"
+      ]
+    },
+    "739": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "740": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%31#0"
+      ],
+      "stack_out": [
+        "tmp%31#0"
+      ]
+    },
+    "743": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%32#0"
+      ],
+      "stack_out": [
+        "tmp%32#0"
+      ]
+    },
+    "746": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%32#0",
+        "tmp%33#0"
+      ],
+      "stack_out": [
+        "tmp%32#0",
+        "tmp%33#0"
+      ]
+    },
+    "749": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%32#0",
+        "tmp%34#0"
+      ],
+      "stack_out": [
+        "tmp%32#0",
+        "tmp%34#0"
+      ]
+    },
+    "752": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%32#0",
+        "tmp%34#0",
+        "tmp%35#0"
+      ],
+      "stack_out": [
+        "tmp%32#0",
+        "tmp%34#0",
+        "tmp%35#0"
+      ]
+    },
+    "755": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%32#0",
+        "tmp%34#0",
+        "tmp%36#0"
+      ],
+      "stack_out": [
+        "tmp%32#0",
+        "tmp%34#0",
+        "tmp%36#0"
+      ]
+    },
+    "758": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.unstakeFromPool",
+      "op": "callsub unstakeFromPool",
+      "defined_out": [
+        "to_encode%2#0"
+      ],
+      "stack_out": [
+        "to_encode%2#0"
+      ]
+    },
+    "761": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%2#0",
+        "to_encode%2#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%2#0",
+        "to_encode%2#0 (copy)"
+      ]
+    },
+    "762": {
+      "op": "len",
+      "defined_out": [
+        "length%2#0",
+        "to_encode%2#0"
+      ],
+      "stack_out": [
+        "to_encode%2#0",
+        "length%2#0"
+      ]
+    },
+    "763": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%2#0",
+        "to_encode%2#0"
+      ],
+      "stack_out": [
+        "to_encode%2#0",
+        "as_bytes%2#0"
+      ]
+    },
+    "764": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%2#0",
+        "to_encode%2#0"
+      ],
+      "stack_out": [
+        "to_encode%2#0",
+        "length_uint16%2#0"
+      ]
+    },
+    "767": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%2#0",
+        "to_encode%2#0"
+      ]
+    },
+    "768": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%2#0"
+      ],
+      "stack_out": [
+        "encoded_value%2#0"
+      ]
+    },
+    "769": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%2#0"
+      ],
+      "stack_out": [
+        "encoded_value%2#0",
+        "0x151f7c75"
+      ]
+    },
+    "770": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%2#0"
+      ]
+    },
+    "771": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%37#0"
+      ],
+      "stack_out": [
+        "tmp%37#0"
+      ]
+    },
+    "772": {
+      "op": "log",
+      "stack_out": []
+    },
+    "773": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "774": {
+      "op": "return",
+      "stack_out": []
+    },
+    "775": {
+      "block": "main_stakeInPool_route@4",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%16#0"
+      ],
+      "stack_out": [
+        "tmp%16#0"
+      ]
+    },
+    "777": {
+      "op": "!",
+      "defined_out": [
+        "tmp%17#0"
+      ],
+      "stack_out": [
+        "tmp%17#0"
+      ]
+    },
+    "778": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "779": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%18#0"
+      ],
+      "stack_out": [
+        "tmp%18#0"
+      ]
+    },
+    "781": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "782": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%20#0"
+      ],
+      "stack_out": [
+        "tmp%20#0"
+      ]
+    },
+    "785": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%21#0"
+      ],
+      "stack_out": [
+        "tmp%21#0"
+      ]
+    },
+    "788": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%21#0",
+        "tmp%22#0"
+      ],
+      "stack_out": [
+        "tmp%21#0",
+        "tmp%22#0"
+      ]
+    },
+    "791": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%21#0",
+        "tmp%23#0"
+      ],
+      "stack_out": [
+        "tmp%21#0",
+        "tmp%23#0"
+      ]
+    },
+    "794": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%21#0",
+        "tmp%23#0",
+        "tmp%24#0"
+      ],
+      "stack_out": [
+        "tmp%21#0",
+        "tmp%23#0",
+        "tmp%24#0"
+      ]
+    },
+    "797": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%21#0",
+        "tmp%23#0",
+        "tmp%25#0"
+      ],
+      "stack_out": [
+        "tmp%21#0",
+        "tmp%23#0",
+        "tmp%25#0"
+      ]
+    },
+    "800": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.stakeInPool",
+      "op": "callsub stakeInPool",
+      "defined_out": [
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0"
+      ]
+    },
+    "803": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%1#0",
+        "to_encode%1#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%1#0",
+        "to_encode%1#0 (copy)"
+      ]
+    },
+    "804": {
+      "op": "len",
+      "defined_out": [
+        "length%1#0",
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0",
+        "length%1#0"
+      ]
+    },
+    "805": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%1#0",
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0",
+        "as_bytes%1#0"
+      ]
+    },
+    "806": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%1#0",
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0",
+        "length_uint16%1#0"
+      ]
+    },
+    "809": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%1#0",
+        "to_encode%1#0"
+      ]
+    },
+    "810": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%1#0"
+      ],
+      "stack_out": [
+        "encoded_value%1#0"
+      ]
+    },
+    "811": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%1#0"
+      ],
+      "stack_out": [
+        "encoded_value%1#0",
+        "0x151f7c75"
+      ]
+    },
+    "812": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%1#0"
+      ]
+    },
+    "813": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%26#0"
+      ],
+      "stack_out": [
+        "tmp%26#0"
+      ]
+    },
+    "814": {
+      "op": "log",
+      "stack_out": []
+    },
+    "815": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "816": {
+      "op": "return",
+      "stack_out": []
+    },
+    "817": {
+      "block": "main_createPool_route@3",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "819": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "820": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "821": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "823": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "824": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "827": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "830": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ]
+    },
+    "833": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0"
+      ]
+    },
+    "836": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%11#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%11#0"
+      ]
+    },
+    "839": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0"
+      ]
+    },
+    "842": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%13#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%13#0"
+      ]
+    },
+    "845": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0",
+        "tmp%12#0",
+        "tmp%14#0"
+      ]
+    },
+    "848": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.createPool",
+      "op": "callsub createPool",
+      "defined_out": [
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0"
+      ]
+    },
+    "851": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%0#0",
+        "to_encode%0#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "to_encode%0#0 (copy)"
+      ]
+    },
+    "852": {
+      "op": "len",
+      "defined_out": [
+        "length%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "length%0#0"
+      ]
+    },
+    "853": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "as_bytes%0#0"
+      ]
+    },
+    "854": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "length_uint16%0#0"
+      ]
+    },
+    "857": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%0#0",
+        "to_encode%0#0"
+      ]
+    },
+    "858": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0"
+      ]
+    },
+    "859": {
+      "op": "bytec_0 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "860": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%0#0"
+      ]
+    },
+    "861": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%15#0"
+      ],
+      "stack_out": [
+        "tmp%15#0"
+      ]
+    },
+    "862": {
+      "op": "log",
+      "stack_out": []
+    },
+    "863": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "864": {
+      "op": "return",
+      "stack_out": []
+    },
+    "865": {
+      "block": "main_bare_routing@19",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%136#0"
+      ],
+      "stack_out": [
+        "tmp%136#0"
+      ]
+    },
+    "867": {
+      "op": "bnz main_after_if_else@23",
+      "stack_out": []
+    },
+    "870": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%137#0"
+      ],
+      "stack_out": [
+        "tmp%137#0"
+      ]
+    },
+    "872": {
+      "op": "!",
+      "defined_out": [
+        "tmp%138#0"
+      ],
+      "stack_out": [
+        "tmp%138#0"
+      ]
+    },
+    "873": {
+      "error": "can only call when creating",
+      "op": "assert // can only call when creating",
+      "stack_out": []
+    },
+    "874": {
+      "op": "intc_0 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "875": {
+      "op": "return",
+      "stack_out": []
+    },
+    "876": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.createPool",
+      "params": {
+        "poolName#0": "bytes",
+        "initialAPY#0": "bytes",
+        "riskLevel#0": "bytes",
+        "minStake#0": "bytes"
+      },
+      "block": "createPool",
+      "stack_in": [],
+      "op": "proto 4 1"
+    },
+    "879": {
+      "op": "bytec_1 // \"Pool \"",
+      "defined_out": [
+        "\"Pool \""
+      ],
+      "stack_out": [
+        "\"Pool \""
+      ]
+    },
+    "880": {
+      "op": "frame_dig -4",
+      "defined_out": [
+        "\"Pool \"",
+        "poolName#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Pool \"",
+        "poolName#0 (copy)"
+      ]
+    },
+    "882": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "883": {
+      "op": "pushbytes \" created with \"",
+      "defined_out": [
+        "\" created with \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\" created with \""
+      ]
+    },
+    "899": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "900": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "initialAPY#0 (copy)",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "initialAPY#0 (copy)"
+      ]
+    },
+    "902": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "903": {
+      "op": "pushbytes \"% APY, risk level: \"",
+      "defined_out": [
+        "\"% APY, risk level: \"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\"% APY, risk level: \""
+      ]
+    },
+    "924": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "925": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "riskLevel#0 (copy)",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "riskLevel#0 (copy)"
+      ]
+    },
+    "927": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "928": {
+      "op": "pushbytes \", minimum stake: \"",
+      "defined_out": [
+        "\", minimum stake: \"",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0",
+        "\", minimum stake: \""
+      ]
+    },
+    "947": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "948": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "minStake#0 (copy)",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0",
+        "minStake#0 (copy)"
+      ]
+    },
+    "950": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "951": {
+      "op": "pushbytes \" microAlgos\"",
+      "defined_out": [
+        "\" microAlgos\"",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0",
+        "\" microAlgos\""
+      ]
+    },
+    "964": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "965": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "966": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.stakeInPool",
+      "params": {
+        "poolId#0": "bytes",
+        "amount#0": "bytes",
+        "userAddress#0": "bytes"
+      },
+      "block": "stakeInPool",
+      "stack_in": [],
+      "op": "proto 3 1"
+    },
+    "969": {
+      "op": "pushbytes \"Successfully staked \"",
+      "defined_out": [
+        "\"Successfully staked \""
+      ],
+      "stack_out": [
+        "\"Successfully staked \""
+      ]
+    },
+    "991": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "\"Successfully staked \"",
+        "amount#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Successfully staked \"",
+        "amount#0 (copy)"
+      ]
+    },
+    "993": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "994": {
+      "op": "pushbytes \" microAlgos in pool \"",
+      "defined_out": [
+        "\" microAlgos in pool \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\" microAlgos in pool \""
+      ]
+    },
+    "1016": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1017": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "poolId#0 (copy)",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "poolId#0 (copy)"
+      ]
+    },
+    "1019": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1020": {
+      "op": "bytec_2 // \" by user \"",
+      "defined_out": [
+        "\" by user \"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\" by user \""
+      ]
+    },
+    "1021": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1022": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "tmp%3#0",
+        "userAddress#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "userAddress#0 (copy)"
+      ]
+    },
+    "1024": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1025": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1026": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.unstakeFromPool",
+      "params": {
+        "poolId#0": "bytes",
+        "amount#0": "bytes",
+        "userAddress#0": "bytes"
+      },
+      "block": "unstakeFromPool",
+      "stack_in": [],
+      "op": "proto 3 1"
+    },
+    "1029": {
+      "op": "pushbytes \"Successfully unstaked \"",
+      "defined_out": [
+        "\"Successfully unstaked \""
+      ],
+      "stack_out": [
+        "\"Successfully unstaked \""
+      ]
+    },
+    "1053": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "\"Successfully unstaked \"",
+        "amount#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Successfully unstaked \"",
+        "amount#0 (copy)"
+      ]
+    },
+    "1055": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1056": {
+      "op": "pushbytes \" microAlgos from pool \"",
+      "defined_out": [
+        "\" microAlgos from pool \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\" microAlgos from pool \""
+      ]
+    },
+    "1080": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1081": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "poolId#0 (copy)",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "poolId#0 (copy)"
+      ]
+    },
+    "1083": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1084": {
+      "op": "bytec_2 // \" by user \"",
+      "defined_out": [
+        "\" by user \"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\" by user \""
+      ]
+    },
+    "1085": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1086": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "tmp%3#0",
+        "userAddress#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "userAddress#0 (copy)"
+      ]
+    },
+    "1088": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1089": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1090": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.emergencyWithdraw",
+      "params": {
+        "poolId#0": "bytes",
+        "userAddress#0": "bytes"
+      },
+      "block": "emergencyWithdraw",
+      "stack_in": [],
+      "op": "proto 2 1"
+    },
+    "1093": {
+      "op": "pushbytes \"Emergency withdrawal executed for \"",
+      "defined_out": [
+        "\"Emergency withdrawal executed for \""
+      ],
+      "stack_out": [
+        "\"Emergency withdrawal executed for \""
+      ]
+    },
+    "1129": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "\"Emergency withdrawal executed for \"",
+        "userAddress#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Emergency withdrawal executed for \"",
+        "userAddress#0 (copy)"
+      ]
+    },
+    "1131": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1132": {
+      "op": "pushbytes \" from pool \"",
+      "defined_out": [
+        "\" from pool \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\" from pool \""
+      ]
+    },
+    "1145": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1146": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "poolId#0 (copy)",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "poolId#0 (copy)"
+      ]
+    },
+    "1148": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1149": {
+      "op": "pushbytes \". Penalties may apply.\"",
+      "defined_out": [
+        "\". Penalties may apply.\"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\". Penalties may apply.\""
+      ]
+    },
+    "1173": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1174": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1175": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.getUserStake",
+      "params": {
+        "poolId#0": "bytes",
+        "userAddress#0": "bytes"
+      },
+      "block": "getUserStake",
+      "stack_in": [],
+      "op": "proto 2 1"
+    },
+    "1178": {
+      "op": "pushbytes \"User \"",
+      "defined_out": [
+        "\"User \""
+      ],
+      "stack_out": [
+        "\"User \""
+      ]
+    },
+    "1185": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "\"User \"",
+        "userAddress#0 (copy)"
+      ],
+      "stack_out": [
+        "\"User \"",
+        "userAddress#0 (copy)"
+      ]
+    },
+    "1187": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1188": {
+      "op": "pushbytes \" has staked amount in pool \"",
+      "defined_out": [
+        "\" has staked amount in pool \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\" has staked amount in pool \""
+      ]
+    },
+    "1217": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1218": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "poolId#0 (copy)",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "poolId#0 (copy)"
+      ]
+    },
+    "1220": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1221": {
+      "op": "pushbytes \": 1,500,000 microAlgos\"",
+      "defined_out": [
+        "\": 1,500,000 microAlgos\"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\": 1,500,000 microAlgos\""
+      ]
+    },
+    "1245": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1246": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1247": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.updateAIPrediction",
+      "params": {
+        "poolId#0": "bytes",
+        "newAPY#0": "bytes",
+        "confidence#0": "bytes",
+        "timeframe#0": "bytes"
+      },
+      "block": "updateAIPrediction",
+      "stack_in": [],
+      "op": "proto 4 1"
+    },
+    "1250": {
+      "op": "bytec_1 // \"Pool \"",
+      "defined_out": [
+        "\"Pool \""
+      ],
+      "stack_out": [
+        "\"Pool \""
+      ]
+    },
+    "1251": {
+      "op": "frame_dig -4",
+      "defined_out": [
+        "\"Pool \"",
+        "poolId#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Pool \"",
+        "poolId#0 (copy)"
+      ]
+    },
+    "1253": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1254": {
+      "op": "pushbytes \" AI prediction updated: \"",
+      "defined_out": [
+        "\" AI prediction updated: \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\" AI prediction updated: \""
+      ]
+    },
+    "1280": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1281": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "newAPY#0 (copy)",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "newAPY#0 (copy)"
+      ]
+    },
+    "1283": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1284": {
+      "op": "pushbytes \"% APY with \"",
+      "defined_out": [
+        "\"% APY with \"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\"% APY with \""
+      ]
+    },
+    "1297": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1298": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "confidence#0 (copy)",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "confidence#0 (copy)"
+      ]
+    },
+    "1300": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1301": {
+      "op": "pushbytes \"% confidence for \"",
+      "defined_out": [
+        "\"% confidence for \"",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0",
+        "\"% confidence for \""
+      ]
+    },
+    "1320": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "1321": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "timeframe#0 (copy)",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0",
+        "timeframe#0 (copy)"
+      ]
+    },
+    "1323": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "1324": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1325": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.submitTrainingData",
+      "params": {
+        "contributor#0": "bytes",
+        "dataType#0": "bytes",
+        "dataHash#0": "bytes",
+        "poolId#0": "bytes"
+      },
+      "block": "submitTrainingData",
+      "stack_in": [],
+      "op": "proto 4 1"
+    },
+    "1328": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "dataType#0 (copy)"
+      ],
+      "stack_out": [
+        "dataType#0 (copy)"
+      ]
+    },
+    "1330": {
+      "op": "pushbytes \"market_data\"",
+      "defined_out": [
+        "\"market_data\"",
+        "dataType#0 (copy)"
+      ],
+      "stack_out": [
+        "dataType#0 (copy)",
+        "\"market_data\""
+      ]
+    },
+    "1343": {
+      "op": "==",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "1344": {
+      "op": "bz submitTrainingData_after_if_else@3",
+      "stack_out": []
+    },
+    "1347": {
+      "op": "pushbytes \"100\"",
+      "defined_out": [
+        "rewardAmount#0"
+      ],
+      "stack_out": [
+        "rewardAmount#0"
+      ]
+    },
+    "1352": {
+      "block": "submitTrainingData_after_inlined_smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.calculateDataReward@8",
+      "stack_in": [
+        "rewardAmount#0"
+      ],
+      "op": "pushbytes \"Data submitted by \"",
+      "defined_out": [
+        "\"Data submitted by \""
+      ],
+      "stack_out": [
+        "rewardAmount#0",
+        "\"Data submitted by \""
+      ]
+    },
+    "1372": {
+      "op": "frame_dig -4",
+      "defined_out": [
+        "\"Data submitted by \"",
+        "contributor#0 (copy)"
+      ],
+      "stack_out": [
+        "rewardAmount#0",
+        "\"Data submitted by \"",
+        "contributor#0 (copy)"
+      ]
+    },
+    "1374": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "rewardAmount#0",
+        "tmp%0#0"
+      ]
+    },
+    "1375": {
+      "op": "pushbytes \" for pool \"",
+      "defined_out": [
+        "\" for pool \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "rewardAmount#0",
+        "tmp%0#0",
+        "\" for pool \""
+      ]
+    },
+    "1387": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "rewardAmount#0",
+        "tmp%1#0"
+      ]
+    },
+    "1388": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "poolId#0 (copy)",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "rewardAmount#0",
+        "tmp%1#0",
+        "poolId#0 (copy)"
+      ]
+    },
+    "1390": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "rewardAmount#0",
+        "tmp%2#0"
+      ]
+    },
+    "1391": {
+      "op": "pushbytes \". Data hash: \"",
+      "defined_out": [
+        "\". Data hash: \"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "rewardAmount#0",
+        "tmp%2#0",
+        "\". Data hash: \""
+      ]
+    },
+    "1406": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "rewardAmount#0",
+        "tmp%3#0"
+      ]
+    },
+    "1407": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "dataHash#0 (copy)",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "rewardAmount#0",
+        "tmp%3#0",
+        "dataHash#0 (copy)"
+      ]
+    },
+    "1409": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "rewardAmount#0",
+        "tmp%4#0"
+      ]
+    },
+    "1410": {
+      "op": "pushbytes \". Governance reward: \"",
+      "defined_out": [
+        "\". Governance reward: \"",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "rewardAmount#0",
+        "tmp%4#0",
+        "\". Governance reward: \""
+      ]
+    },
+    "1433": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "rewardAmount#0",
+        "tmp%5#0"
+      ]
+    },
+    "1434": {
+      "op": "swap",
+      "defined_out": [
+        "rewardAmount#0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0",
+        "rewardAmount#0"
+      ]
+    },
+    "1435": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "1436": {
+      "op": "pushbytes \" tokens.\"",
+      "defined_out": [
+        "\" tokens.\"",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0",
+        "\" tokens.\""
+      ]
+    },
+    "1446": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "1447": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1448": {
+      "block": "submitTrainingData_after_if_else@3",
+      "stack_in": [],
+      "op": "frame_dig -3",
+      "defined_out": [
+        "dataType#0 (copy)"
+      ],
+      "stack_out": [
+        "dataType#0 (copy)"
+      ]
+    },
+    "1450": {
+      "op": "pushbytes \"liquidity_data\"",
+      "defined_out": [
+        "\"liquidity_data\"",
+        "dataType#0 (copy)"
+      ],
+      "stack_out": [
+        "dataType#0 (copy)",
+        "\"liquidity_data\""
+      ]
+    },
+    "1466": {
+      "op": "==",
+      "defined_out": [
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%1#1"
+      ]
+    },
+    "1467": {
+      "op": "bz submitTrainingData_after_if_else@5",
+      "stack_out": []
+    },
+    "1470": {
+      "op": "pushbytes \"150\"",
+      "defined_out": [
+        "rewardAmount#0"
+      ],
+      "stack_out": [
+        "rewardAmount#0"
+      ]
+    },
+    "1475": {
+      "op": "b submitTrainingData_after_inlined_smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.calculateDataReward@8"
+    },
+    "1478": {
+      "block": "submitTrainingData_after_if_else@5",
+      "stack_in": [],
+      "op": "frame_dig -3",
+      "defined_out": [
+        "dataType#0 (copy)"
+      ],
+      "stack_out": [
+        "dataType#0 (copy)"
+      ]
+    },
+    "1480": {
+      "op": "pushbytes \"user_behavior\"",
+      "defined_out": [
+        "\"user_behavior\"",
+        "dataType#0 (copy)"
+      ],
+      "stack_out": [
+        "dataType#0 (copy)",
+        "\"user_behavior\""
+      ]
+    },
+    "1495": {
+      "op": "==",
+      "defined_out": [
+        "tmp%2#1"
+      ],
+      "stack_out": [
+        "tmp%2#1"
+      ]
+    },
+    "1496": {
+      "op": "bz submitTrainingData_after_if_else@7",
+      "stack_out": []
+    },
+    "1499": {
+      "op": "pushbytes \"200\"",
+      "defined_out": [
+        "rewardAmount#0"
+      ],
+      "stack_out": [
+        "rewardAmount#0"
+      ]
+    },
+    "1504": {
+      "op": "b submitTrainingData_after_inlined_smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.calculateDataReward@8"
+    },
+    "1507": {
+      "block": "submitTrainingData_after_if_else@7",
+      "stack_in": [],
+      "op": "pushbytes \"50\"",
+      "defined_out": [
+        "rewardAmount#0"
+      ],
+      "stack_out": [
+        "rewardAmount#0"
+      ]
+    },
+    "1511": {
+      "op": "b submitTrainingData_after_inlined_smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.calculateDataReward@8"
+    },
+    "1514": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.voteOnProposal",
+      "params": {
+        "proposalId#0": "bytes",
+        "vote#0": "uint64",
+        "voter#0": "bytes"
+      },
+      "block": "voteOnProposal",
+      "stack_in": [],
+      "op": "proto 3 1"
+    },
+    "1517": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "vote#0 (copy)"
+      ],
+      "stack_out": [
+        "vote#0 (copy)"
+      ]
+    },
+    "1519": {
+      "op": "bz voteOnProposal_ternary_false@2",
+      "stack_out": []
+    },
+    "1522": {
+      "op": "pushbytes \"FOR\"",
+      "defined_out": [
+        "voteString#0"
+      ],
+      "stack_out": [
+        "voteString#0"
+      ]
+    },
+    "1527": {
+      "block": "voteOnProposal_ternary_merge@3",
+      "stack_in": [
+        "voteString#0"
+      ],
+      "op": "pushbytes \"Vote cast on proposal \"",
+      "defined_out": [
+        "\"Vote cast on proposal \""
+      ],
+      "stack_out": [
+        "voteString#0",
+        "\"Vote cast on proposal \""
+      ]
+    },
+    "1551": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "\"Vote cast on proposal \"",
+        "proposalId#0 (copy)"
+      ],
+      "stack_out": [
+        "voteString#0",
+        "\"Vote cast on proposal \"",
+        "proposalId#0 (copy)"
+      ]
+    },
+    "1553": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "voteString#0",
+        "tmp%0#0"
+      ]
+    },
+    "1554": {
+      "op": "pushbytes \" by \"",
+      "defined_out": [
+        "\" by \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "voteString#0",
+        "tmp%0#0",
+        "\" by \""
+      ]
+    },
+    "1560": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "voteString#0",
+        "tmp%1#0"
+      ]
+    },
+    "1561": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "tmp%1#0",
+        "voter#0 (copy)"
+      ],
+      "stack_out": [
+        "voteString#0",
+        "tmp%1#0",
+        "voter#0 (copy)"
+      ]
+    },
+    "1563": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "voteString#0",
+        "tmp%2#0"
+      ]
+    },
+    "1564": {
+      "op": "pushbytes \": \"",
+      "defined_out": [
+        "\": \"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "voteString#0",
+        "tmp%2#0",
+        "\": \""
+      ]
+    },
+    "1568": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "voteString#0",
+        "tmp%3#0"
+      ]
+    },
+    "1569": {
+      "op": "swap",
+      "defined_out": [
+        "tmp%3#0",
+        "voteString#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "voteString#0"
+      ]
+    },
+    "1570": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1571": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1572": {
+      "block": "voteOnProposal_ternary_false@2",
+      "stack_in": [],
+      "op": "pushbytes \"AGAINST\"",
+      "defined_out": [
+        "voteString#0"
+      ],
+      "stack_out": [
+        "voteString#0"
+      ]
+    },
+    "1581": {
+      "op": "b voteOnProposal_ternary_merge@3"
+    },
+    "1584": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.calculateUserRiskScore",
+      "params": {
+        "userAddress#0": "bytes",
+        "portfolioValue#0": "bytes",
+        "tradingFrequency#0": "bytes"
+      },
+      "block": "calculateUserRiskScore",
+      "stack_in": [],
+      "op": "proto 3 1"
+    },
+    "1587": {
+      "op": "pushbytes \"Risk score for \"",
+      "defined_out": [
+        "\"Risk score for \""
+      ],
+      "stack_out": [
+        "\"Risk score for \""
+      ]
+    },
+    "1604": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "\"Risk score for \"",
+        "userAddress#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Risk score for \"",
+        "userAddress#0 (copy)"
+      ]
+    },
+    "1606": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1607": {
+      "op": "pushbytes \": 65/100 based on portfolio value \"",
+      "defined_out": [
+        "\": 65/100 based on portfolio value \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\": 65/100 based on portfolio value \""
+      ]
+    },
+    "1643": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1644": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "portfolioValue#0 (copy)",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "portfolioValue#0 (copy)"
+      ]
+    },
+    "1646": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1647": {
+      "op": "pushbytes \" and trading frequency \"",
+      "defined_out": [
+        "\" and trading frequency \"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\" and trading frequency \""
+      ]
+    },
+    "1672": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1673": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "tmp%3#0",
+        "tradingFrequency#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "tradingFrequency#0 (copy)"
+      ]
+    },
+    "1675": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1676": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1677": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.claimRewards",
+      "params": {
+        "userAddress#0": "bytes",
+        "poolId#0": "bytes"
+      },
+      "block": "claimRewards",
+      "stack_in": [],
+      "op": "proto 2 1"
+    },
+    "1680": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "userAddress#0 (copy)"
+      ],
+      "stack_out": [
+        "userAddress#0 (copy)"
+      ]
+    },
+    "1682": {
+      "op": "pushbytes \" claimed \"",
+      "defined_out": [
+        "\" claimed \"",
+        "userAddress#0 (copy)"
+      ],
+      "stack_out": [
+        "userAddress#0 (copy)",
+        "\" claimed \""
+      ]
+    },
+    "1693": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1694": {
+      "op": "pushbytes \"120\"",
+      "defined_out": [
+        "\"120\"",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "\"120\""
+      ]
+    },
+    "1699": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1700": {
+      "op": "pushbytes \" tokens from pool \"",
+      "defined_out": [
+        "\" tokens from pool \"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\" tokens from pool \""
+      ]
+    },
+    "1720": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1721": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "poolId#0 (copy)",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "poolId#0 (copy)"
+      ]
+    },
+    "1723": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1724": {
+      "op": "pushbytes \". Rewards calculated using AI-powered dynamic system.\"",
+      "defined_out": [
+        "\". Rewards calculated using AI-powered dynamic system.\"",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0",
+        "\". Rewards calculated using AI-powered dynamic system.\""
+      ]
+    },
+    "1779": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "1780": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1781": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.getPoolStats",
+      "params": {
+        "poolId#0": "bytes"
+      },
+      "block": "getPoolStats",
+      "stack_in": [],
+      "op": "proto 1 1"
+    },
+    "1784": {
+      "op": "bytec_1 // \"Pool \"",
+      "defined_out": [
+        "\"Pool \""
+      ],
+      "stack_out": [
+        "\"Pool \""
+      ]
+    },
+    "1785": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "\"Pool \"",
+        "poolId#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Pool \"",
+        "poolId#0 (copy)"
+      ]
+    },
+    "1787": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1788": {
+      "op": "pushbytes \": Current APY 15.5%, Predicted APY 18.2% (87% confidence), TVL: 1,500,000 microAlgos\"",
+      "defined_out": [
+        "\": Current APY 15.5%, Predicted APY 18.2% (87% confidence), TVL: 1,500,000 microAlgos\"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\": Current APY 15.5%, Predicted APY 18.2% (87% confidence), TVL: 1,500,000 microAlgos\""
+      ]
+    },
+    "1874": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1875": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1876": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::PredictiveLiquidityMining.getUserPortfolio",
+      "params": {
+        "userAddress#0": "bytes"
+      },
+      "block": "getUserPortfolio",
+      "stack_in": [],
+      "op": "proto 1 1"
+    },
+    "1879": {
+      "op": "pushbytes \"Portfolio for \"",
+      "defined_out": [
+        "\"Portfolio for \""
+      ],
+      "stack_out": [
+        "\"Portfolio for \""
+      ]
+    },
+    "1895": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "\"Portfolio for \"",
+        "userAddress#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Portfolio for \"",
+        "userAddress#0 (copy)"
+      ]
+    },
+    "1897": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1898": {
+      "op": "pushbytes \": Active positions tracked, rewards available, risk assessment completed\"",
+      "defined_out": [
+        "\": Active positions tracked, rewards available, risk assessment completed\"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\": Active positions tracked, rewards available, risk assessment completed\""
+      ]
+    },
+    "1972": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1973": {
+      "retsub": true,
+      "op": "retsub"
+    }
+  }
+}

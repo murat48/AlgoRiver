@@ -1,0 +1,710 @@
+#pragma version 10
+#pragma typetrack false
+
+// @algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram() -> uint64:
+main:
+    intcblock 0 1 1000000
+    bytecblock "totalStaked" 0x151f7c75 "totalPools" "dailyTransactionCount" "dailyVolume" "totalTransactionCount" "totalVolume" "lastResetTime" "poolTransactionCounts" "poolVolumes" " by user "
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:15
+    // export class RealPredictiveLiquidityMining extends Contract {
+    txn NumAppArgs
+    bz main_after_if_else@19
+    pushbytess 0xb8447b36 0xc3b9922a 0x96ceaba9 0x5a41b7a1 0xc57acd4f 0xddfa9f28 0x3adfede5 0xdc0bcc76 0xcfeec563 0x11237b48 0x8c98b237 0x4325a2f6 0xa590b1ca // method "createApplication()void", method "createPool(string,string,string,string)string", method "stakeInPool(string,string,string)string", method "unstakeFromPool(string,string,string)string", method "getUserStake(string)string", method "getPoolStats(string)string", method "getAllTransactions()string", method "getTransactionSummary()string", method "getPoolTransactions(string)string", method "getPlatformStats()string", method "getVolumeStatistics()string", method "getLastResetTime()uint64", method "resetDailyCounters()string"
+    txna ApplicationArgs 0
+    match main_createApplication_route@3 main_createPool_route@4 main_stakeInPool_route@5 main_unstakeFromPool_route@6 main_getUserStake_route@7 main_getPoolStats_route@8 main_getAllTransactions_route@9 main_getTransactionSummary_route@10 main_getPoolTransactions_route@11 main_getPlatformStats_route@12 main_getVolumeStatistics_route@13 main_getLastResetTime_route@14 main_resetDailyCounters_route@15
+
+main_after_if_else@19:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:15
+    // export class RealPredictiveLiquidityMining extends Contract {
+    intc_0 // 0
+    return
+
+main_resetDailyCounters_route@15:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:205
+    // resetDailyCounters(): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    callsub resetDailyCounters
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_1 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_1 // 1
+    return
+
+main_getLastResetTime_route@14:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:198
+    // getLastResetTime(): uint64 {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    callsub getLastResetTime
+    itob
+    bytec_1 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_1 // 1
+    return
+
+main_getVolumeStatistics_route@13:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:191
+    // getVolumeStatistics(): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c7500407b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c22766f6c756d655374617473223a227265616c74696d65227d
+    log
+    intc_1 // 1
+    return
+
+main_getPlatformStats_route@12:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:184
+    // getPlatformStats(): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c75003e7b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c22706c6174666f726d5374617473223a226c697665227d
+    log
+    intc_1 // 1
+    return
+
+main_getPoolTransactions_route@11:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:177
+    // getPoolTransactions(poolId: string): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c75003c7b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c22706f6f6c44617461223a2264796e616d6963227d
+    log
+    intc_1 // 1
+    return
+
+main_getTransactionSummary_route@10:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:170
+    // getTransactionSummary(): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c7500417b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c2264796e616d696343616c63756c6174696f6e223a747275657d
+    log
+    intc_1 // 1
+    return
+
+main_getAllTransactions_route@9:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:163
+    // getAllTransactions(): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c7500397b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c22737461747573223a22616374697665227d
+    log
+    intc_1 // 1
+    return
+
+main_getPoolStats_route@8:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:152
+    // getPoolStats(poolId: string): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c750025506f6f6c2073746174732066726f6d207265616c20626c6f636b636861696e207374617465
+    log
+    intc_1 // 1
+    return
+
+main_getUserStake_route@7:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:143-145
+    // getUserStake(
+    //     userAddress: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c75002d55736572207374616b656420616d6f756e742066726f6d207265616c20626c6f636b636861696e207374617465
+    log
+    intc_1 // 1
+    return
+
+main_unstakeFromPool_route@6:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:104-108
+    // unstakeFromPool(
+    //     poolId: string,
+    //     amount: string,
+    //     userAddress: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:15
+    // export class RealPredictiveLiquidityMining extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:104-108
+    // unstakeFromPool(
+    //     poolId: string,
+    //     amount: string,
+    //     userAddress: string
+    // ): string {
+    callsub unstakeFromPool
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_1 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_1 // 1
+    return
+
+main_stakeInPool_route@5:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:85-89
+    // stakeInPool(
+    //     poolId: string,
+    //     amount: string,
+    //     userAddress: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:15
+    // export class RealPredictiveLiquidityMining extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:85-89
+    // stakeInPool(
+    //     poolId: string,
+    //     amount: string,
+    //     userAddress: string
+    // ): string {
+    callsub stakeInPool
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_1 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_1 // 1
+    return
+
+main_createPool_route@4:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:67-72
+    // createPool(
+    //     poolName: string,
+    //     initialAPY: string,
+    //     riskLevel: string,
+    //     minStake: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:15
+    // export class RealPredictiveLiquidityMining extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    txna ApplicationArgs 4
+    extract 2 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:67-72
+    // createPool(
+    //     poolName: string,
+    //     initialAPY: string,
+    //     riskLevel: string,
+    //     minStake: string
+    // ): string {
+    callsub createPool
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_1 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_1 // 1
+    return
+
+main_createApplication_route@3:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:46
+    // createApplication(): void {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    !
+    assert // can only call when creating
+    callsub createApplication
+    intc_1 // 1
+    return
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.createApplication() -> void:
+createApplication:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:22
+    // totalPools = GlobalState<uint64>() // Toplam havuz sayısı
+    bytec_2 // "totalPools"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:47
+    // this.totalPools.value = 0
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:23
+    // totalStaked = GlobalState<uint64>() // Toplam stake edilen miktar (microAlgos)
+    bytec_0 // "totalStaked"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:48
+    // this.totalStaked.value = 0
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:24
+    // platformFee = GlobalState<uint64>() // Platform ücreti (basis points)
+    pushbytes "platformFee"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:49
+    // this.platformFee.value = 300 // %3 platform ücreti
+    pushint 300 // 300
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:27
+    // totalTransactionCount = GlobalState<uint64>()
+    bytec 5 // "totalTransactionCount"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:52
+    // this.totalTransactionCount.value = 0
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:28
+    // totalVolume = GlobalState<uint64>()
+    bytec 6 // "totalVolume"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:53
+    // this.totalVolume.value = 0
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:29
+    // dailyTransactionCount = GlobalState<uint64>()
+    bytec_3 // "dailyTransactionCount"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:54
+    // this.dailyTransactionCount.value = 0
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:30
+    // dailyVolume = GlobalState<uint64>()
+    bytec 4 // "dailyVolume"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:55
+    // this.dailyVolume.value = 0
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:31
+    // lastResetTime = GlobalState<uint64>()
+    bytec 7 // "lastResetTime"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:56
+    // this.lastResetTime.value = 0
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:34
+    // poolTransactionCounts = GlobalState<uint64>()
+    bytec 8 // "poolTransactionCounts"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:58
+    // this.poolTransactionCounts.value = 0
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:35
+    // poolVolumes = GlobalState<uint64>()
+    bytec 9 // "poolVolumes"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:59
+    // this.poolVolumes.value = 0
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:61
+    // log('RealPredictiveLiquidityMining contract initialized with real state')
+    pushbytes "RealPredictiveLiquidityMining contract initialized with real state"
+    log
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.createPool(poolName: bytes, initialAPY: bytes, riskLevel: bytes, minStake: bytes) -> bytes:
+createPool:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:67-72
+    // createPool(
+    //     poolName: string,
+    //     initialAPY: string,
+    //     riskLevel: string,
+    //     minStake: string
+    // ): string {
+    proto 4 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:22
+    // totalPools = GlobalState<uint64>() // Toplam havuz sayısı
+    intc_0 // 0
+    bytec_2 // "totalPools"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:74
+    // this.totalPools.value = this.totalPools.value + 1
+    intc_1 // 1
+    +
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:22
+    // totalPools = GlobalState<uint64>() // Toplam havuz sayısı
+    bytec_2 // "totalPools"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:74
+    // this.totalPools.value = this.totalPools.value + 1
+    swap
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:22
+    // totalPools = GlobalState<uint64>() // Toplam havuz sayısı
+    intc_0 // 0
+    bytec_2 // "totalPools"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:77
+    // this.logTransaction('CREATE_POOL', 0, this.totalPools.value)
+    pushbytes "CREATE_POOL"
+    intc_0 // 0
+    uncover 2
+    callsub logTransaction
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:79
+    // return `Pool ${poolName} created with ${initialAPY}% APY, risk level: ${riskLevel}, minimum stake: ${minStake} microAlgos`
+    pushbytes "Pool "
+    frame_dig -4
+    concat
+    pushbytes " created with "
+    concat
+    frame_dig -3
+    concat
+    pushbytes "% APY, risk level: "
+    concat
+    frame_dig -2
+    concat
+    pushbytes ", minimum stake: "
+    concat
+    frame_dig -1
+    concat
+    pushbytes " microAlgos"
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.stakeInPool(poolId: bytes, amount: bytes, userAddress: bytes) -> bytes:
+stakeInPool:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:85-89
+    // stakeInPool(
+    //     poolId: string,
+    //     amount: string,
+    //     userAddress: string
+    // ): string {
+    proto 3 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:23
+    // totalStaked = GlobalState<uint64>() // Toplam stake edilen miktar (microAlgos)
+    intc_0 // 0
+    bytec_0 // "totalStaked"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:90
+    // const stakeAmount: uint64 = 1000000 // 1 Algo in microAlgos for demo
+    intc_2 // 1000000
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:93
+    // this.totalStaked.value = this.totalStaked.value + stakeAmount
+    +
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:23
+    // totalStaked = GlobalState<uint64>() // Toplam stake edilen miktar (microAlgos)
+    bytec_0 // "totalStaked"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:93
+    // this.totalStaked.value = this.totalStaked.value + stakeAmount
+    swap
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:96
+    // this.logTransaction('STAKE', stakeAmount, 1)
+    pushbytes "STAKE"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:90
+    // const stakeAmount: uint64 = 1000000 // 1 Algo in microAlgos for demo
+    intc_2 // 1000000
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:96
+    // this.logTransaction('STAKE', stakeAmount, 1)
+    intc_1 // 1
+    callsub logTransaction
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:98
+    // return `Successfully staked ${amount} microAlgos in pool ${poolId} by user ${userAddress}`
+    pushbytes "Successfully staked "
+    frame_dig -2
+    concat
+    pushbytes " microAlgos in pool "
+    concat
+    frame_dig -3
+    concat
+    bytec 10 // " by user "
+    concat
+    frame_dig -1
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.unstakeFromPool(poolId: bytes, amount: bytes, userAddress: bytes) -> bytes:
+unstakeFromPool:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:104-108
+    // unstakeFromPool(
+    //     poolId: string,
+    //     amount: string,
+    //     userAddress: string
+    // ): string {
+    proto 3 1
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:23
+    // totalStaked = GlobalState<uint64>() // Toplam stake edilen miktar (microAlgos)
+    intc_0 // 0
+    bytec_0 // "totalStaked"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:109
+    // const unstakeAmount: uint64 = 1000000 // 1 Algo in microAlgos for demo
+    intc_2 // 1000000
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:112
+    // assert(this.totalStaked.value >= unstakeAmount, 'Insufficient total stake')
+    >=
+    assert // Insufficient total stake
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:23
+    // totalStaked = GlobalState<uint64>() // Toplam stake edilen miktar (microAlgos)
+    intc_0 // 0
+    bytec_0 // "totalStaked"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:109
+    // const unstakeAmount: uint64 = 1000000 // 1 Algo in microAlgos for demo
+    intc_2 // 1000000
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:115
+    // this.totalStaked.value = this.totalStaked.value - unstakeAmount
+    -
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:23
+    // totalStaked = GlobalState<uint64>() // Toplam stake edilen miktar (microAlgos)
+    bytec_0 // "totalStaked"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:115
+    // this.totalStaked.value = this.totalStaked.value - unstakeAmount
+    swap
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:118
+    // this.logTransaction('UNSTAKE', unstakeAmount, 1)
+    pushbytes "UNSTAKE"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:109
+    // const unstakeAmount: uint64 = 1000000 // 1 Algo in microAlgos for demo
+    intc_2 // 1000000
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:118
+    // this.logTransaction('UNSTAKE', unstakeAmount, 1)
+    intc_1 // 1
+    callsub logTransaction
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:120
+    // return `Successfully unstaked ${amount} microAlgos from pool ${poolId} by user ${userAddress}`
+    pushbytes "Successfully unstaked "
+    frame_dig -2
+    concat
+    pushbytes " microAlgos from pool "
+    concat
+    frame_dig -3
+    concat
+    bytec 10 // " by user "
+    concat
+    frame_dig -1
+    concat
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.logTransaction(txType: bytes, amount: uint64, poolId: uint64) -> void:
+logTransaction:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:126
+    // private logTransaction(txType: string, amount: uint64, poolId: uint64): void {
+    proto 3 0
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:27
+    // totalTransactionCount = GlobalState<uint64>()
+    intc_0 // 0
+    bytec 5 // "totalTransactionCount"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:128
+    // this.totalTransactionCount.value = this.totalTransactionCount.value + 1
+    intc_1 // 1
+    +
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:27
+    // totalTransactionCount = GlobalState<uint64>()
+    bytec 5 // "totalTransactionCount"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:128
+    // this.totalTransactionCount.value = this.totalTransactionCount.value + 1
+    swap
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:28
+    // totalVolume = GlobalState<uint64>()
+    intc_0 // 0
+    bytec 6 // "totalVolume"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:129
+    // this.totalVolume.value = this.totalVolume.value + amount
+    frame_dig -2
+    +
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:28
+    // totalVolume = GlobalState<uint64>()
+    bytec 6 // "totalVolume"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:129
+    // this.totalVolume.value = this.totalVolume.value + amount
+    swap
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:29
+    // dailyTransactionCount = GlobalState<uint64>()
+    intc_0 // 0
+    bytec_3 // "dailyTransactionCount"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:130
+    // this.dailyTransactionCount.value = this.dailyTransactionCount.value + 1
+    intc_1 // 1
+    +
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:29
+    // dailyTransactionCount = GlobalState<uint64>()
+    bytec_3 // "dailyTransactionCount"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:130
+    // this.dailyTransactionCount.value = this.dailyTransactionCount.value + 1
+    swap
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:30
+    // dailyVolume = GlobalState<uint64>()
+    intc_0 // 0
+    bytec 4 // "dailyVolume"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:131
+    // this.dailyVolume.value = this.dailyVolume.value + amount
+    frame_dig -2
+    +
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:30
+    // dailyVolume = GlobalState<uint64>()
+    bytec 4 // "dailyVolume"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:131
+    // this.dailyVolume.value = this.dailyVolume.value + amount
+    swap
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:34
+    // poolTransactionCounts = GlobalState<uint64>()
+    intc_0 // 0
+    bytec 8 // "poolTransactionCounts"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:134
+    // this.poolTransactionCounts.value = this.poolTransactionCounts.value + 1
+    intc_1 // 1
+    +
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:34
+    // poolTransactionCounts = GlobalState<uint64>()
+    bytec 8 // "poolTransactionCounts"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:134
+    // this.poolTransactionCounts.value = this.poolTransactionCounts.value + 1
+    swap
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:35
+    // poolVolumes = GlobalState<uint64>()
+    intc_0 // 0
+    bytec 9 // "poolVolumes"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:135
+    // this.poolVolumes.value = this.poolVolumes.value + amount
+    frame_dig -2
+    +
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:35
+    // poolVolumes = GlobalState<uint64>()
+    bytec 9 // "poolVolumes"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:135
+    // this.poolVolumes.value = this.poolVolumes.value + amount
+    swap
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:137
+    // log('Transaction logged successfully')
+    pushbytes "Transaction logged successfully"
+    log
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.getLastResetTime() -> uint64:
+getLastResetTime:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:31
+    // lastResetTime = GlobalState<uint64>()
+    intc_0 // 0
+    bytec 7 // "lastResetTime"
+    app_global_get_ex
+    assert // check GlobalState exists
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:199
+    // return this.lastResetTime.value
+    retsub
+
+
+// smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.resetDailyCounters() -> bytes:
+resetDailyCounters:
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:29
+    // dailyTransactionCount = GlobalState<uint64>()
+    bytec_3 // "dailyTransactionCount"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:206
+    // this.dailyTransactionCount.value = 0
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:30
+    // dailyVolume = GlobalState<uint64>()
+    bytec 4 // "dailyVolume"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:207
+    // this.dailyVolume.value = 0
+    intc_0 // 0
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:31
+    // lastResetTime = GlobalState<uint64>()
+    bytec 7 // "lastResetTime"
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:208
+    // this.lastResetTime.value = 1727470000 // Current timestamp
+    pushint 1727470000 // 1727470000
+    app_global_put
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:210
+    // log('Daily counters reset')
+    pushbytes "Daily counters reset"
+    log
+    // smart_contracts/predictive_liquidity_mining/contract.algo.ts:211
+    // return 'Daily counters have been reset successfully'
+    pushbytes "Daily counters have been reset successfully"
+    retsub

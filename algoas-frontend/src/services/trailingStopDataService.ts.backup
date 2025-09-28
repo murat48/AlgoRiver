@@ -1,0 +1,289 @@
+import { TrailingStopLossClient } from '../contracts/TrailingStopLoss';
+import { AlgorandClient } from '@algorandfoundation/algokit-utils/types/algorand-client';
+import { AlgorandClient as AlgorandClientConstructor } from "@algorandfoundation/algokit-utils";
+
+export interface TrailingOrderData {
+    id: string;
+    assetId: string;
+    assetName: string;
+    assetSymbol: string;
+    amount: string;
+    entryPrice: string;
+    currentPrice: string;
+    stopPrice: string;
+    trailDistance: string;
+    trailDistanceType: 'percentage' | 'price';
+    targetPrice?: string;
+    highWaterMark: string;
+    status: 'active' | 'triggered' | 'cancelled' | 'executed';
+    createdAt: string;
+    updatedAt: string;
+    pnl: string;
+    pnlPercentage: string;
+    userAddress: string;
+    orderType: 'trailing' | 'bracket';
+    takeProfitPrice?: string;
+    executionPrice?: string;
+    executionTime?: string;
+    txId?: string;
+}
+
+class PriceTrackingService {
+    private algoPrice: number = 0;
+    private priceCallbacks: ((price: number) => void)[] = [];
+    private priceUpdateInterval?: NodeJS.Timeout;
+
+    startPriceTracking() {
+        if (!this.priceUpdateInterval) {
+            this.updatePrice();
+            this.priceUpdateInterval = setInterval(() => {
+                this.updatePrice();
+            }, 10000);
+        }
+    }
+
+    stopPriceTracking() {
+        if (this.priceUpdateInterval) {
+            clearInterval(this.priceUpdateInterval);
+            this.priceUpdateInterval = undefined;
+        }
+    }
+
+    private async updatePrice() {
+        try {
+            const response = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=algorand&vs_currencies=usd');
+            const data = await response.json();
+            this.algoPrice = data.algorand.usd;
+            this.notifyPriceCallbacks(this.algoPrice);
+        } catch (error) {
+            console.error('Fiyat alınırken hata:', error);
+        }
+    }
+
+    getCurrentPrice(): number {
+        return this.algoPrice;
+    }
+
+    onPriceUpdate(callback: (price: number) => void) {
+        this.priceCallbacks.push(callback);
+        if (this.algoPrice > 0) {
+            callback(this.algoPrice);
+        }
+    }
+
+    private notifyPriceCallbacks(price: number) {
+        this.priceCallbacks.forEach(callback => callback(price));
+    }
+}
+
+export class TrailingStopDataService {
+    private client?: TrailingStopLossClient;
+    private algodClient?: AlgorandClient;
+    private appId: number;
+    private priceService: PriceTrackingService;
+
+    constructor() {
+        this.appId = parseInt(import.meta.env.VITE_APP_ID || '746293500');
+        this.priceService = new PriceTrackingService();
+    }
+
+    async initializeClient() {
+        try {
+            this.algodClient = AlgorandClientConstructor.fromEnvironment();
+            console.log('Service initialized with App ID:', this.appId);
+        } catch (error) {
+            console.error('Service initialization failed:', error);
+            // Fallback mode - sadece simülasyon
+            this.algodClient = undefined;
+        }
+    }
+
+    private async getClient() {
+        if (!this.algodClient) {
+            await this.initializeClient();
+        }
+        return this.client;
+    }
+
+    startPriceTracking() {
+        this.priceService.startPriceTracking();
+    }
+
+    stopPriceTracking() {
+        this.priceService.stopPriceTracking();
+    }
+
+    getCurrentPrice(): number {
+        return this.priceService.getCurrentPrice();
+    }
+
+    onPriceUpdate(callback: (price: number) => void) {
+        this.priceService.onPriceUpdate(callback);
+    }
+
+    async createOrder(orderData: {
+        assetId: string;
+        amount: string;
+        trailDistance: string;
+        initialPrice: string;
+        userAddress: string;
+    }): Promise<{ success: boolean; orderId?: string; message: string }> {
+        try {
+            await this.getClient();
+
+            console.log('Creating order (simulation):', orderData);
+
+            const simulatedOrderId = `TSL_${orderData.assetId}_${Date.now()}`;
+            const simulatedResult = `Order ${simulatedOrderId} created: Asset ${orderData.assetId}, Amount ${orderData.amount}, Trail ${orderData.trailDistance}%, Stop Price ${orderData.initialPrice} by ${orderData.userAddress}`;
+
+            const orderRecord: TrailingOrderData = {
+                id: simulatedOrderId,
+                assetId: orderData.assetId,
+                assetName: 'Algorand',
+                assetSymbol: 'ALGO',
+                amount: orderData.amount,
+                entryPrice: orderData.initialPrice,
+                currentPrice: orderData.initialPrice,
+                stopPrice: this.calculateStopPrice(parseFloat(orderData.initialPrice), parseFloat(orderData.trailDistance)),
+                trailDistance: orderData.trailDistance,
+                trailDistanceType: 'percentage',
+                highWaterMark: orderData.initialPrice,
+                status: 'active',
+                createdAt: new Date().toISOString(),
+                updatedAt: new Date().toISOString(),
+                pnl: '0',
+                pnlPercentage: '0',
+                userAddress: orderData.userAddress,
+                orderType: 'trailing'
+            };
+
+            this.saveOrderToStorage(orderRecord);
+
+            return {
+                success: true,
+                orderId: simulatedOrderId,
+                message: simulatedResult
+            };
+        } catch (error) {
+            console.error('Order creation error:', error);
+            return {
+                success: false,
+                message: `Order creation failed: ${error instanceof Error ? error.message : 'Unknown error'}`
+            };
+        }
+    }
+
+    async cancelOrder(orderId: string, userAddress: string): Promise<{ success: boolean; message: string }> {
+        try {
+            await this.getClient();
+
+            console.log('Cancelling order (simulation):', { orderId, userAddress });
+
+            const orders = this.getOrdersFromStorage();
+            const orderIndex = orders.findIndex(order => order.id === orderId && order.userAddress === userAddress);
+
+            if (orderIndex !== -1) {
+                orders[orderIndex].status = 'cancelled';
+                orders[orderIndex].updatedAt = new Date().toISOString();
+                this.saveOrdersToStorage(orders);
+
+                return {
+                    success: true,
+                    message: `Order ${orderId} cancelled by ${userAddress}. Assets returned to wallet.`
+                };
+            } else {
+                return {
+                    success: false,
+                    message: `Order ${orderId} not found or unauthorized`
+                };
+            }
+        } catch (error) {
+            console.error('Order cancellation error:', error);
+            return {
+                success: false,
+                message: `Order cancellation failed: ${error instanceof Error ? error.message : 'Unknown error'}`
+            };
+        }
+    }
+
+    async getUserOrders(userAddress: string): Promise<TrailingOrderData[]> {
+        try {
+            const orders = this.getOrdersFromStorage();
+            return orders.filter(order => order.userAddress === userAddress);
+        } catch (error) {
+            console.error('Error fetching user orders:', error);
+            return [];
+        }
+    }
+
+    private calculateStopPrice(entryPrice: number, trailDistance: number): string {
+        const stopPrice = entryPrice * (1 - trailDistance / 100);
+        return stopPrice.toFixed(6);
+    }
+
+    private saveOrderToStorage(order: TrailingOrderData) {
+        const orders = this.getOrdersFromStorage();
+        orders.push(order);
+        this.saveOrdersToStorage(orders);
+    }
+
+    private getOrdersFromStorage(): TrailingOrderData[] {
+        try {
+            const stored = localStorage.getItem('trailingStopOrders');
+            return stored ? JSON.parse(stored) : [];
+        } catch (error) {
+            console.error('Error reading orders from storage:', error);
+            return [];
+        }
+    }
+
+    private saveOrdersToStorage(orders: TrailingOrderData[]) {
+        try {
+            localStorage.setItem('trailingStopOrders', JSON.stringify(orders));
+        } catch (error) {
+            console.error('Error saving orders to storage:', error);
+        }
+    }
+
+    updateOrderPrices() {
+        const currentPrice = this.getCurrentPrice();
+        if (currentPrice === 0) return;
+
+        const orders = this.getOrdersFromStorage();
+        let hasUpdates = false;
+
+        orders.forEach(order => {
+            if (order.status === 'active') {
+                order.currentPrice = currentPrice.toString();
+
+                if (currentPrice > parseFloat(order.highWaterMark)) {
+                    order.highWaterMark = currentPrice.toString();
+                    const newStopPrice = currentPrice * (1 - parseFloat(order.trailDistance) / 100);
+                    order.stopPrice = newStopPrice.toFixed(6);
+                }
+
+                const entryPrice = parseFloat(order.entryPrice);
+                const pnl = (currentPrice - entryPrice) * parseFloat(order.amount);
+                const pnlPercentage = ((currentPrice - entryPrice) / entryPrice) * 100;
+
+                order.pnl = pnl.toFixed(2);
+                order.pnlPercentage = pnlPercentage.toFixed(2);
+                order.updatedAt = new Date().toISOString();
+
+                if (currentPrice <= parseFloat(order.stopPrice)) {
+                    order.status = 'triggered';
+                    console.log(`Order ${order.id} triggered at price ${currentPrice}`);
+                }
+
+                hasUpdates = true;
+            }
+        });
+
+        if (hasUpdates) {
+            this.saveOrdersToStorage(orders);
+        }
+    }
+}
+
+const trailingStopDataService = new TrailingStopDataService();
+export default trailingStopDataService;

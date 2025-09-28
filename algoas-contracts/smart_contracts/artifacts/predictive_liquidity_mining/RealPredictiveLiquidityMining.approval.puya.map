@@ -1,0 +1,3252 @@
+{
+  "version": 3,
+  "sources": [
+    "/home/muratkeskin/vault/algoasv4/projects/algoas-contracts/smart_contracts/predictive_liquidity_mining/contract.algo.ts"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAcA;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;AA8LI;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAPA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAPA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAPA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAPA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAPA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAPA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAXA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AATA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAvCA;;AAAA;AAAA;AAAA;;AAAA;AAzFJ;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAyFI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAnBA;;AAAA;AAAA;AAAA;;AAAA;AAtEJ;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAsEI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAlBA;;AAAA;AAAA;AAAA;;AAAA;AApDJ;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAAA;;;AAoDI;;;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AArBA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;;AAAA;;AAxBA;AAyB4B;AAAxB;AAxBJ;AAyB6B;AAAzB;AAxBJ;;;;;;;;;;;;;AAyB6B;;;AAAzB;AAtBJ;;AAyBuC;AAAnC;AAxBJ;;AAyB6B;AAAzB;AAxBJ;AAyBuC;AAAnC;AAxBJ;;AAyB6B;AAAzB;AAxBJ;;AAyB+B;AAA3B;AAtBJ;;AAwBuC;AAAnC;AAvBJ;;AAwB6B;AAAzB;AAEI;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAJ;;AAMJ;;;AA7CA;AAAA;AAAA;AAAA;AAoDoD;AAAxB;AApD5B;AAoDI;AAAA;AApDJ;AAAA;AAAA;AAAA;AAuDwB;;;;;;;;;;;;;AAAe;AAAnC;;AAAA;;;AAEO;;;;;;;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;AAAA;AAAP;AAMJ;;;AA9DA;AAAA;AAAA;AAAA;AAmEgC;AAGH;AAtE7B;AAsEI;AAAA;AAGoB;;;;;;;AANQ;AAMc;AAA1C;;;AAEO;;;;;;;;;;;;;;;;;;;;;;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAP;AAMJ;;;AAjFA;AAAA;AAAA;AAAA;AAsFkC;AAGvB;AAAP;AAzFJ;AAAA;AAAA;AAAA;AAsFkC;AAML;AA5F7B;AA4FI;AAAA;AAGoB;;;;;;;;;AATU;AASgB;AAA9C;;;AAEO;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAP;AAMJ;;;AAnGA;AAAA;;AAAA;AAAA;AAqG0E;AAAnC;AArGvC;;AAqGI;AAAA;AApGJ;AAAA;;AAAA;AAAA;AAqG6B;;AAAA;AArG7B;;AAqGI;AAAA;AApGJ;AAAA;AAAA;AAAA;AAqG0E;AAAnC;AArGvC;AAqGI;AAAA;AApGJ;AAAA;;AAAA;AAAA;AAqG6B;;AAAA;AArG7B;;AAqGI;AAAA;AAjGJ;AAAA;;AAAA;AAAA;AAoG0E;AAAnC;AApGvC;;AAoGI;AAAA;AAnGJ;AAAA;;AAAA;AAAA;AAoG6B;;AAAA;AApG7B;;AAoGI;AAAA;AAEI;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAJ;;AA1GJ;AAAA;;AAAA;AAAA;AAwKI;AA1KJ;AAiLuC;AAAnC;AAhLJ;;AAiL6B;AAAzB;AAhLJ;;AAiL+B;;;;;;AAA3B;AAEI;;;;;;;;;;;;;;;;;;;;;;AAAJ;AACO;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAP",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "@algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 0 1 1000000"
+    },
+    "8": {
+      "op": "bytecblock \"totalStaked\" 0x151f7c75 \"totalPools\" \"dailyTransactionCount\" \"dailyVolume\" \"totalTransactionCount\" \"totalVolume\" \"lastResetTime\" \"poolTransactionCounts\" \"poolVolumes\" \" by user \""
+    },
+    "164": {
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "166": {
+      "op": "bz main_after_if_else@19",
+      "stack_out": []
+    },
+    "169": {
+      "op": "pushbytess 0xb8447b36 0xc3b9922a 0x96ceaba9 0x5a41b7a1 0xc57acd4f 0xddfa9f28 0x3adfede5 0xdc0bcc76 0xcfeec563 0x11237b48 0x8c98b237 0x4325a2f6 0xa590b1ca // method \"createApplication()void\", method \"createPool(string,string,string,string)string\", method \"stakeInPool(string,string,string)string\", method \"unstakeFromPool(string,string,string)string\", method \"getUserStake(string)string\", method \"getPoolStats(string)string\", method \"getAllTransactions()string\", method \"getTransactionSummary()string\", method \"getPoolTransactions(string)string\", method \"getPlatformStats()string\", method \"getVolumeStatistics()string\", method \"getLastResetTime()uint64\", method \"resetDailyCounters()string\"",
+      "defined_out": [
+        "Method(createApplication()void)",
+        "Method(createPool(string,string,string,string)string)",
+        "Method(getAllTransactions()string)",
+        "Method(getLastResetTime()uint64)",
+        "Method(getPlatformStats()string)",
+        "Method(getPoolStats(string)string)",
+        "Method(getPoolTransactions(string)string)",
+        "Method(getTransactionSummary()string)",
+        "Method(getUserStake(string)string)",
+        "Method(getVolumeStatistics()string)",
+        "Method(resetDailyCounters()string)",
+        "Method(stakeInPool(string,string,string)string)",
+        "Method(unstakeFromPool(string,string,string)string)"
+      ],
+      "stack_out": [
+        "Method(createApplication()void)",
+        "Method(createPool(string,string,string,string)string)",
+        "Method(stakeInPool(string,string,string)string)",
+        "Method(unstakeFromPool(string,string,string)string)",
+        "Method(getUserStake(string)string)",
+        "Method(getPoolStats(string)string)",
+        "Method(getAllTransactions()string)",
+        "Method(getTransactionSummary()string)",
+        "Method(getPoolTransactions(string)string)",
+        "Method(getPlatformStats()string)",
+        "Method(getVolumeStatistics()string)",
+        "Method(getLastResetTime()uint64)",
+        "Method(resetDailyCounters()string)"
+      ]
+    },
+    "236": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(createApplication()void)",
+        "Method(createPool(string,string,string,string)string)",
+        "Method(getAllTransactions()string)",
+        "Method(getLastResetTime()uint64)",
+        "Method(getPlatformStats()string)",
+        "Method(getPoolStats(string)string)",
+        "Method(getPoolTransactions(string)string)",
+        "Method(getTransactionSummary()string)",
+        "Method(getUserStake(string)string)",
+        "Method(getVolumeStatistics()string)",
+        "Method(resetDailyCounters()string)",
+        "Method(stakeInPool(string,string,string)string)",
+        "Method(unstakeFromPool(string,string,string)string)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "Method(createApplication()void)",
+        "Method(createPool(string,string,string,string)string)",
+        "Method(stakeInPool(string,string,string)string)",
+        "Method(unstakeFromPool(string,string,string)string)",
+        "Method(getUserStake(string)string)",
+        "Method(getPoolStats(string)string)",
+        "Method(getAllTransactions()string)",
+        "Method(getTransactionSummary()string)",
+        "Method(getPoolTransactions(string)string)",
+        "Method(getPlatformStats()string)",
+        "Method(getVolumeStatistics()string)",
+        "Method(getLastResetTime()uint64)",
+        "Method(resetDailyCounters()string)",
+        "tmp%2#0"
+      ]
+    },
+    "239": {
+      "op": "match main_createApplication_route@3 main_createPool_route@4 main_stakeInPool_route@5 main_unstakeFromPool_route@6 main_getUserStake_route@7 main_getPoolStats_route@8 main_getAllTransactions_route@9 main_getTransactionSummary_route@10 main_getPoolTransactions_route@11 main_getPlatformStats_route@12 main_getVolumeStatistics_route@13 main_getLastResetTime_route@14 main_resetDailyCounters_route@15",
+      "stack_out": []
+    },
+    "267": {
+      "block": "main_after_if_else@19",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "268": {
+      "op": "return",
+      "stack_out": []
+    },
+    "269": {
+      "block": "main_resetDailyCounters_route@15",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%88#0"
+      ],
+      "stack_out": [
+        "tmp%88#0"
+      ]
+    },
+    "271": {
+      "op": "!",
+      "defined_out": [
+        "tmp%89#0"
+      ],
+      "stack_out": [
+        "tmp%89#0"
+      ]
+    },
+    "272": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "273": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%90#0"
+      ],
+      "stack_out": [
+        "tmp%90#0"
+      ]
+    },
+    "275": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "276": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.resetDailyCounters",
+      "op": "callsub resetDailyCounters",
+      "defined_out": [
+        "to_encode%11#0"
+      ],
+      "stack_out": [
+        "to_encode%11#0"
+      ]
+    },
+    "279": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%11#0",
+        "to_encode%11#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%11#0",
+        "to_encode%11#0 (copy)"
+      ]
+    },
+    "280": {
+      "op": "len",
+      "defined_out": [
+        "length%10#0",
+        "to_encode%11#0"
+      ],
+      "stack_out": [
+        "to_encode%11#0",
+        "length%10#0"
+      ]
+    },
+    "281": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%10#0",
+        "to_encode%11#0"
+      ],
+      "stack_out": [
+        "to_encode%11#0",
+        "as_bytes%10#0"
+      ]
+    },
+    "282": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%10#0",
+        "to_encode%11#0"
+      ],
+      "stack_out": [
+        "to_encode%11#0",
+        "length_uint16%10#0"
+      ]
+    },
+    "285": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%10#0",
+        "to_encode%11#0"
+      ]
+    },
+    "286": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%10#0"
+      ],
+      "stack_out": [
+        "encoded_value%10#0"
+      ]
+    },
+    "287": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%10#0"
+      ],
+      "stack_out": [
+        "encoded_value%10#0",
+        "0x151f7c75"
+      ]
+    },
+    "288": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%10#0"
+      ]
+    },
+    "289": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%92#0"
+      ],
+      "stack_out": [
+        "tmp%92#0"
+      ]
+    },
+    "290": {
+      "op": "log",
+      "stack_out": []
+    },
+    "291": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "292": {
+      "op": "return",
+      "stack_out": []
+    },
+    "293": {
+      "block": "main_getLastResetTime_route@14",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%83#0"
+      ],
+      "stack_out": [
+        "tmp%83#0"
+      ]
+    },
+    "295": {
+      "op": "!",
+      "defined_out": [
+        "tmp%84#0"
+      ],
+      "stack_out": [
+        "tmp%84#0"
+      ]
+    },
+    "296": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "297": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%85#0"
+      ],
+      "stack_out": [
+        "tmp%85#0"
+      ]
+    },
+    "299": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "300": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.getLastResetTime",
+      "op": "callsub getLastResetTime",
+      "defined_out": [
+        "to_encode%10#0"
+      ],
+      "stack_out": [
+        "to_encode%10#0"
+      ]
+    },
+    "303": {
+      "op": "itob",
+      "defined_out": [
+        "val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%0#0"
+      ]
+    },
+    "304": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "305": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "val_as_bytes%0#0"
+      ]
+    },
+    "306": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%87#0"
+      ],
+      "stack_out": [
+        "tmp%87#0"
+      ]
+    },
+    "307": {
+      "op": "log",
+      "stack_out": []
+    },
+    "308": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "309": {
+      "op": "return",
+      "stack_out": []
+    },
+    "310": {
+      "block": "main_getVolumeStatistics_route@13",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%78#0"
+      ],
+      "stack_out": [
+        "tmp%78#0"
+      ]
+    },
+    "312": {
+      "op": "!",
+      "defined_out": [
+        "tmp%79#0"
+      ],
+      "stack_out": [
+        "tmp%79#0"
+      ]
+    },
+    "313": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "314": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%80#0"
+      ],
+      "stack_out": [
+        "tmp%80#0"
+      ]
+    },
+    "316": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "317": {
+      "op": "pushbytes 0x151f7c7500407b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c22766f6c756d655374617473223a227265616c74696d65227d",
+      "defined_out": [
+        "0x151f7c7500407b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c22766f6c756d655374617473223a227265616c74696d65227d"
+      ],
+      "stack_out": [
+        "0x151f7c7500407b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c22766f6c756d655374617473223a227265616c74696d65227d"
+      ]
+    },
+    "389": {
+      "op": "log",
+      "stack_out": []
+    },
+    "390": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "391": {
+      "op": "return",
+      "stack_out": []
+    },
+    "392": {
+      "block": "main_getPlatformStats_route@12",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%73#0"
+      ],
+      "stack_out": [
+        "tmp%73#0"
+      ]
+    },
+    "394": {
+      "op": "!",
+      "defined_out": [
+        "tmp%74#0"
+      ],
+      "stack_out": [
+        "tmp%74#0"
+      ]
+    },
+    "395": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "396": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%75#0"
+      ],
+      "stack_out": [
+        "tmp%75#0"
+      ]
+    },
+    "398": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "399": {
+      "op": "pushbytes 0x151f7c75003e7b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c22706c6174666f726d5374617473223a226c697665227d",
+      "defined_out": [
+        "0x151f7c75003e7b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c22706c6174666f726d5374617473223a226c697665227d"
+      ],
+      "stack_out": [
+        "0x151f7c75003e7b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c22706c6174666f726d5374617473223a226c697665227d"
+      ]
+    },
+    "469": {
+      "op": "log",
+      "stack_out": []
+    },
+    "470": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "471": {
+      "op": "return",
+      "stack_out": []
+    },
+    "472": {
+      "block": "main_getPoolTransactions_route@11",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%66#0"
+      ],
+      "stack_out": [
+        "tmp%66#0"
+      ]
+    },
+    "474": {
+      "op": "!",
+      "defined_out": [
+        "tmp%67#0"
+      ],
+      "stack_out": [
+        "tmp%67#0"
+      ]
+    },
+    "475": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "476": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%68#0"
+      ],
+      "stack_out": [
+        "tmp%68#0"
+      ]
+    },
+    "478": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "479": {
+      "op": "pushbytes 0x151f7c75003c7b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c22706f6f6c44617461223a2264796e616d6963227d",
+      "defined_out": [
+        "0x151f7c75003c7b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c22706f6f6c44617461223a2264796e616d6963227d"
+      ],
+      "stack_out": [
+        "0x151f7c75003c7b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c22706f6f6c44617461223a2264796e616d6963227d"
+      ]
+    },
+    "547": {
+      "op": "log",
+      "stack_out": []
+    },
+    "548": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "549": {
+      "op": "return",
+      "stack_out": []
+    },
+    "550": {
+      "block": "main_getTransactionSummary_route@10",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%61#0"
+      ],
+      "stack_out": [
+        "tmp%61#0"
+      ]
+    },
+    "552": {
+      "op": "!",
+      "defined_out": [
+        "tmp%62#0"
+      ],
+      "stack_out": [
+        "tmp%62#0"
+      ]
+    },
+    "553": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "554": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%63#0"
+      ],
+      "stack_out": [
+        "tmp%63#0"
+      ]
+    },
+    "556": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "557": {
+      "op": "pushbytes 0x151f7c7500417b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c2264796e616d696343616c63756c6174696f6e223a747275657d",
+      "defined_out": [
+        "0x151f7c7500417b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c2264796e616d696343616c63756c6174696f6e223a747275657d"
+      ],
+      "stack_out": [
+        "0x151f7c7500417b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c2264796e616d696343616c63756c6174696f6e223a747275657d"
+      ]
+    },
+    "630": {
+      "op": "log",
+      "stack_out": []
+    },
+    "631": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "632": {
+      "op": "return",
+      "stack_out": []
+    },
+    "633": {
+      "block": "main_getAllTransactions_route@9",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%56#0"
+      ],
+      "stack_out": [
+        "tmp%56#0"
+      ]
+    },
+    "635": {
+      "op": "!",
+      "defined_out": [
+        "tmp%57#0"
+      ],
+      "stack_out": [
+        "tmp%57#0"
+      ]
+    },
+    "636": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "637": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%58#0"
+      ],
+      "stack_out": [
+        "tmp%58#0"
+      ]
+    },
+    "639": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "640": {
+      "op": "pushbytes 0x151f7c7500397b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c22737461747573223a22616374697665227d",
+      "defined_out": [
+        "0x151f7c7500397b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c22737461747573223a22616374697665227d"
+      ],
+      "stack_out": [
+        "0x151f7c7500397b227265616c44617461223a747275652c22736f75726365223a22626c6f636b636861696e222c22737461747573223a22616374697665227d"
+      ]
+    },
+    "705": {
+      "op": "log",
+      "stack_out": []
+    },
+    "706": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "707": {
+      "op": "return",
+      "stack_out": []
+    },
+    "708": {
+      "block": "main_getPoolStats_route@8",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%49#0"
+      ],
+      "stack_out": [
+        "tmp%49#0"
+      ]
+    },
+    "710": {
+      "op": "!",
+      "defined_out": [
+        "tmp%50#0"
+      ],
+      "stack_out": [
+        "tmp%50#0"
+      ]
+    },
+    "711": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "712": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%51#0"
+      ],
+      "stack_out": [
+        "tmp%51#0"
+      ]
+    },
+    "714": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "715": {
+      "op": "pushbytes 0x151f7c750025506f6f6c2073746174732066726f6d207265616c20626c6f636b636861696e207374617465",
+      "defined_out": [
+        "0x151f7c750025506f6f6c2073746174732066726f6d207265616c20626c6f636b636861696e207374617465"
+      ],
+      "stack_out": [
+        "0x151f7c750025506f6f6c2073746174732066726f6d207265616c20626c6f636b636861696e207374617465"
+      ]
+    },
+    "760": {
+      "op": "log",
+      "stack_out": []
+    },
+    "761": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "762": {
+      "op": "return",
+      "stack_out": []
+    },
+    "763": {
+      "block": "main_getUserStake_route@7",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%42#0"
+      ],
+      "stack_out": [
+        "tmp%42#0"
+      ]
+    },
+    "765": {
+      "op": "!",
+      "defined_out": [
+        "tmp%43#0"
+      ],
+      "stack_out": [
+        "tmp%43#0"
+      ]
+    },
+    "766": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "767": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%44#0"
+      ],
+      "stack_out": [
+        "tmp%44#0"
+      ]
+    },
+    "769": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "770": {
+      "op": "pushbytes 0x151f7c75002d55736572207374616b656420616d6f756e742066726f6d207265616c20626c6f636b636861696e207374617465",
+      "defined_out": [
+        "0x151f7c75002d55736572207374616b656420616d6f756e742066726f6d207265616c20626c6f636b636861696e207374617465"
+      ],
+      "stack_out": [
+        "0x151f7c75002d55736572207374616b656420616d6f756e742066726f6d207265616c20626c6f636b636861696e207374617465"
+      ]
+    },
+    "823": {
+      "op": "log",
+      "stack_out": []
+    },
+    "824": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "825": {
+      "op": "return",
+      "stack_out": []
+    },
+    "826": {
+      "block": "main_unstakeFromPool_route@6",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%31#0"
+      ],
+      "stack_out": [
+        "tmp%31#0"
+      ]
+    },
+    "828": {
+      "op": "!",
+      "defined_out": [
+        "tmp%32#0"
+      ],
+      "stack_out": [
+        "tmp%32#0"
+      ]
+    },
+    "829": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "830": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%33#0"
+      ],
+      "stack_out": [
+        "tmp%33#0"
+      ]
+    },
+    "832": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "833": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%35#0"
+      ],
+      "stack_out": [
+        "tmp%35#0"
+      ]
+    },
+    "836": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%36#0"
+      ],
+      "stack_out": [
+        "tmp%36#0"
+      ]
+    },
+    "839": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%36#0",
+        "tmp%37#0"
+      ],
+      "stack_out": [
+        "tmp%36#0",
+        "tmp%37#0"
+      ]
+    },
+    "842": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%36#0",
+        "tmp%38#0"
+      ],
+      "stack_out": [
+        "tmp%36#0",
+        "tmp%38#0"
+      ]
+    },
+    "845": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%36#0",
+        "tmp%38#0",
+        "tmp%39#0"
+      ],
+      "stack_out": [
+        "tmp%36#0",
+        "tmp%38#0",
+        "tmp%39#0"
+      ]
+    },
+    "848": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%36#0",
+        "tmp%38#0",
+        "tmp%40#0"
+      ],
+      "stack_out": [
+        "tmp%36#0",
+        "tmp%38#0",
+        "tmp%40#0"
+      ]
+    },
+    "851": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.unstakeFromPool",
+      "op": "callsub unstakeFromPool",
+      "defined_out": [
+        "to_encode%2#0"
+      ],
+      "stack_out": [
+        "to_encode%2#0"
+      ]
+    },
+    "854": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%2#0",
+        "to_encode%2#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%2#0",
+        "to_encode%2#0 (copy)"
+      ]
+    },
+    "855": {
+      "op": "len",
+      "defined_out": [
+        "length%2#0",
+        "to_encode%2#0"
+      ],
+      "stack_out": [
+        "to_encode%2#0",
+        "length%2#0"
+      ]
+    },
+    "856": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%2#0",
+        "to_encode%2#0"
+      ],
+      "stack_out": [
+        "to_encode%2#0",
+        "as_bytes%2#0"
+      ]
+    },
+    "857": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%2#0",
+        "to_encode%2#0"
+      ],
+      "stack_out": [
+        "to_encode%2#0",
+        "length_uint16%2#0"
+      ]
+    },
+    "860": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%2#0",
+        "to_encode%2#0"
+      ]
+    },
+    "861": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%2#0"
+      ],
+      "stack_out": [
+        "encoded_value%2#0"
+      ]
+    },
+    "862": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%2#0"
+      ],
+      "stack_out": [
+        "encoded_value%2#0",
+        "0x151f7c75"
+      ]
+    },
+    "863": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%2#0"
+      ]
+    },
+    "864": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%41#0"
+      ],
+      "stack_out": [
+        "tmp%41#0"
+      ]
+    },
+    "865": {
+      "op": "log",
+      "stack_out": []
+    },
+    "866": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "867": {
+      "op": "return",
+      "stack_out": []
+    },
+    "868": {
+      "block": "main_stakeInPool_route@5",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%20#0"
+      ],
+      "stack_out": [
+        "tmp%20#0"
+      ]
+    },
+    "870": {
+      "op": "!",
+      "defined_out": [
+        "tmp%21#0"
+      ],
+      "stack_out": [
+        "tmp%21#0"
+      ]
+    },
+    "871": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "872": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%22#0"
+      ],
+      "stack_out": [
+        "tmp%22#0"
+      ]
+    },
+    "874": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "875": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%24#0"
+      ],
+      "stack_out": [
+        "tmp%24#0"
+      ]
+    },
+    "878": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%25#0"
+      ],
+      "stack_out": [
+        "tmp%25#0"
+      ]
+    },
+    "881": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%25#0",
+        "tmp%26#0"
+      ],
+      "stack_out": [
+        "tmp%25#0",
+        "tmp%26#0"
+      ]
+    },
+    "884": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%25#0",
+        "tmp%27#0"
+      ],
+      "stack_out": [
+        "tmp%25#0",
+        "tmp%27#0"
+      ]
+    },
+    "887": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%25#0",
+        "tmp%27#0",
+        "tmp%28#0"
+      ],
+      "stack_out": [
+        "tmp%25#0",
+        "tmp%27#0",
+        "tmp%28#0"
+      ]
+    },
+    "890": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%25#0",
+        "tmp%27#0",
+        "tmp%29#0"
+      ],
+      "stack_out": [
+        "tmp%25#0",
+        "tmp%27#0",
+        "tmp%29#0"
+      ]
+    },
+    "893": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.stakeInPool",
+      "op": "callsub stakeInPool",
+      "defined_out": [
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0"
+      ]
+    },
+    "896": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%1#0",
+        "to_encode%1#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%1#0",
+        "to_encode%1#0 (copy)"
+      ]
+    },
+    "897": {
+      "op": "len",
+      "defined_out": [
+        "length%1#0",
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0",
+        "length%1#0"
+      ]
+    },
+    "898": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%1#0",
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0",
+        "as_bytes%1#0"
+      ]
+    },
+    "899": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%1#0",
+        "to_encode%1#0"
+      ],
+      "stack_out": [
+        "to_encode%1#0",
+        "length_uint16%1#0"
+      ]
+    },
+    "902": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%1#0",
+        "to_encode%1#0"
+      ]
+    },
+    "903": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%1#0"
+      ],
+      "stack_out": [
+        "encoded_value%1#0"
+      ]
+    },
+    "904": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%1#0"
+      ],
+      "stack_out": [
+        "encoded_value%1#0",
+        "0x151f7c75"
+      ]
+    },
+    "905": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%1#0"
+      ]
+    },
+    "906": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%30#0"
+      ],
+      "stack_out": [
+        "tmp%30#0"
+      ]
+    },
+    "907": {
+      "op": "log",
+      "stack_out": []
+    },
+    "908": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "909": {
+      "op": "return",
+      "stack_out": []
+    },
+    "910": {
+      "block": "main_createPool_route@4",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "912": {
+      "op": "!",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "913": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "914": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%9#0"
+      ]
+    },
+    "916": {
+      "error": "can only call when not creating",
+      "op": "assert // can only call when not creating",
+      "stack_out": []
+    },
+    "917": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0"
+      ]
+    },
+    "920": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "tmp%12#0"
+      ]
+    },
+    "923": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "tmp%12#0",
+        "tmp%13#0"
+      ],
+      "stack_out": [
+        "tmp%12#0",
+        "tmp%13#0"
+      ]
+    },
+    "926": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%12#0",
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "tmp%12#0",
+        "tmp%14#0"
+      ]
+    },
+    "929": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%15#0"
+      ],
+      "stack_out": [
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%15#0"
+      ]
+    },
+    "932": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0"
+      ],
+      "stack_out": [
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0"
+      ]
+    },
+    "935": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%17#0"
+      ],
+      "stack_out": [
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%17#0"
+      ]
+    },
+    "938": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%18#0"
+      ],
+      "stack_out": [
+        "tmp%12#0",
+        "tmp%14#0",
+        "tmp%16#0",
+        "tmp%18#0"
+      ]
+    },
+    "941": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.createPool",
+      "op": "callsub createPool",
+      "defined_out": [
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0"
+      ]
+    },
+    "944": {
+      "op": "dup",
+      "defined_out": [
+        "to_encode%0#0",
+        "to_encode%0#0 (copy)"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "to_encode%0#0 (copy)"
+      ]
+    },
+    "945": {
+      "op": "len",
+      "defined_out": [
+        "length%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "length%0#0"
+      ]
+    },
+    "946": {
+      "op": "itob",
+      "defined_out": [
+        "as_bytes%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "as_bytes%0#0"
+      ]
+    },
+    "947": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "length_uint16%0#0",
+        "to_encode%0#0"
+      ],
+      "stack_out": [
+        "to_encode%0#0",
+        "length_uint16%0#0"
+      ]
+    },
+    "950": {
+      "op": "swap",
+      "stack_out": [
+        "length_uint16%0#0",
+        "to_encode%0#0"
+      ]
+    },
+    "951": {
+      "op": "concat",
+      "defined_out": [
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0"
+      ]
+    },
+    "952": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "encoded_value%0#0"
+      ],
+      "stack_out": [
+        "encoded_value%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "953": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "encoded_value%0#0"
+      ]
+    },
+    "954": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%19#0"
+      ],
+      "stack_out": [
+        "tmp%19#0"
+      ]
+    },
+    "955": {
+      "op": "log",
+      "stack_out": []
+    },
+    "956": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "957": {
+      "op": "return",
+      "stack_out": []
+    },
+    "958": {
+      "block": "main_createApplication_route@3",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "960": {
+      "op": "!",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "961": {
+      "error": "OnCompletion is not NoOp",
+      "op": "assert // OnCompletion is not NoOp",
+      "stack_out": []
+    },
+    "962": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "964": {
+      "op": "!",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "965": {
+      "error": "can only call when creating",
+      "op": "assert // can only call when creating",
+      "stack_out": []
+    },
+    "966": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.createApplication",
+      "op": "callsub createApplication"
+    },
+    "969": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "970": {
+      "op": "return",
+      "stack_out": []
+    },
+    "971": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.createApplication",
+      "params": {},
+      "block": "createApplication",
+      "stack_in": [],
+      "op": "bytec_2 // \"totalPools\"",
+      "defined_out": [
+        "\"totalPools\""
+      ],
+      "stack_out": [
+        "\"totalPools\""
+      ]
+    },
+    "972": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"totalPools\"",
+        "0"
+      ],
+      "stack_out": [
+        "\"totalPools\"",
+        "0"
+      ]
+    },
+    "973": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "974": {
+      "op": "bytec_0 // \"totalStaked\"",
+      "defined_out": [
+        "\"totalStaked\""
+      ],
+      "stack_out": [
+        "\"totalStaked\""
+      ]
+    },
+    "975": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"totalStaked\"",
+        "0"
+      ]
+    },
+    "976": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "977": {
+      "op": "pushbytes \"platformFee\"",
+      "defined_out": [
+        "\"platformFee\""
+      ],
+      "stack_out": [
+        "\"platformFee\""
+      ]
+    },
+    "990": {
+      "op": "pushint 300 // 300",
+      "defined_out": [
+        "\"platformFee\"",
+        "300"
+      ],
+      "stack_out": [
+        "\"platformFee\"",
+        "300"
+      ]
+    },
+    "993": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "994": {
+      "op": "bytec 5 // \"totalTransactionCount\"",
+      "defined_out": [
+        "\"totalTransactionCount\""
+      ],
+      "stack_out": [
+        "\"totalTransactionCount\""
+      ]
+    },
+    "996": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"totalTransactionCount\"",
+        "0"
+      ]
+    },
+    "997": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "998": {
+      "op": "bytec 6 // \"totalVolume\"",
+      "defined_out": [
+        "\"totalVolume\""
+      ],
+      "stack_out": [
+        "\"totalVolume\""
+      ]
+    },
+    "1000": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"totalVolume\"",
+        "0"
+      ]
+    },
+    "1001": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1002": {
+      "op": "bytec_3 // \"dailyTransactionCount\"",
+      "defined_out": [
+        "\"dailyTransactionCount\""
+      ],
+      "stack_out": [
+        "\"dailyTransactionCount\""
+      ]
+    },
+    "1003": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"dailyTransactionCount\"",
+        "0"
+      ]
+    },
+    "1004": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1005": {
+      "op": "bytec 4 // \"dailyVolume\"",
+      "defined_out": [
+        "\"dailyVolume\""
+      ],
+      "stack_out": [
+        "\"dailyVolume\""
+      ]
+    },
+    "1007": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"dailyVolume\"",
+        "0"
+      ]
+    },
+    "1008": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1009": {
+      "op": "bytec 7 // \"lastResetTime\"",
+      "defined_out": [
+        "\"lastResetTime\""
+      ],
+      "stack_out": [
+        "\"lastResetTime\""
+      ]
+    },
+    "1011": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"lastResetTime\"",
+        "0"
+      ]
+    },
+    "1012": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1013": {
+      "op": "bytec 8 // \"poolTransactionCounts\"",
+      "defined_out": [
+        "\"poolTransactionCounts\""
+      ],
+      "stack_out": [
+        "\"poolTransactionCounts\""
+      ]
+    },
+    "1015": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"poolTransactionCounts\"",
+        "0"
+      ]
+    },
+    "1016": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1017": {
+      "op": "bytec 9 // \"poolVolumes\"",
+      "defined_out": [
+        "\"poolVolumes\""
+      ],
+      "stack_out": [
+        "\"poolVolumes\""
+      ]
+    },
+    "1019": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"poolVolumes\"",
+        "0"
+      ]
+    },
+    "1020": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1021": {
+      "op": "pushbytes \"RealPredictiveLiquidityMining contract initialized with real state\"",
+      "defined_out": [
+        "\"RealPredictiveLiquidityMining contract initialized with real state\""
+      ],
+      "stack_out": [
+        "\"RealPredictiveLiquidityMining contract initialized with real state\""
+      ]
+    },
+    "1089": {
+      "op": "log",
+      "stack_out": []
+    },
+    "1090": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1091": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.createPool",
+      "params": {
+        "poolName#0": "bytes",
+        "initialAPY#0": "bytes",
+        "riskLevel#0": "bytes",
+        "minStake#0": "bytes"
+      },
+      "block": "createPool",
+      "stack_in": [],
+      "op": "proto 4 1"
+    },
+    "1094": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1095": {
+      "op": "bytec_2 // \"totalPools\"",
+      "defined_out": [
+        "\"totalPools\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"totalPools\""
+      ]
+    },
+    "1096": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1097": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "1098": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "1"
+      ]
+    },
+    "1099": {
+      "op": "+",
+      "defined_out": [
+        "new_state_value%0#0"
+      ],
+      "stack_out": [
+        "new_state_value%0#0"
+      ]
+    },
+    "1100": {
+      "op": "bytec_2 // \"totalPools\"",
+      "stack_out": [
+        "new_state_value%0#0",
+        "\"totalPools\""
+      ]
+    },
+    "1101": {
+      "op": "swap",
+      "stack_out": [
+        "\"totalPools\"",
+        "new_state_value%0#0"
+      ]
+    },
+    "1102": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1103": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1104": {
+      "op": "bytec_2 // \"totalPools\"",
+      "stack_out": [
+        "0",
+        "\"totalPools\""
+      ]
+    },
+    "1105": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "1106": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%1#0"
+      ]
+    },
+    "1107": {
+      "op": "pushbytes \"CREATE_POOL\"",
+      "defined_out": [
+        "\"CREATE_POOL\"",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "\"CREATE_POOL\""
+      ]
+    },
+    "1120": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "maybe_value%1#0",
+        "\"CREATE_POOL\"",
+        "0"
+      ]
+    },
+    "1121": {
+      "op": "uncover 2",
+      "stack_out": [
+        "\"CREATE_POOL\"",
+        "0",
+        "maybe_value%1#0"
+      ]
+    },
+    "1123": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.logTransaction",
+      "op": "callsub logTransaction",
+      "stack_out": []
+    },
+    "1126": {
+      "op": "pushbytes \"Pool \"",
+      "defined_out": [
+        "\"Pool \""
+      ],
+      "stack_out": [
+        "\"Pool \""
+      ]
+    },
+    "1133": {
+      "op": "frame_dig -4",
+      "defined_out": [
+        "\"Pool \"",
+        "poolName#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Pool \"",
+        "poolName#0 (copy)"
+      ]
+    },
+    "1135": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1136": {
+      "op": "pushbytes \" created with \"",
+      "defined_out": [
+        "\" created with \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\" created with \""
+      ]
+    },
+    "1152": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1153": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "initialAPY#0 (copy)",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "initialAPY#0 (copy)"
+      ]
+    },
+    "1155": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1156": {
+      "op": "pushbytes \"% APY, risk level: \"",
+      "defined_out": [
+        "\"% APY, risk level: \"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\"% APY, risk level: \""
+      ]
+    },
+    "1177": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1178": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "riskLevel#0 (copy)",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "riskLevel#0 (copy)"
+      ]
+    },
+    "1180": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1181": {
+      "op": "pushbytes \", minimum stake: \"",
+      "defined_out": [
+        "\", minimum stake: \"",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0",
+        "\", minimum stake: \""
+      ]
+    },
+    "1200": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "1201": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "minStake#0 (copy)",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0",
+        "minStake#0 (copy)"
+      ]
+    },
+    "1203": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0"
+      ]
+    },
+    "1204": {
+      "op": "pushbytes \" microAlgos\"",
+      "defined_out": [
+        "\" microAlgos\"",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "tmp%6#0",
+        "\" microAlgos\""
+      ]
+    },
+    "1217": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "1218": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1219": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.stakeInPool",
+      "params": {
+        "poolId#0": "bytes",
+        "amount#0": "bytes",
+        "userAddress#0": "bytes"
+      },
+      "block": "stakeInPool",
+      "stack_in": [],
+      "op": "proto 3 1"
+    },
+    "1222": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1223": {
+      "op": "bytec_0 // \"totalStaked\"",
+      "defined_out": [
+        "\"totalStaked\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"totalStaked\""
+      ]
+    },
+    "1224": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1225": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "1226": {
+      "op": "intc_2 // 1000000",
+      "defined_out": [
+        "1000000",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "1000000"
+      ]
+    },
+    "1227": {
+      "op": "+",
+      "defined_out": [
+        "new_state_value%0#0"
+      ],
+      "stack_out": [
+        "new_state_value%0#0"
+      ]
+    },
+    "1228": {
+      "op": "bytec_0 // \"totalStaked\"",
+      "stack_out": [
+        "new_state_value%0#0",
+        "\"totalStaked\""
+      ]
+    },
+    "1229": {
+      "op": "swap",
+      "stack_out": [
+        "\"totalStaked\"",
+        "new_state_value%0#0"
+      ]
+    },
+    "1230": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1231": {
+      "op": "pushbytes \"STAKE\"",
+      "defined_out": [
+        "\"STAKE\""
+      ],
+      "stack_out": [
+        "\"STAKE\""
+      ]
+    },
+    "1238": {
+      "op": "intc_2 // 1000000",
+      "stack_out": [
+        "\"STAKE\"",
+        "1000000"
+      ]
+    },
+    "1239": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "\"STAKE\"",
+        "1",
+        "1000000"
+      ],
+      "stack_out": [
+        "\"STAKE\"",
+        "1000000",
+        "1"
+      ]
+    },
+    "1240": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.logTransaction",
+      "op": "callsub logTransaction",
+      "stack_out": []
+    },
+    "1243": {
+      "op": "pushbytes \"Successfully staked \"",
+      "defined_out": [
+        "\"Successfully staked \""
+      ],
+      "stack_out": [
+        "\"Successfully staked \""
+      ]
+    },
+    "1265": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "\"Successfully staked \"",
+        "amount#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Successfully staked \"",
+        "amount#0 (copy)"
+      ]
+    },
+    "1267": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1268": {
+      "op": "pushbytes \" microAlgos in pool \"",
+      "defined_out": [
+        "\" microAlgos in pool \"",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "\" microAlgos in pool \""
+      ]
+    },
+    "1290": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1291": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "poolId#0 (copy)",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "poolId#0 (copy)"
+      ]
+    },
+    "1293": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1294": {
+      "op": "bytec 10 // \" by user \"",
+      "defined_out": [
+        "\" by user \"",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "\" by user \""
+      ]
+    },
+    "1296": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1297": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "tmp%3#0",
+        "userAddress#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "userAddress#0 (copy)"
+      ]
+    },
+    "1299": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1300": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1301": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.unstakeFromPool",
+      "params": {
+        "poolId#0": "bytes",
+        "amount#0": "bytes",
+        "userAddress#0": "bytes"
+      },
+      "block": "unstakeFromPool",
+      "stack_in": [],
+      "op": "proto 3 1"
+    },
+    "1304": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1305": {
+      "op": "bytec_0 // \"totalStaked\"",
+      "defined_out": [
+        "\"totalStaked\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"totalStaked\""
+      ]
+    },
+    "1306": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1307": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "1308": {
+      "op": "intc_2 // 1000000",
+      "defined_out": [
+        "1000000",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "1000000"
+      ]
+    },
+    "1309": {
+      "op": ">=",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "1310": {
+      "error": "Insufficient total stake",
+      "op": "assert // Insufficient total stake",
+      "stack_out": []
+    },
+    "1311": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1312": {
+      "op": "bytec_0 // \"totalStaked\"",
+      "stack_out": [
+        "0",
+        "\"totalStaked\""
+      ]
+    },
+    "1313": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "1314": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%1#0"
+      ]
+    },
+    "1315": {
+      "op": "intc_2 // 1000000",
+      "stack_out": [
+        "maybe_value%1#0",
+        "1000000"
+      ]
+    },
+    "1316": {
+      "op": "-",
+      "defined_out": [
+        "new_state_value%0#0"
+      ],
+      "stack_out": [
+        "new_state_value%0#0"
+      ]
+    },
+    "1317": {
+      "op": "bytec_0 // \"totalStaked\"",
+      "stack_out": [
+        "new_state_value%0#0",
+        "\"totalStaked\""
+      ]
+    },
+    "1318": {
+      "op": "swap",
+      "stack_out": [
+        "\"totalStaked\"",
+        "new_state_value%0#0"
+      ]
+    },
+    "1319": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1320": {
+      "op": "pushbytes \"UNSTAKE\"",
+      "defined_out": [
+        "\"UNSTAKE\""
+      ],
+      "stack_out": [
+        "\"UNSTAKE\""
+      ]
+    },
+    "1329": {
+      "op": "intc_2 // 1000000",
+      "stack_out": [
+        "\"UNSTAKE\"",
+        "1000000"
+      ]
+    },
+    "1330": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "\"UNSTAKE\"",
+        "1",
+        "1000000"
+      ],
+      "stack_out": [
+        "\"UNSTAKE\"",
+        "1000000",
+        "1"
+      ]
+    },
+    "1331": {
+      "callsub": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.logTransaction",
+      "op": "callsub logTransaction",
+      "stack_out": []
+    },
+    "1334": {
+      "op": "pushbytes \"Successfully unstaked \"",
+      "defined_out": [
+        "\"Successfully unstaked \""
+      ],
+      "stack_out": [
+        "\"Successfully unstaked \""
+      ]
+    },
+    "1358": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "\"Successfully unstaked \"",
+        "amount#0 (copy)"
+      ],
+      "stack_out": [
+        "\"Successfully unstaked \"",
+        "amount#0 (copy)"
+      ]
+    },
+    "1360": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "1361": {
+      "op": "pushbytes \" microAlgos from pool \"",
+      "defined_out": [
+        "\" microAlgos from pool \"",
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0",
+        "\" microAlgos from pool \""
+      ]
+    },
+    "1385": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "1386": {
+      "op": "frame_dig -3",
+      "defined_out": [
+        "poolId#0 (copy)",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0",
+        "poolId#0 (copy)"
+      ]
+    },
+    "1388": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "1389": {
+      "op": "bytec 10 // \" by user \"",
+      "defined_out": [
+        "\" by user \"",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "\" by user \""
+      ]
+    },
+    "1391": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "1392": {
+      "op": "frame_dig -1",
+      "defined_out": [
+        "tmp%4#0",
+        "userAddress#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%4#0",
+        "userAddress#0 (copy)"
+      ]
+    },
+    "1394": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "tmp%5#0"
+      ]
+    },
+    "1395": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1396": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.logTransaction",
+      "params": {
+        "txType#0": "bytes",
+        "amount#0": "uint64",
+        "poolId#0": "uint64"
+      },
+      "block": "logTransaction",
+      "stack_in": [],
+      "op": "proto 3 0"
+    },
+    "1399": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1400": {
+      "op": "bytec 5 // \"totalTransactionCount\"",
+      "defined_out": [
+        "\"totalTransactionCount\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"totalTransactionCount\""
+      ]
+    },
+    "1402": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1403": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "1404": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "1"
+      ]
+    },
+    "1405": {
+      "op": "+",
+      "defined_out": [
+        "new_state_value%0#0"
+      ],
+      "stack_out": [
+        "new_state_value%0#0"
+      ]
+    },
+    "1406": {
+      "op": "bytec 5 // \"totalTransactionCount\"",
+      "stack_out": [
+        "new_state_value%0#0",
+        "\"totalTransactionCount\""
+      ]
+    },
+    "1408": {
+      "op": "swap",
+      "stack_out": [
+        "\"totalTransactionCount\"",
+        "new_state_value%0#0"
+      ]
+    },
+    "1409": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1410": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1411": {
+      "op": "bytec 6 // \"totalVolume\"",
+      "defined_out": [
+        "\"totalVolume\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"totalVolume\""
+      ]
+    },
+    "1413": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "1414": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%1#0"
+      ]
+    },
+    "1415": {
+      "op": "frame_dig -2",
+      "defined_out": [
+        "amount#0 (copy)",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "amount#0 (copy)"
+      ]
+    },
+    "1417": {
+      "op": "+",
+      "defined_out": [
+        "new_state_value%1#0"
+      ],
+      "stack_out": [
+        "new_state_value%1#0"
+      ]
+    },
+    "1418": {
+      "op": "bytec 6 // \"totalVolume\"",
+      "stack_out": [
+        "new_state_value%1#0",
+        "\"totalVolume\""
+      ]
+    },
+    "1420": {
+      "op": "swap",
+      "stack_out": [
+        "\"totalVolume\"",
+        "new_state_value%1#0"
+      ]
+    },
+    "1421": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1422": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1423": {
+      "op": "bytec_3 // \"dailyTransactionCount\"",
+      "defined_out": [
+        "\"dailyTransactionCount\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"dailyTransactionCount\""
+      ]
+    },
+    "1424": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value%2#0"
+      ],
+      "stack_out": [
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "1425": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%2#0"
+      ]
+    },
+    "1426": {
+      "op": "intc_1 // 1",
+      "stack_out": [
+        "maybe_value%2#0",
+        "1"
+      ]
+    },
+    "1427": {
+      "op": "+",
+      "defined_out": [
+        "new_state_value%2#0"
+      ],
+      "stack_out": [
+        "new_state_value%2#0"
+      ]
+    },
+    "1428": {
+      "op": "bytec_3 // \"dailyTransactionCount\"",
+      "stack_out": [
+        "new_state_value%2#0",
+        "\"dailyTransactionCount\""
+      ]
+    },
+    "1429": {
+      "op": "swap",
+      "stack_out": [
+        "\"dailyTransactionCount\"",
+        "new_state_value%2#0"
+      ]
+    },
+    "1430": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1431": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1432": {
+      "op": "bytec 4 // \"dailyVolume\"",
+      "defined_out": [
+        "\"dailyVolume\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"dailyVolume\""
+      ]
+    },
+    "1434": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%3#0",
+        "maybe_value%3#0"
+      ],
+      "stack_out": [
+        "maybe_value%3#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "1435": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%3#0"
+      ]
+    },
+    "1436": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "maybe_value%3#0",
+        "amount#0 (copy)"
+      ]
+    },
+    "1438": {
+      "op": "+",
+      "defined_out": [
+        "new_state_value%3#0"
+      ],
+      "stack_out": [
+        "new_state_value%3#0"
+      ]
+    },
+    "1439": {
+      "op": "bytec 4 // \"dailyVolume\"",
+      "stack_out": [
+        "new_state_value%3#0",
+        "\"dailyVolume\""
+      ]
+    },
+    "1441": {
+      "op": "swap",
+      "stack_out": [
+        "\"dailyVolume\"",
+        "new_state_value%3#0"
+      ]
+    },
+    "1442": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1443": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1444": {
+      "op": "bytec 8 // \"poolTransactionCounts\"",
+      "defined_out": [
+        "\"poolTransactionCounts\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"poolTransactionCounts\""
+      ]
+    },
+    "1446": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%4#0",
+        "maybe_value%4#0"
+      ],
+      "stack_out": [
+        "maybe_value%4#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "1447": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%4#0"
+      ]
+    },
+    "1448": {
+      "op": "intc_1 // 1",
+      "stack_out": [
+        "maybe_value%4#0",
+        "1"
+      ]
+    },
+    "1449": {
+      "op": "+",
+      "defined_out": [
+        "new_state_value%4#0"
+      ],
+      "stack_out": [
+        "new_state_value%4#0"
+      ]
+    },
+    "1450": {
+      "op": "bytec 8 // \"poolTransactionCounts\"",
+      "stack_out": [
+        "new_state_value%4#0",
+        "\"poolTransactionCounts\""
+      ]
+    },
+    "1452": {
+      "op": "swap",
+      "stack_out": [
+        "\"poolTransactionCounts\"",
+        "new_state_value%4#0"
+      ]
+    },
+    "1453": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1454": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1455": {
+      "op": "bytec 9 // \"poolVolumes\"",
+      "defined_out": [
+        "\"poolVolumes\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"poolVolumes\""
+      ]
+    },
+    "1457": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%5#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "maybe_value%5#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "1458": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%5#0"
+      ]
+    },
+    "1459": {
+      "op": "frame_dig -2",
+      "stack_out": [
+        "maybe_value%5#0",
+        "amount#0 (copy)"
+      ]
+    },
+    "1461": {
+      "op": "+",
+      "defined_out": [
+        "new_state_value%5#0"
+      ],
+      "stack_out": [
+        "new_state_value%5#0"
+      ]
+    },
+    "1462": {
+      "op": "bytec 9 // \"poolVolumes\"",
+      "stack_out": [
+        "new_state_value%5#0",
+        "\"poolVolumes\""
+      ]
+    },
+    "1464": {
+      "op": "swap",
+      "stack_out": [
+        "\"poolVolumes\"",
+        "new_state_value%5#0"
+      ]
+    },
+    "1465": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1466": {
+      "op": "pushbytes \"Transaction logged successfully\"",
+      "defined_out": [
+        "\"Transaction logged successfully\""
+      ],
+      "stack_out": [
+        "\"Transaction logged successfully\""
+      ]
+    },
+    "1499": {
+      "op": "log",
+      "stack_out": []
+    },
+    "1500": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1501": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.getLastResetTime",
+      "params": {},
+      "block": "getLastResetTime",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "1502": {
+      "op": "bytec 7 // \"lastResetTime\"",
+      "defined_out": [
+        "\"lastResetTime\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"lastResetTime\""
+      ]
+    },
+    "1504": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "1505": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "1506": {
+      "retsub": true,
+      "op": "retsub"
+    },
+    "1507": {
+      "subroutine": "smart_contracts/predictive_liquidity_mining/contract.algo.ts::RealPredictiveLiquidityMining.resetDailyCounters",
+      "params": {},
+      "block": "resetDailyCounters",
+      "stack_in": [],
+      "op": "bytec_3 // \"dailyTransactionCount\"",
+      "defined_out": [
+        "\"dailyTransactionCount\""
+      ],
+      "stack_out": [
+        "\"dailyTransactionCount\""
+      ]
+    },
+    "1508": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"dailyTransactionCount\"",
+        "0"
+      ],
+      "stack_out": [
+        "\"dailyTransactionCount\"",
+        "0"
+      ]
+    },
+    "1509": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1510": {
+      "op": "bytec 4 // \"dailyVolume\"",
+      "defined_out": [
+        "\"dailyVolume\""
+      ],
+      "stack_out": [
+        "\"dailyVolume\""
+      ]
+    },
+    "1512": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"dailyVolume\"",
+        "0"
+      ]
+    },
+    "1513": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1514": {
+      "op": "bytec 7 // \"lastResetTime\"",
+      "defined_out": [
+        "\"lastResetTime\""
+      ],
+      "stack_out": [
+        "\"lastResetTime\""
+      ]
+    },
+    "1516": {
+      "op": "pushint 1727470000 // 1727470000",
+      "defined_out": [
+        "\"lastResetTime\"",
+        "1727470000"
+      ],
+      "stack_out": [
+        "\"lastResetTime\"",
+        "1727470000"
+      ]
+    },
+    "1522": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "1523": {
+      "op": "pushbytes \"Daily counters reset\"",
+      "defined_out": [
+        "\"Daily counters reset\""
+      ],
+      "stack_out": [
+        "\"Daily counters reset\""
+      ]
+    },
+    "1545": {
+      "op": "log",
+      "stack_out": []
+    },
+    "1546": {
+      "op": "pushbytes \"Daily counters have been reset successfully\"",
+      "defined_out": [
+        "\"Daily counters have been reset successfully\""
+      ],
+      "stack_out": [
+        "\"Daily counters have been reset successfully\""
+      ]
+    },
+    "1591": {
+      "retsub": true,
+      "op": "retsub"
+    }
+  }
+}

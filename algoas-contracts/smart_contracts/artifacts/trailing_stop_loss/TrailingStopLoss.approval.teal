@@ -1,0 +1,793 @@
+#pragma version 10
+#pragma typetrack false
+
+// @algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram() -> uint64:
+main:
+    intcblock 1
+    bytecblock 0x151f7c75 "Order " "_" "TSL_" "_ORDER" ", Trail " " at " "h: "
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:7
+    // export class TrailingStopLoss extends Contract {
+    txn NumAppArgs
+    bz main_bare_routing@17
+    pushbytess 0x674e5a35 0x5c7a635b 0xf3196bb8 0x95020b9e 0x0fe99d46 0x371abbc0 0x15ec8879 0xa14cd0ed 0x792b47cb 0xd373076c 0x11237b48 0xb171c8a6 // method "createTrailingOrder(string,string,string,string,string)string", method "updateStopPrice(string,string,string)string", method "checkExecutionCondition(string,string,string)string", method "executeTrailingOrder(string,string,string,string,string)string", method "cancelTrailingOrder(string,string)string", method "getOrderDetails(string)string", method "createBracketOrder(string,string,string,string,string,string)string", method "updateTrailDistance(string,string,string)string", method "getUserOrders(string)string", method "setTimeBasedTrail(string,string,string,string,string,string)string", method "getPlatformStats()string", method "emergencyPauseOrders()string"
+    txna ApplicationArgs 0
+    match main_createTrailingOrder_route@3 main_updateStopPrice_route@4 main_checkExecutionCondition_route@5 main_executeTrailingOrder_route@6 main_cancelTrailingOrder_route@7 main_getOrderDetails_route@8 main_createBracketOrder_route@9 main_updateTrailDistance_route@10 main_getUserOrders_route@11 main_setTimeBasedTrail_route@12 main_getPlatformStats_route@13 main_emergencyPauseOrders_route@14
+
+main_after_if_else@21:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:7
+    // export class TrailingStopLoss extends Contract {
+    pushint 0 // 0
+    return
+
+main_emergencyPauseOrders_route@14:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:148
+    // emergencyPauseOrders(): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c750044454d455247454e43593a20416c6c20747261696c696e67206f7264657273207061757365642e204d616e75616c20696e74657276656e74696f6e2072657175697265642e
+    log
+    intc_0 // 1
+    return
+
+main_getPlatformStats_route@13:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:141
+    // getPlatformStats(): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    pushbytes 0x151f7c750077547261696c696e672053746f7020506c6174666f726d3a20312c32333420616374697665206f72646572732c2024322e354d20746f74616c2070726f7465637465642076616c75652c2039382e372520657865637574696f6e207375636365737320726174652c2041766720747261696c3a20382e3525
+    log
+    intc_0 // 1
+    return
+
+main_setTimeBasedTrail_route@12:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:127-134
+    // setTimeBasedTrail(
+    //     orderId: string,
+    //     phase1Duration: string,
+    //     phase1Trail: string,
+    //     phase2Duration: string,
+    //     phase2Trail: string,
+    //     phase3Trail: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:7
+    // export class TrailingStopLoss extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    txna ApplicationArgs 4
+    extract 2 0
+    txna ApplicationArgs 5
+    extract 2 0
+    txna ApplicationArgs 6
+    extract 2 0
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:127-134
+    // setTimeBasedTrail(
+    //     orderId: string,
+    //     phase1Duration: string,
+    //     phase1Trail: string,
+    //     phase2Duration: string,
+    //     phase2Trail: string,
+    //     phase3Trail: string
+    // ): string {
+    callsub setTimeBasedTrail
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_getUserOrders_route@11:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:119
+    // getUserOrders(userAddress: string): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:7
+    // export class TrailingStopLoss extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:119
+    // getUserOrders(userAddress: string): string {
+    callsub getUserOrders
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_updateTrailDistance_route@10:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:108-112
+    // updateTrailDistance(
+    //     orderId: string,
+    //     newTrailDistance: string,
+    //     userAddress: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:7
+    // export class TrailingStopLoss extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:108-112
+    // updateTrailDistance(
+    //     orderId: string,
+    //     newTrailDistance: string,
+    //     userAddress: string
+    // ): string {
+    callsub updateTrailDistance
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_createBracketOrder_route@9:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:92-99
+    // createBracketOrder(
+    //     assetId: string,
+    //     buyAmount: string,
+    //     buyPrice: string,
+    //     trailDistance: string,
+    //     takeProfitPrice: string,
+    //     userAddress: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:7
+    // export class TrailingStopLoss extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    txna ApplicationArgs 4
+    extract 2 0
+    txna ApplicationArgs 5
+    extract 2 0
+    txna ApplicationArgs 6
+    extract 2 0
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:92-99
+    // createBracketOrder(
+    //     assetId: string,
+    //     buyAmount: string,
+    //     buyPrice: string,
+    //     trailDistance: string,
+    //     takeProfitPrice: string,
+    //     userAddress: string
+    // ): string {
+    callsub createBracketOrder
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_getOrderDetails_route@8:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:84
+    // getOrderDetails(orderId: string): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:7
+    // export class TrailingStopLoss extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:84
+    // getOrderDetails(orderId: string): string {
+    callsub getOrderDetails
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_cancelTrailingOrder_route@7:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:74-77
+    // cancelTrailingOrder(
+    //     orderId: string,
+    //     userAddress: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:7
+    // export class TrailingStopLoss extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:74-77
+    // cancelTrailingOrder(
+    //     orderId: string,
+    //     userAddress: string
+    // ): string {
+    callsub cancelTrailingOrder
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_executeTrailingOrder_route@6:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:58-64
+    // executeTrailingOrder(
+    //     orderId: string,
+    //     assetId: string,
+    //     amount: string,
+    //     executionPrice: string,
+    //     userAddress: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:7
+    // export class TrailingStopLoss extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    txna ApplicationArgs 4
+    extract 2 0
+    txna ApplicationArgs 5
+    extract 2 0
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:58-64
+    // executeTrailingOrder(
+    //     orderId: string,
+    //     assetId: string,
+    //     amount: string,
+    //     executionPrice: string,
+    //     userAddress: string
+    // ): string {
+    callsub executeTrailingOrder
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_checkExecutionCondition_route@5:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:41-45
+    // checkExecutionCondition(
+    //     orderId: string,
+    //     currentPrice: string,
+    //     stopPrice: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:7
+    // export class TrailingStopLoss extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:41-45
+    // checkExecutionCondition(
+    //     orderId: string,
+    //     currentPrice: string,
+    //     stopPrice: string
+    // ): string {
+    callsub checkExecutionCondition
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_updateStopPrice_route@4:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:28-32
+    // updateStopPrice(
+    //     orderId: string,
+    //     currentMarketPrice: string,
+    //     trailDistance: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:7
+    // export class TrailingStopLoss extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:28-32
+    // updateStopPrice(
+    //     orderId: string,
+    //     currentMarketPrice: string,
+    //     trailDistance: string
+    // ): string {
+    callsub updateStopPrice
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_createTrailingOrder_route@3:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:12-18
+    // createTrailingOrder(
+    //     assetId: string,
+    //     amount: string,
+    //     trailDistance: string,
+    //     initialPrice: string,
+    //     userAddress: string
+    // ): string {
+    txn OnCompletion
+    !
+    assert // OnCompletion is not NoOp
+    txn ApplicationID
+    assert // can only call when not creating
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:7
+    // export class TrailingStopLoss extends Contract {
+    txna ApplicationArgs 1
+    extract 2 0
+    txna ApplicationArgs 2
+    extract 2 0
+    txna ApplicationArgs 3
+    extract 2 0
+    txna ApplicationArgs 4
+    extract 2 0
+    txna ApplicationArgs 5
+    extract 2 0
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:12-18
+    // createTrailingOrder(
+    //     assetId: string,
+    //     amount: string,
+    //     trailDistance: string,
+    //     initialPrice: string,
+    //     userAddress: string
+    // ): string {
+    callsub createTrailingOrder
+    dup
+    len
+    itob
+    extract 6 2
+    swap
+    concat
+    bytec_0 // 0x151f7c75
+    swap
+    concat
+    log
+    intc_0 // 1
+    return
+
+main_bare_routing@17:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:7
+    // export class TrailingStopLoss extends Contract {
+    txn OnCompletion
+    bnz main_after_if_else@21
+    txn ApplicationID
+    !
+    assert // can only call when creating
+    intc_0 // 1
+    return
+
+
+// smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.createTrailingOrder(assetId: bytes, amount: bytes, trailDistance: bytes, initialPrice: bytes, userAddress: bytes) -> bytes:
+createTrailingOrder:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:12-18
+    // createTrailingOrder(
+    //     assetId: string,
+    //     amount: string,
+    //     trailDistance: string,
+    //     initialPrice: string,
+    //     userAddress: string
+    // ): string {
+    proto 5 1
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:157
+    // return `stopPrice_${initialPrice}_${trailDistance}`
+    pushbytes "stopPrice_"
+    frame_dig -2
+    concat
+    bytec_2 // "_"
+    concat
+    frame_dig -3
+    concat
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:174
+    // return `TSL_${assetId}_ORDER`
+    bytec_3 // "TSL_"
+    frame_dig -5
+    concat
+    bytec 4 // "_ORDER"
+    concat
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:22
+    // return `Trailing order ${orderId} created: Asset ${assetId}, Amount ${amount}, Trail ${trailDistance}%, Stop Price ${currentStopPrice} by ${userAddress}`
+    pushbytes "Trailing order "
+    swap
+    concat
+    pushbytes " created: Asset "
+    concat
+    frame_dig -5
+    concat
+    pushbytes ", Amount "
+    concat
+    frame_dig -4
+    concat
+    bytec 5 // ", Trail "
+    concat
+    frame_dig -3
+    concat
+    pushbytes "%, Stop Price "
+    concat
+    swap
+    concat
+    pushbytes " by "
+    concat
+    frame_dig -1
+    concat
+    retsub
+
+
+// smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.updateStopPrice(orderId: bytes, currentMarketPrice: bytes, trailDistance: bytes) -> bytes:
+updateStopPrice:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:28-32
+    // updateStopPrice(
+    //     orderId: string,
+    //     currentMarketPrice: string,
+    //     trailDistance: string
+    // ): string {
+    proto 3 1
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:163
+    // return `trailStopPrice_${currentPrice}_${trailDistance}`
+    pushbytes "trailStopPrice_"
+    frame_dig -2
+    concat
+    bytec_2 // "_"
+    concat
+    frame_dig -1
+    concat
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:35
+    // return `Order ${orderId}: Stop price updated to ${newStopPrice} based on market price ${currentMarketPrice}`
+    bytec_1 // "Order "
+    frame_dig -3
+    concat
+    pushbytes ": Stop price updated to "
+    concat
+    swap
+    concat
+    pushbytes " based on market price "
+    concat
+    frame_dig -2
+    concat
+    retsub
+
+
+// smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.checkExecutionCondition(orderId: bytes, currentPrice: bytes, stopPrice: bytes) -> bytes:
+checkExecutionCondition:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:41-45
+    // checkExecutionCondition(
+    //     orderId: string,
+    //     currentPrice: string,
+    //     stopPrice: string
+    // ): string {
+    proto 3 1
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:49
+    // return `Order ${orderId} TRIGGERED: Current price ${currentPrice} <= Stop price ${stopPrice}`
+    bytec_1 // "Order "
+    frame_dig -3
+    concat
+    pushbytes " TRIGGERED: Current price "
+    concat
+    frame_dig -2
+    concat
+    pushbytes " <= Stop price "
+    concat
+    frame_dig -1
+    concat
+    retsub
+
+
+// smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.executeTrailingOrder(orderId: bytes, assetId: bytes, amount: bytes, executionPrice: bytes, userAddress: bytes) -> bytes:
+executeTrailingOrder:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:58-64
+    // executeTrailingOrder(
+    //     orderId: string,
+    //     assetId: string,
+    //     amount: string,
+    //     executionPrice: string,
+    //     userAddress: string
+    // ): string {
+    proto 5 1
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:179
+    // return `Trade executed via optimal routing for ${assetId}`
+    pushbytes "Trade executed via optimal routing for "
+    frame_dig -4
+    concat
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:68
+    // return `Order ${orderId} EXECUTED: Sold ${amount} of asset ${assetId} at ${executionPrice} for user ${userAddress}. ${executionResult}`
+    bytec_1 // "Order "
+    frame_dig -5
+    concat
+    pushbytes " EXECUTED: Sold "
+    concat
+    frame_dig -3
+    concat
+    pushbytes " of asset "
+    concat
+    frame_dig -4
+    concat
+    bytec 6 // " at "
+    concat
+    frame_dig -2
+    concat
+    pushbytes " for user "
+    concat
+    frame_dig -1
+    concat
+    pushbytes ". "
+    concat
+    swap
+    concat
+    retsub
+
+
+// smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.cancelTrailingOrder(orderId: bytes, userAddress: bytes) -> bytes:
+cancelTrailingOrder:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:74-77
+    // cancelTrailingOrder(
+    //     orderId: string,
+    //     userAddress: string
+    // ): string {
+    proto 2 1
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:78
+    // return `Order ${orderId} cancelled by ${userAddress}. Assets returned to wallet.`
+    bytec_1 // "Order "
+    frame_dig -2
+    concat
+    pushbytes " cancelled by "
+    concat
+    frame_dig -1
+    concat
+    pushbytes ". Assets returned to wallet."
+    concat
+    retsub
+
+
+// smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.getOrderDetails(orderId: bytes) -> bytes:
+getOrderDetails:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:84
+    // getOrderDetails(orderId: string): string {
+    proto 1 1
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:86
+    // return `Order ${orderId}: Asset ALGO, Amount 1000, Trail 10%, Current Stop $0.585, Status ACTIVE, High Water Mark $0.65`
+    bytec_1 // "Order "
+    frame_dig -1
+    concat
+    pushbytes ": Asset ALGO, Amount 1000, Trail 10%, Current Stop $0.585, Status ACTIVE, High Water Mark $0.65"
+    concat
+    retsub
+
+
+// smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.createBracketOrder(assetId: bytes, buyAmount: bytes, buyPrice: bytes, trailDistance: bytes, takeProfitPrice: bytes, userAddress: bytes) -> bytes:
+createBracketOrder:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:92-99
+    // createBracketOrder(
+    //     assetId: string,
+    //     buyAmount: string,
+    //     buyPrice: string,
+    //     trailDistance: string,
+    //     takeProfitPrice: string,
+    //     userAddress: string
+    // ): string {
+    proto 6 1
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:174
+    // return `TSL_${assetId}_ORDER`
+    bytec_3 // "TSL_"
+    frame_dig -6
+    concat
+    bytec 4 // "_ORDER"
+    concat
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:102
+    // return `Bracket order ${orderId} created: Buy ${buyAmount} ${assetId} at ${buyPrice}, Trail ${trailDistance}%, Take Profit ${takeProfitPrice}`
+    pushbytes "Bracket order "
+    swap
+    concat
+    pushbytes " created: Buy "
+    concat
+    frame_dig -5
+    concat
+    pushbytes " "
+    concat
+    frame_dig -6
+    concat
+    bytec 6 // " at "
+    concat
+    frame_dig -4
+    concat
+    bytec 5 // ", Trail "
+    concat
+    frame_dig -3
+    concat
+    pushbytes "%, Take Profit "
+    concat
+    frame_dig -2
+    concat
+    retsub
+
+
+// smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.updateTrailDistance(orderId: bytes, newTrailDistance: bytes, userAddress: bytes) -> bytes:
+updateTrailDistance:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:108-112
+    // updateTrailDistance(
+    //     orderId: string,
+    //     newTrailDistance: string,
+    //     userAddress: string
+    // ): string {
+    proto 3 1
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:113
+    // return `Order ${orderId}: Trail distance updated from current to ${newTrailDistance}% by ${userAddress}`
+    bytec_1 // "Order "
+    frame_dig -3
+    concat
+    pushbytes ": Trail distance updated from current to "
+    concat
+    frame_dig -2
+    concat
+    pushbytes "% by "
+    concat
+    frame_dig -1
+    concat
+    retsub
+
+
+// smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.getUserOrders(userAddress: bytes) -> bytes:
+getUserOrders:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:119
+    // getUserOrders(userAddress: string): string {
+    proto 1 1
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:121
+    // return `Active orders for ${userAddress}: 3 trailing stops, 1 bracket order, Total value protected: $5,420`
+    pushbytes "Active orders for "
+    frame_dig -1
+    concat
+    pushbytes ": 3 trailing stops, 1 bracket order, Total value protected: $5,420"
+    concat
+    retsub
+
+
+// smart_contracts/trailing_stop_loss/contract.algo.ts::TrailingStopLoss.setTimeBasedTrail(orderId: bytes, phase1Duration: bytes, phase1Trail: bytes, phase2Duration: bytes, phase2Trail: bytes, phase3Trail: bytes) -> bytes:
+setTimeBasedTrail:
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:127-134
+    // setTimeBasedTrail(
+    //     orderId: string,
+    //     phase1Duration: string,
+    //     phase1Trail: string,
+    //     phase2Duration: string,
+    //     phase2Trail: string,
+    //     phase3Trail: string
+    // ): string {
+    proto 6 1
+    // smart_contracts/trailing_stop_loss/contract.algo.ts:135
+    // return `Order ${orderId}: Time-based trail set - First ${phase1Duration}h: ${phase1Trail}%, Next ${phase2Duration}h: ${phase2Trail}%, After: ${phase3Trail}%`
+    bytec_1 // "Order "
+    frame_dig -6
+    concat
+    pushbytes ": Time-based trail set - First "
+    concat
+    frame_dig -5
+    concat
+    bytec 7 // "h: "
+    concat
+    frame_dig -4
+    concat
+    pushbytes "%, Next "
+    concat
+    frame_dig -3
+    concat
+    bytec 7 // "h: "
+    concat
+    frame_dig -2
+    concat
+    pushbytes "%, After: "
+    concat
+    frame_dig -1
+    concat
+    pushbytes "%"
+    concat
+    retsub

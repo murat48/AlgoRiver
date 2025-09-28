@@ -1,0 +1,9 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: 0.3.5
+_src_path: gh:algorandfoundation/algokit-typescript-template
+author_email: your.email@example.com
+author_name: Your Name
+contract_name: hello_world
+preset_name: starter
+project_name: algoas-contracts
+
