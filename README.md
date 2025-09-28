@@ -100,7 +100,7 @@
 ## 🔧 Smart Contracts
 
 ### Predictive Liquidity Mining Contract
-- **App ID**: 746499783 (TestNet - V4 Dynamic)
+- **App ID**: 746488803 (TestNet - V4 Dynamic)
 - **Contract Name**: PredictiveLiquidityMiningV4Dynamic
 - **Functions**: `stakeInPool`, `unstakeFromPool`, `claimRewards`
 - **Features**: Multi-pool staking, reward distribution, governance voting
@@ -114,11 +114,6 @@
 - **Features**: Automated execution, price monitoring, risk management
 - **Explorer**: [View on AlgoExplorer](https://testnet.algoexplorer.io/application/746503417)
 - **Deployment**: Active price tracking and order execution
-
-### Additional Contracts
-- **Legacy PLM Contract**: 746293484 (TestNet - Original)
-- **User Portfolio Contract**: 746488803 (TestNet - Portfolio Management)
-- **Real Data Contract**: Various App IDs for data integration
 
 ## 📊 API Integration
 
